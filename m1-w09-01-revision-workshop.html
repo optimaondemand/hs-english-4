@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 9.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 9.1 &middot; Revision Workshop</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Project</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 9.1 &middot; Revision Workshop</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Making the Draft Better, Not Just Neater</div>
+        <div style="font-size: 16px; color: #666;">Turning your Week 8 draft into the final essay</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; OBJECTIVE</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">By the end of this lesson you will be able to revise your essay at three levels &mdash; argument, paragraph, and sentence &mdash; using a checklist and your feedback, so the final version is genuinely stronger than the draft, not just cleaner.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128218; REVISING IS NOT EDITING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;"><strong>Editing</strong> fixes the surface &mdash; commas, typos, a clumsy word. <strong>Revision</strong>, literally &ldquo;re-seeing,&rdquo; changes the substance: a thesis that finally says what you mean, a paragraph moved so the logic flows, a counterargument made fairer, a weak quote swapped for a stronger one. Most writers want to skip straight to editing because it feels productive and safe. Resist that for one full pass. Read your draft asking not &ldquo;is this correct?&rdquo; but &ldquo;is this <em>convincing</em>, and is it really what I think?&rdquo; Edit last, once the argument is settled.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; A THREE-LEVEL REVISION CHECKLIST</div>
+
+        <div style="margin:0 0 12px 0;">
+            <div class="notebook">
+                <div class="nb-title"><strong>Level 1 &mdash; The whole argument</strong></div>
+                <div class="nb-line">&#9744; Can a reader find your thesis in the first paragraph, stated as a claim?</div>
+                <div class="nb-line">&#9744; Does every body paragraph support that one thesis? (Cut or fix any that wander.)</div>
+                <div class="nb-line">&#9744; Did you actually answer the counterargument, or just mention it?</div>
+            </div>
+        </div>
+        <div style="background:#EEF1F8;border-radius:7px;padding:14px 18px;margin:0 0 12px 0;">
+            <div style="font-size:16px;color:#0E1C42;margin-bottom:6px;"><strong>Level 2 &mdash; The paragraphs</strong></div>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;">&#9744; Does each paragraph open with a point of your own, not a quote?<br />&#9744; Is every quotation framed and explained &mdash; with your explanation longer than the quote?<br />&#9744; Do the paragraphs connect? (This is where conjunctive adverbs from Lesson 7.4 earn their place.)</div>
+        </div>
+        <div style="background:#FDF3E3;border-radius:7px;padding:14px 18px;margin:0;">
+            <div style="font-size:16px;color:#0E1C42;margin-bottom:6px;"><strong>Level 3 &mdash; The sentences (edit last)</strong></div>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;">&#9744; Semicolons, colons, and quotation marks correct (Lessons 6.4, 7.4, and the colon week)?<br />&#9744; Any sentence you can&rsquo;t read aloud in one breath &mdash; can it be split?<br />&#9744; Quotations copied <em>exactly</em>? Each tradition named respectfully, in its own terms?</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#9989; PART 2 &middot; REVISION OR EDITING?</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; SORT EACH CHANGE</div>
+            <div class="widget-question">Is each change a <em>revision</em> (substance) or an <em>edit</em> (surface)?</div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">1. Rewriting your thesis so it actually names the thinker you argue against.</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; you&rsquo;re changing what the essay argues. That&rsquo;s revision.">Revision</button>
+                    <button data-choice="1" data-fb="This changes the substance of your claim, so it&rsquo;s more than an edit.">Edit</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">2. Fixing a comma splice between two sentences with a semicolon.</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The meaning doesn&rsquo;t change &mdash; only the punctuation. That&rsquo;s editing.">Revision</button>
+                    <button data-choice="1" data-fb="Yes &mdash; a surface correction. Save these for your last pass.">Edit</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">3. Moving your counterargument paragraph earlier so your answer can build on it.</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; reordering the argument changes how it persuades. Revision.">Revision</button>
+                    <button data-choice="1" data-fb="Reordering paragraphs reshapes the argument; it&rsquo;s more than surface.">Edit</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">4. Replacing a vague quote with one that directly supports your point.</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; stronger evidence changes how convincing the essay is. Revision.">Revision</button>
+                    <button data-choice="1" data-fb="Swapping evidence affects the argument itself, not just the surface.">Edit</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #EAF1EA; border-left: 4px solid #4F6F52; border: 1px solid #CBD8CB; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #4F6F52; margin-bottom: 10px;">&#9999;&#65039; DO THIS NOW &middot; ON YOUR DRAFT</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65;">Open your Week 8 draft and any feedback you received. Make <strong>one full revision pass first</strong> using Levels 1 and 2 &mdash; resist fixing commas yet. Then do a separate Level 3 editing pass. Save the result as your <strong>final</strong> version (same file name, replacing the draft) in your Module 1 folder, and submit it to the Synthesis Essay assignment. This is the version graded on the 100-point rubric.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; ALSO THIS WEEK</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Once your argument is settled, you will present it out loud in the <strong>VR Gallery Finale</strong> &mdash; a walking tour of your completed Hall of Thinkers. Speaking your argument is one of the best final checks there is: if you can walk someone through it, it holds together.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Module Project</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 9.1 &middot; Revision Workshop</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

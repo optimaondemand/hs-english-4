@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 2.4</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 18px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.4 &middot; Grammar &amp; Vocabulary</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Drawn From</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bible (KJV)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.4 &middot; Grammar &amp; Vocabulary</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Five Words, and Parallel Structure</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Five words to keep from this week&rsquo;s reading, and one of the most useful tools in good writing: parallel structure.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You already heard parallel structure at work this week &mdash; the Beatitudes (&ldquo;Blessed are X: for they shall Y&rdquo;) repeat the same grammatical shape again and again. Today you will learn what that tool is, why it makes writing clearer and stronger, and how to fix it when it breaks.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> define five words from the reading and use one in a sentence of my own.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">recognize parallel structure, explain why it helps, and fix a sentence whose parallelism is broken.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; VOCABULARY FROM THE READING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;">Tap each card to check the definition, then add all five to the <strong>Vocabulary Log</strong> in your Learning Log.</p>
+
+        <div class="optima-widget">
+            <div class="widget-kicker">&#9889; TAP TO REVEAL &middot; THE DEFINITION</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>dominion</strong> <span style="color:#888;font-size:14px;">(n.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">authority or rule over something. <em>&ldquo;let them have dominion over the fish of the sea&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>firmament</strong> <span style="color:#888;font-size:14px;">(n.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">the vault of the sky; the heavens. <em>&ldquo;Let there be a firmament in the midst of the waters&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>tribulation</strong> <span style="color:#888;font-size:14px;">(n.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">great trouble or suffering. <em>&ldquo;we glory in tribulations also&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>righteousness</strong> <span style="color:#888;font-size:14px;">(n.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">the quality of being morally right or just. <em>&ldquo;hunger and thirst after righteousness&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>meek</strong> <span style="color:#888;font-size:14px;">(adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">gentle, humble, patient &mdash; not aggressive or self-asserting. <em>&ldquo;Blessed are the meek&rdquo;</em></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #EAF1EA; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 16px 20px; margin: 14px 0 0 0;">
+            <div style="font-size: 11px; color: #4F6F52; margin-bottom: 10px;">&#9999;&#65039; WRITE IT &middot; COPIA</div>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Choose <strong>one</strong> of the five words, find the line it appears in this week, and <strong>rewrite that line in your own words</strong> &mdash; same meaning, your phrasing. Put it in your Vocabulary Log.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; PARALLEL STRUCTURE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><strong>Parallel structure</strong> means putting ideas of equal importance into the same grammatical form. When you list, compare, or repeat, the parts should match: all nouns, or all verbs ending the same way, or all phrases shaped alike. The Beatitudes are a clear model &mdash; every line is &ldquo;Blessed are <em>[noun phrase]</em>: for they shall <em>[verb phrase]</em>.&rdquo; The matching shape is what makes the passage feel ordered and memorable, and it is what lets the meaning land. Parallel structure does the same thing in ordinary writing: it makes lists and comparisons easy to follow and gives sentences a clear rhythm.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Parallelism <em>breaks</em> when one item in a series does not match the others. That is a common error, and it makes a sentence stumble:</p>
+
+        <div style="background: #FDECEC; border-left: 5px solid #C0392B; border-top: 3px solid #E74C3C; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #8A1F16; margin-bottom: 8px;">&#9888;&#65039; FAULTY PARALLELISM</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;"><strong>Broken:</strong> The Gita values <em>steadiness</em>, <em>duty</em>, and <em>being calm</em>.<br /><span style="font-size:15px;color:#555;">Two nouns and then a phrase &mdash; the third item does not match.</span><br /><strong>Fixed:</strong> The Gita values <em>steadiness</em>, <em>duty</em>, and <em>calm</em>.&nbsp; <span style="font-size:15px;color:#555;">(three nouns &mdash; all matching)</span></div>
+        </div>
+
+        <div style="margin:14px 0;">
+            <div class="chalkboard">
+                <div class="cb-kicker">&#128221; ON THE BOARD</div>
+                <div class="cb-line">The Gita values <span class="cb-accent">steadiness</span>, <span class="cb-accent">duty</span>, and <span class="cb-accent">calm</span>.</div>
+            </div>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK THE PARALLELISM</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. Which sentence is correctly parallel?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="&lsquo;To act&rsquo; and &lsquo;letting go&rsquo; don&rsquo;t match. Make both the same form.">Krishna tells Arjuna to act and letting go of the result.</button>
+                    <button data-choice="1" data-fb="Yes. &lsquo;To act&rsquo; and &lsquo;to release&rsquo; match &mdash; both infinitives.">Krishna tells Arjuna to act and to release the result.</button>
+                    <button data-choice="2" data-fb="&lsquo;Acting&rsquo; and &lsquo;release&rsquo; don&rsquo;t match.">Krishna tells Arjuna acting and release the result.</button>
+                    <button data-choice="3" data-fb="&lsquo;That he acts&rsquo; and &lsquo;to release&rsquo; are different structures.">Krishna tells Arjuna that he acts and to release the result.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">2. Which sentence has <em>faulty</em> parallelism (the error)?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Parallel &mdash; three matching nouns.">Genesis describes light, land, and life.</button>
+                    <button data-choice="1" data-fb="Parallel &mdash; three matching -ing verbs.">Yahweh is speaking, dividing, and naming.</button>
+                    <button data-choice="2" data-fb="Parallel &mdash; two matching &lsquo;to&rsquo; phrases.">The psalm offers comfort and gives rest.</button>
+                    <button data-choice="3" data-fb="Yes. &lsquo;Reading,&rsquo; &lsquo;to annotate,&rsquo; and &lsquo;a discussion&rsquo; are three different forms.">Study means reading the text, to annotate it, and a discussion.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">3. Best fix for: &ldquo;The Beatitudes bless the poor, the mourning, and people who are meek.&rdquo;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes. &lsquo;the poor, the mourning, and the meek&rsquo; &mdash; three matching noun phrases.">&hellip;bless the poor, the mourning, and the meek.</button>
+                    <button data-choice="1" data-fb="Now the first two don&rsquo;t match the longer third item either.">&hellip;bless poor people, mourning, and the meek.</button>
+                    <button data-choice="2" data-fb="Still mismatched &mdash; a clause tacked onto two noun phrases.">&hellip;bless the poor, the mourning, and they are meek.</button>
+                    <button data-choice="3" data-fb="That keeps the original mismatch.">&hellip;bless the poor, the mourning, and people who are meek.</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHY THIS IS WORTH KNOWING</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Parallel structure shows up everywhere strong writing makes a list or a comparison &mdash; thesis statements, r&eacute;sum&eacute; bullet points, the three reasons in an essay. Matching forms make your meaning easy to follow and give your sentences force. Try to build one clearly parallel sentence into this week&rsquo;s Quick Write.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.4 &middot; Grammar &amp; Vocabulary</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

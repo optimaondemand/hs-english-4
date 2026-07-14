@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 7.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.2 &middot; Literature (2 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Aristotle, <em>Nicomachean Ethics</em> &mdash; Book II</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.2 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">We Become What We Repeatedly Do</div>
+        <div style="font-size: 16px; color: #666;">Virtue as habit, and the idea of the mean</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Yesterday Aristotle said the good life is the soul working well. Today he answers the obvious follow-up: how does a soul <em>get</em> to work well?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">His answer is unglamorous and powerful: by practice. You are not born just or brave or self-controlled &mdash; you become those things by repeatedly doing just, brave, and self-controlled acts, the same way you learn an instrument by playing it. And he gives a rule for what those right acts look like: they sit in a <em>mean</em>, a balance point between doing too much and doing too little.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aristotle&rsquo;s claim that we acquire virtues by practicing them, as we learn a skill.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">locate a virtue as a &ldquo;mean&rdquo; between an excess and a deficiency, and explain why the mean is relative to the situation.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; from the <em>Nicomachean Ethics</em>, Book II.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage once before the lesson below. The first part is about habit; the second is about the mean.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; on habit and the mean (<em>Nicomachean Ethics</em>, Book II)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">&hellip; what we have to make when we have learned how, these we learn how to make by making: men come to be builders, for instance, by building; harp-players, by playing on the harp: exactly so, by doing just actions we come to be just; by doing the actions of self-mastery we come to be perfected in self-mastery; and by doing brave actions brave.</p>
+                <p style="margin:0 0 12px 0;">And to the truth of this testimony is borne by what takes place in communities: because the law-givers make the individual members good men by habituation&hellip;</p>
+                <p style="margin:0 0 12px 0;">In all quantity&hellip; one may take the greater part, the less, or the exactly equal&hellip; and the exactly equal is a mean between excess and defect. Now by the mean&hellip; relatively to ourselves, [I denote] that which is neither too much nor too little for the particular individual&hellip;</p>
+                <p style="margin:0 0 12px 0;">&hellip; suppose ten [portions of food] is too much and two too little&hellip; it does not follow&hellip; that the trainer will order his man six; because for the person who is to take it this also may be too much or too little: for Milo it would be too little, but for a man just commencing his athletic exercises too much&hellip; So then it seems every one possessed of skill avoids excess and defect, but seeks for and chooses the mean, not the absolute but the relative.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Aristotle, <em>Nicomachean Ethics</em>, Book II (D. P. Chase translation). Public domain English text. Excerpts. (Milo of Croton was a famously strong ancient wrestler.)</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Aristotle was, among many other things, a working biologist who dissected animals and classified hundreds of species. That habit of mind shows here: instead of asking what goodness is in the abstract, he watches how people actually become skilled at anything &mdash; a craft, a sport, an instrument &mdash; and reasons that becoming good must work the same way. His Greek word for these settled good states of character, <em>hexis</em>, is the root of our word for a fixed disposition; in this translation it appears as a state built by &ldquo;habituation.&rdquo;</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; CHARACTER IS BUILT, NOT BORN</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think of one thing you are genuinely good at. How did you get good at it? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That&rsquo;s Aristotle&rsquo;s whole point &mdash; you built the skill by repeating it. He says character works the same way.">By doing it over and over</button>
+                <button data-response="Talent gives a head start, but Aristotle would ask what you did with it &mdash; the doing is what made it stick.">I had a natural knack for it</button>
+                <button data-response="Coaching matters &mdash; and notice Aristotle says law-givers train good citizens by habituation, much like a coach.">Someone taught and corrected me</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Aristotle&rsquo;s claim is that the virtues are skills of character, learned the way any skill is learned: &ldquo;by doing just actions we come to be just; by doing the actions of self-mastery we come to be perfected in self-mastery; and by doing brave actions brave.&rdquo; You do not first become brave and then act bravely &mdash; you become brave <em>by</em> doing brave things, the way you become a builder by building. This flips a common assumption. People often treat character as something you either have or don&rsquo;t. Aristotle treats it as something you construct, one act at a time, until acting well becomes second nature. That is hopeful &mdash; anyone can start &mdash; but also demanding, because it means your small repeated choices are quietly making you into someone.</p>
+
+        <div style="margin:14px 0;">
+            <div style="font-size:11px;color:#7a5b1e;margin-bottom:8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">men come to be builders, for instance, by building; harp-players, by playing on the harp:</div>
+                <div class="pm-line" style="font-style:italic;">exactly so, by doing just actions we come to be just; by doing the actions of self-mastery</div>
+                <div class="pm-line" style="font-style:italic;">we come to be perfected in self-mastery; and by doing brave actions brave.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE MEAN: NEITHER TOO MUCH NOR TOO LITTLE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">But practice toward <em>what</em>? Aristotle&rsquo;s answer is the idea he is most famous for: each virtue is a <strong>mean</strong> &mdash; a balance point &mdash; between two faults, one of excess and one of deficiency. Courage sits between recklessness (too much) and cowardice (too little). Generosity sits between wastefulness and stinginess. The crucial detail is that the mean is &ldquo;not the absolute but the relative.&rdquo; It is not a fixed midpoint like the number six between two and ten. He uses a trainer feeding an athlete: the right amount of food is not automatically the middle number, because &ldquo;for Milo it would be too little, but for a man just commencing his athletic exercises too much.&rdquo; The right action depends on who you are, the situation, and the moment. That makes Aristotle&rsquo;s ethics less like a rulebook and more like good judgment trained over time &mdash; which is exactly why he made habit the foundation in Part 1. You build the judgment by practicing it.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; FIND THE MEAN</div>
+            <div class="widget-question">Each row gives a virtue with its two extremes. Pick the virtue that sits in the mean.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. Between <em>cowardice</em> (too little) and <em>recklessness</em> (too much) is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Fear unchecked is the deficiency side, not the mean.">fearfulness</button>
+                    <button data-choice="1" data-fb="That&rsquo;s the excess &mdash; charging in with no caution.">rashness</button>
+                    <button data-choice="2" data-fb="Yes. Courage is acting rightly in the face of fear &mdash; neither frozen nor reckless.">courage</button>
+                    <button data-choice="3" data-fb="Indifference isn&rsquo;t the balance point; it&rsquo;s a way of not engaging at all.">indifference</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">2. Between <em>stinginess</em> (too little) and <em>wastefulness</em> (too much) is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Giving everything away with no limit is the excess side.">extravagance</button>
+                    <button data-choice="1" data-fb="Yes. Generosity gives the right amount, to the right person, at the right time.">generosity</button>
+                    <button data-choice="2" data-fb="Hoarding is the deficiency &mdash; the failure to give at all.">hoarding</button>
+                    <button data-choice="3" data-fb="Pride isn&rsquo;t about giving; it&rsquo;s a different scale entirely.">pride</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Aristotle says the mean is &ldquo;relative&rdquo; because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He says the reverse &mdash; it is NOT a fixed midpoint like six between two and ten.">it is always the exact middle number</button>
+                    <button data-choice="1" data-fb="He does think there are real virtues; he&rsquo;s not saying anything goes.">there are no real right answers</button>
+                    <button data-choice="2" data-fb="Relatives don&rsquo;t come into it &mdash; &lsquo;relative&rsquo; here means relative to the situation.">it depends on your family</button>
+                    <button data-choice="3" data-fb="Yes. The right amount depends on the person and the situation &mdash; Milo needs more food than a beginner.">the right amount depends on the person and the situation</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 7.2</em>: pick one virtue you care about and name its two extremes &mdash; the &ldquo;too much&rdquo; and the &ldquo;too little.&rdquo; Then, in two or three sentences, describe one small habit that would move you toward the mean. Quote one line from the passage. Save it for Project Day and your Quick Write.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Aristotle&rsquo;s &ldquo;we become just by doing just acts&rdquo; rhymes with several earlier readings. Confucius, too, saw the good person as cultivated by steady practice, not born finished. The Buddhist parables treated craving as a habit to be unlearned. Hold these together: more than one tradition in this module locates the good life in what you repeatedly do, not in what you happen to feel. In the final lesson, Aristotle asks which activity, practiced well, is the very highest a human can reach.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.2 &middot; We Become What We Repeatedly Do</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

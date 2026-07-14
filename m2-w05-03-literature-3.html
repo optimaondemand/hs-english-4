@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 5.3 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.3 &middot; Literature (3 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; the close</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.3 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">&ldquo;I Am Alone&rdquo;</div>
+        <div style="font-size: 16px; color: #666;">The novel gives its last word to the monster &mdash; and asks you to judge</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Victor is dead. Walton finds the creature weeping over his maker&rsquo;s body &mdash; and Shelley lets him speak last.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In the novel&rsquo;s final pages, the creature grieves the man he hunted, condemns himself more harshly than anyone else could, demands that we see who else is to blame, and then vanishes into the dark to end his own life. It is one of the boldest choices in the book: the last voice we hear is not the scientist&rsquo;s but the monster&rsquo;s. Today &mdash; the last reading of the novel &mdash; you decide what to do with that voice, and pull the whole story together.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how the creature holds together genuine remorse and a demand for shared blame.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">arrive at my own considered judgment of the creature, using the whole novel as evidence.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from the novel&rsquo;s closing pages.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">All five weeks of <strong>reading notes</strong> &mdash; this week&rsquo;s Quick Write asks you to pull the whole novel together.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Walton discovers the creature beside Victor&rsquo;s body. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; the creature&rsquo;s last words (the close)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>His loneliness:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;&hellip; the fallen angel becomes a malignant devil. Yet even that enemy of God and man had friends and associates in his desolation; I am alone.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>His demand for shared blame:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;&hellip; still I desired love and fellowship, and I was still spurned. Was there no injustice in this? Am I to be thought the only criminal, when all humankind sinned against me?&hellip; I, the miserable and the abandoned, am an abortion, to be spurned at, and kicked, and trampled on.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>His remorse:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;But it is true that I am a wretch. I have murdered the lovely and the helpless&hellip; You hate me, but your abhorrence cannot equal that with which I regard myself.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The end:</strong></div>
+                <p style="margin:0 0 12px 0;">He sprang from the cabin-window&hellip; upon the ice raft which lay close to the vessel. He was soon borne away by the waves and lost in darkness and distance.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from the closing pages.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; AN ENDING THAT REFUSES TO JUDGE</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Notice what Shelley does <em>not</em> do. She does not have a hero kill the monster. She does not redeem him, or damn him, or tell us what to think. The creature is not punished by anyone &mdash; he chooses his own end and disappears, &ldquo;lost in darkness and distance.&rdquo; The novel ends on an open question rather than a verdict. And the boldest choice of all: the <em>last</em> voice belongs to the creature, not the scientist, the explorer, or a narrator. By leaving us alone with the monster&rsquo;s grief and refusing to render judgment for us, Shelley forces the reader to do what this course has trained you to do all year &mdash; weigh the evidence and reach your own considered conclusion.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; REMORSE AND ACCUSATION AT ONCE</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">After everything &mdash; four murders, and a childhood of cruelty done to him &mdash; what do you feel toward the creature as he weeps over Victor&rsquo;s body? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="Pity is what Shelley fights to earn from you &mdash; without erasing the murders. That tension is the whole achievement of the ending.">Pity, mostly</button>
+                <button data-response="Fair &mdash; he is a murderer, and the novel never lets you forget it. Hold that next to his suffering.">Horror &mdash; he killed innocents</button>
+                <button data-response="That mixture &mdash; pity and horror at once &mdash; is exactly the response the ending is built to produce.">Both at the same time, uncomfortably</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The creature&rsquo;s final speech does two things at once, and refuses to choose between them. First, real <strong>remorse</strong>: &ldquo;it is true that I am a wretch. I have murdered the lovely and the helpless&hellip; your abhorrence cannot equal that with which I regard myself.&rdquo; He does not excuse the killings; he hates himself for them more than we ever could. But second, a <strong>demand for shared blame</strong>: &ldquo;Am I to be thought the only criminal, when all humankind sinned against me?&rdquo; He insists we remember Felix who beat him, the world that spurned him, the maker who fled him &mdash; that he is &ldquo;the miserable and the abandoned,&rdquo; made a murderer by a lifetime of being &ldquo;trampled on.&rdquo; Both are true. He is guilty <em>and</em> wronged. The whole novel has trained you to hold exactly this kind of double truth without collapsing it into a simple label.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; YOUR VERDICT, AND THE WHOLE NOVEL</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">And then he is gone &mdash; not killed, not saved, just &ldquo;lost in darkness and distance.&rdquo; Shelley hands you the verdict she would not give. So gather the evidence you have been collecting for five weeks. He began &ldquo;benevolent and good&rdquo; (Week 3), chopping firewood for a poor family. He was abandoned at birth, beaten when he asked for kindness, denied the one companion that might have saved him (Week 4). He chose, in the end, to murder the innocent &mdash; William, Justine, Clerval, Elizabeth. And he ends in total isolation, hating himself, alone in a way even Satan was not. Is he a monster, a victim, or a mirror held up to the people &mdash; and the maker &mdash; who made him one? There is no single right answer; there is only the answer you can defend with the text. That defense is the heart of your <strong>module project</strong>, and the skill this whole year has built: not to repeat a verdict, but to reach one and stand behind it.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. The creature&rsquo;s final speech is best described as&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He doesn&rsquo;t excuse the murders &mdash; he condemns himself for them.">a defense that denies any guilt</button>
+                    <button data-choice="1" data-fb="There&rsquo;s deep feeling here &mdash; far from boastful.">a proud boast about his crimes</button>
+                    <button data-choice="2" data-fb="Yes &mdash; genuine remorse <em>and</em> a demand that others share the blame, held together.">both real remorse and a claim that others share the blame</button>
+                    <button data-choice="3" data-fb="He feels intensely &mdash; the opposite of indifference.">cold indifference</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. Giving the creature the novel&rsquo;s last word forces the reader to&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; we&rsquo;re left alone with his grief and must judge for ourselves.">reckon with his humanity and reach their own judgment</button>
+                    <button data-choice="1" data-fb="The opposite &mdash; ending in his voice makes him impossible to dismiss.">forget about him quickly</button>
+                    <button data-choice="2" data-fb="Shelley refuses to deliver a verdict &mdash; that&rsquo;s the point.">accept the narrator&rsquo;s verdict</button>
+                    <button data-choice="3" data-fb="He&rsquo;s clearly no hero; the ending isn&rsquo;t a celebration.">cheer for a hero</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The ending &mdash; &ldquo;lost in darkness and distance&rdquo; &mdash; is powerful because it&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="No one punishes him; he leaves on his own.">shows justice finally done to him</button>
+                    <button data-choice="1" data-fb="He isn&rsquo;t redeemed or forgiven &mdash; it&rsquo;s not tidy.">ties everything up neatly</button>
+                    <button data-choice="2" data-fb="He vanishes; he&rsquo;s not killed by a hero.">proves the monster was defeated</button>
+                    <button data-choice="3" data-fb="Yes &mdash; it leaves the moral question open, refusing to judge for us.">leaves the verdict unresolved, for the reader to make</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 5.3</em>, answer in four or five sentences: <strong>Your final verdict &mdash; is the creature a monster, a victim, or both? Use evidence from at least two different weeks of the novel, and quote one line from his last speech.</strong> This feeds your synthesis Quick Write.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS &mdash; THE WHOLE NOVEL</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Every thread of the module meets in this final voice: <strong>origins</strong> (a being who never asked to be made), <strong>the creature/creator</strong> bond (a maker who fled what he made), <strong>the other</strong> (an outcast judged by his surface), and <strong>technology</strong> (power without responsibility). Next, we leave Geneva and the ice for a very different thinker &mdash; Nietzsche &mdash; who asks who gets to <em>decide</em> what counts as good and monstrous in the first place. And on Friday, you build the first full draft of your project: your own answer to this story.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.3 &middot; &ldquo;I Am Alone&rdquo;</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

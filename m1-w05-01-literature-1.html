@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 5.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Qur&rsquo;an &mdash; Al-Fatiha</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Opening</div>
+        <div style="font-size: 16px; color: #666;">The first of three readings from the Qur&rsquo;an this week</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">Three short readings from the Qur&rsquo;an (the Opening today, then human dignity and human limits, then the oneness of Allah), a grammar &amp; vocabulary lesson, and Friday Project Day. This week&rsquo;s <strong>Quick Write</strong> is assigned now and <strong>due Friday</strong>, and you have two VR activities. Keep your notes in your <strong>Module 1 folder</strong>.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The Qur&rsquo;an&rsquo;s first chapter is only seven lines long, and it is the passage Muslims recite most often. It is worth asking what those seven lines are doing.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">&ldquo;The Opening&rdquo; (Al-Fatiha) is a short prayer. As you read, notice that it does two distinct things in a very small space: it praises, and then it asks. Watch where the shift happens, and what exactly is requested.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the two parts of this prayer &mdash; praise and petition &mdash; and where it turns from one to the other.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">explain what the prayer assumes about the relationship between a human being and Allah.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; Al-Fatiha, &ldquo;The Opening.&rdquo;</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the whole surah once before the lesson below. It is brief; read it slowly.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the surah &mdash; Al-Fatiha, &ldquo;The Opening&rdquo;</summary>
+            <div style="font-size:17px;color:#1a2340;line-height:1.9;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;font-style:italic;">
+                In the Name of God, the Compassionate, the Merciful.<br />
+                Praise be to God, Lord of the worlds!<br />
+                The compassionate, the merciful!<br />
+                King on the day of reckoning!<br />
+                Thee only do we worship, and to Thee do we cry for help.<br />
+                Guide Thou us on the straight path,<br />
+                The path of those to whom Thou hast been gracious;&mdash;with whom thou art not angry, and who go not astray.
+                <div style="font-size:13px;color:#888;margin-top:14px;padding-top:10px;border-top:1px solid #EEF1F8;font-style:normal;">The Qur&rsquo;an, Surah 1 (Al-Fatiha, &ldquo;The Opening&rdquo;). Public domain English text.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">The Qur&rsquo;an is the scripture of Islam, whose central teaching is that there is one God, named <strong>Allah</strong> (the Arabic word for God). Muslims hold that it was revealed to the Prophet Muhammad in Arabia in the early 600s CE, and it is organized into chapters called <em>surahs</em>. The English text here renders the name as &ldquo;God&rdquo;; in the lessons it is called by name, Allah. Al-Fatiha, &ldquo;The Opening,&rdquo; is the first surah and the one recited most &mdash; it is part of the daily prayers, said many times a day. Reading it, you are looking at words that, for well over a billion people, are among the most repeated sentences on earth.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; PRAISE, THEN A REQUEST</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">If you had only one short thing to say to whatever you take to be greater than yourself, would you praise, ask, or thank? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="The Opening starts here too &mdash; with praise &mdash; before it asks for anything.">Praise &mdash; acknowledge it first</button>
+                <button data-response="The prayer gets to a request, but notice it waits until after praise to ask.">Ask &mdash; I&rsquo;d want help with something</button>
+                <button data-response="Gratitude is close to the praise the surah opens with. Watch how it blends thanks and request.">Thank &mdash; for what I already have</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The surah is built in two movements, and you can feel the hinge. It begins with <em>praise</em>: Allah is named &ldquo;Lord of the worlds,&rdquo; &ldquo;the compassionate, the merciful,&rdquo; &ldquo;King on the day of <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="A settling of accounts; a final judgment.">reckoning</span>.&rdquo; Then comes the turn: &ldquo;Thee only do we worship, and to Thee do we cry for help.&rdquo; From there the prayer becomes a <em>petition</em> &mdash; a request: &ldquo;Guide Thou us on the straight path.&rdquo; Notice the order. The prayer does not open by asking for things; it opens by acknowledging who is being addressed, and only then asks. And notice what it asks for. Not wealth, not victory, not long life &mdash; only guidance, to be kept on the right road.</p>
+
+        <div style="margin:14px 0;">
+            <div style="font-size:11px;color:#7a5b1e;margin-bottom:8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">Thee only do we worship, and to Thee do we cry for help.</div>
+                <div class="pm-line" style="font-style:italic;">Guide Thou us on the straight path,</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT THE PRAYER ASSUMES</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">A prayer reveals what it takes for granted. This one assumes a particular relationship: the speaker is dependent, and Allah is the one depended upon. &ldquo;To Thee do we cry for help&rdquo; only makes sense if you cannot supply the thing yourself. The single request &mdash; guidance onto &ldquo;the straight path&rdquo; &mdash; assumes it is possible to &ldquo;go astray,&rdquo; to lose the way, and that staying on it is not something a person manages alone. So in seven lines the surah sketches a whole picture of the human situation: small before Allah, in need of mercy, and asking above all not to be lost. Set that beside the other traditions you have read &mdash; some looked inward for steadiness, some outward to neighbors; this one looks <em>upward</em>, in dependence.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. The surah turns from praise to petition at the line&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="That line is still praise &mdash; naming Allah&rsquo;s qualities.">&ldquo;Lord of the worlds&rdquo;</button>
+                    <button data-choice="1" data-fb="Yes. &lsquo;To Thee do we cry for help&rsquo; pivots the prayer into asking.">&ldquo;to Thee do we cry for help&rdquo;</button>
+                    <button data-choice="2" data-fb="That is part of the opening praise, before the turn.">&ldquo;The compassionate, the merciful&rdquo;</button>
+                    <button data-choice="3" data-fb="That is the closing of the petition, after the turn has happened.">&ldquo;who go not astray&rdquo;</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">2. The one thing the prayer actually asks for is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Wealth is never requested.">wealth</button>
+                    <button data-choice="1" data-fb="Victory over enemies is not what is asked.">victory in battle</button>
+                    <button data-choice="2" data-fb="Long life is not the request.">a long life</button>
+                    <button data-choice="3" data-fb="Yes. &lsquo;Guide Thou us on the straight path&rsquo; &mdash; the request is for guidance.">guidance onto the right path</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">3. The prayer assumes the human being is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The whole prayer cries for help &mdash; the opposite of self-sufficient.">fully self-sufficient</button>
+                    <button data-choice="1" data-fb="It addresses Allah with reverence, not as an equal.">equal to Allah</button>
+                    <button data-choice="2" data-fb="Yes. &lsquo;To Thee do we cry for help&rsquo; assumes dependence and the need for mercy.">dependent on Allah and in need of guidance</button>
+                    <button data-choice="3" data-fb="The prayer takes the relationship seriously, not indifferently.">indifferent to Allah</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 5.1</em>, answer in three or four sentences: <strong>If you could ask for only one thing &mdash; and guidance &ldquo;not to go astray&rdquo; were on the list &mdash; would you choose it? Why or why not?</strong> Quote one line from the surah. Save it for Project Day.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; THIS WEEK'S QUICK WRITE</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">This week&rsquo;s Quick Write (due Friday) asks you to <em>compare</em> &mdash; to set the Qur&rsquo;an&rsquo;s view of the human being beside one earlier text&rsquo;s. Open the assignment page now; this is the kind of comparison your final essay is built from.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">&ldquo;Praise, then petition&rdquo; is the same shape as Psalm 23 and many other prayers you will meet &mdash; first acknowledge, then ask. And the posture here &mdash; dependence, the plea not to be lost &mdash; is one more distinct answer to the module&rsquo;s question. Add it to the set you are weighing.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.1 &middot; The Opening</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

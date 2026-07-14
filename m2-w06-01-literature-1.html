@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 6.1 (Nietzsche)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Nietzsche, <em>Zarathustra</em> &mdash; Prologue</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">&ldquo;God Is Dead&rdquo;</div>
+        <div style="font-size: 16px; color: #666;">A new thinker &mdash; and one of the most misunderstood sentences ever written</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">We turn from a novel to a philosopher. Three literature lessons on Nietzsche (&ldquo;God is dead,&rdquo; the Superman, and reading him critically), a <strong>grammar &amp; vocabulary</strong> lesson, and &mdash; new this week &mdash; your <strong>Friday Project Day and two VR sessions become work time for your module project</strong>, building it in your VR headset. There&rsquo;s also a Quick Write. Keep notes in your <strong>Module 2 folder</strong>.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">You have almost certainly heard the phrase &ldquo;God is dead.&rdquo; You have probably also heard it misused. Today we read what Nietzsche actually meant by it &mdash; and why it is a diagnosis, not a celebration.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Friedrich Nietzsche puts the line in the mouth of a fictional prophet, Zarathustra, who comes down from a mountain to teach. Approaching this as <em>readers</em>, our job is not to agree or disagree with Nietzsche&rsquo;s claim but to understand it precisely: what he was saying about his own time, and what hard question it forces. You can analyze his argument carefully whatever you yourself believe.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what Nietzsche meant by &ldquo;God is dead&rdquo; as a claim about his culture, not a boast.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">state the hard question his diagnosis forces: if a shared foundation for values weakens, who decides right and wrong?</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Thus Spake Zarathustra</em>, the Prologue.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Zarathustra, coming down from his mountain, meets an old hermit who still spends his days praising God. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; the saint in the forest (Prologue)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">The saint answered: &ldquo;I make hymns and sing them; and in making hymns I laugh and weep and mumble: thus do I praise God&hellip; But what dost thou bring us as a gift?&rdquo;</p>
+                <p style="margin:0 0 12px 0;">When Zarathustra had heard these words, he bowed to the saint and said: &ldquo;What should I have to give thee! Let me rather hurry hence lest I take aught away from thee!&rdquo;&mdash;And thus they parted from one another, the old man and Zarathustra, laughing like schoolboys.</p>
+                <p style="margin:0 0 12px 0;">When Zarathustra was alone, however, he said to his heart: &ldquo;Could it be possible! This old saint in the forest hath not yet heard of it, that <strong>God is dead!</strong>&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Friedrich Nietzsche, <em>Thus Spake Zarathustra</em>, Prologue (Thomas Common translation). Public domain.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Friedrich Nietzsche (1844&ndash;1900) was a German philosopher &mdash; and, notably, the son of a Lutheran pastor. He wrote in a Europe where the authority of organized religion was weakening under the pressure of science, industrialization, and historical scholarship. When he wrote &ldquo;God is dead&rdquo; (first in an earlier book, then here in <em>Zarathustra</em>, 1883&ndash;85), he was not claiming to have disproven God. He was describing what he saw as a fact about his <em>culture</em>: that belief in the Christian God no longer held European society together the way it once had. He gives the idea to a made-up prophet named after Zoroaster, the ancient Persian religious teacher, and writes in a deliberately grand, Biblical style &mdash; partly in earnest, partly to provoke. Read him as a diagnostician of his age, describing a change he found as alarming as it was momentous.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WHAT THE LINE ACTUALLY CLAIMS</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Where do you think most people get their sense of right and wrong &mdash; their bedrock of what&rsquo;s good? <em>(No wrong answer; we&rsquo;re mapping the question, not settling it.)</em></div>
+            <div class="widget-options">
+                <button data-response="For much of history that&rsquo;s exactly where shared values came from &mdash; which is why Nietzsche thought a culture losing it faced a crisis.">From religion or a higher power</button>
+                <button data-response="A real modern answer &mdash; and Nietzsche&rsquo;s worry was that without a shared source, &lsquo;each person decides&rsquo; can slide into &lsquo;anything goes.&rsquo;">From family, culture, and their own reasoning</button>
+                <button data-response="That uncertainty is precisely the question Nietzsche forces open. Hold it as you read.">Honestly, I&rsquo;m not sure</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Notice how Nietzsche stages the idea. Zarathustra meets a gentle old saint who still spends his days praising God &mdash; and Zarathustra does not argue with him or mock him; they part &ldquo;laughing like schoolboys.&rdquo; Only afterward, alone, does Zarathustra marvel: &ldquo;This old saint&hellip; hath not yet heard of it, that God is dead!&rdquo; The point of the staging is that the saint is a kind of holdover &mdash; sincere, but, in Nietzsche&rsquo;s view, out of step with where his society has gone. So &ldquo;God is dead&rdquo; is best read as: <em>the belief that once anchored our shared values has lost its grip on our civilization, whether or not people have noticed.</em> It is a claim about a culture, not a proof about the universe &mdash; which is exactly why a person of any faith can study what Nietzsche is arguing without having to accept it.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; CRISIS AND OPENING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Here is the part that gets lost when the line is quoted as a slogan: Nietzsche found this development <strong>frightening</strong>, not delightful. If a whole civilization&rsquo;s shared foundation for right and wrong weakens, two things can follow. One is <em>nihilism</em> &mdash; the despairing sense that nothing means anything, that no value is more true than any other. Nietzsche saw that danger clearly and dreaded it. But he also saw an <em>opening</em>: if values are no longer simply handed down, then human beings must take responsibility for <strong>creating</strong> their own &mdash; consciously, courageously, instead of drifting into nihilism. That is the project the rest of the Prologue sets up, and the subject of our next lesson. For now, hold the question, which is genuinely hard and which this whole course has circled: <em>where do our values come from, and what happens to a person &mdash; or a society &mdash; that can no longer answer that easily?</em></p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. By &ldquo;God is dead,&rdquo; Nietzsche most precisely means&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He doesn&rsquo;t claim to have disproven God &mdash; it&rsquo;s not a metaphysical proof.">he has proven God does not exist</button>
+                    <button data-choice="1" data-fb="It&rsquo;s not a literal death &mdash; it&rsquo;s about belief and culture.">a god has literally died</button>
+                    <button data-choice="2" data-fb="Yes &mdash; belief in God no longer anchors his society&rsquo;s shared values as it once did.">belief in God has lost its hold on his culture&rsquo;s shared values</button>
+                    <button data-choice="3" data-fb="He doesn&rsquo;t tell people what to worship; he diagnoses a change.">people should worship something else</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. Nietzsche&rsquo;s attitude toward this &ldquo;death&rdquo; is best described as&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; he sees both danger (nihilism) and a daunting opportunity, not simple triumph.">alarmed and serious, not celebratory</button>
+                    <button data-choice="1" data-fb="He&rsquo;s far from gleeful; he dreads the nihilism it could bring.">gleeful and triumphant</button>
+                    <button data-choice="2" data-fb="He&rsquo;s deeply concerned, not indifferent.">completely indifferent</button>
+                    <button data-choice="3" data-fb="He doesn&rsquo;t mourn a return to faith; he&rsquo;s asking what comes next.">hopeful that faith will return</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The hard question the diagnosis forces is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="That&rsquo;s a science question, not the one Nietzsche raises here.">how the universe began</button>
+                    <button data-choice="1" data-fb="He&rsquo;s not asking which religion is correct.">which religion is true</button>
+                    <button data-choice="2" data-fb="Not about church attendance &mdash; about the source of values themselves.">how many people still attend church</button>
+                    <button data-choice="3" data-fb="Yes &mdash; if shared values lose their old foundation, who or what decides right and wrong now?">where our values come from once an old foundation weakens</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 6.1</em>, answer in three or four sentences: <strong>In your own words, what is Nietzsche diagnosing &mdash; and why might he find it frightening rather than freeing? Quote the line.</strong> You don&rsquo;t have to agree with him; explain what he is claiming.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the bridge from <em>Frankenstein</em>. The novel asked who decides what counts as a <em>monster</em>; Nietzsche asks who decides what counts as <em>good</em> at all. He also stands in sharp contrast to the Module 1 thinkers &mdash; the Gita, the Bible, Confucius, the Qur&rsquo;an, Plato, Aristotle &mdash; nearly all of whom grounded the good life in something beyond the individual self. Nietzsche pulls that ground away and asks what we do then. Next lesson: his answer &mdash; the idea of the &ldquo;Superman.&rdquo;</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.1 &middot; &ldquo;God Is Dead&rdquo;</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

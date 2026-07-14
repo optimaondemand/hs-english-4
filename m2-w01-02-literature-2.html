@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 1.2 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.2 &middot; Literature (2 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Chapter 4</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.2 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">How Dangerous Is Knowledge?</div>
+        <div style="font-size: 16px; color: #666;">Victor&rsquo;s obsession, and the work he hid in a lonely room</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Walton pulls a half-frozen stranger from the ice. The stranger &mdash; Victor Frankenstein &mdash; has one thing to say before he tells his story: stop, before you become like me.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">As a young student at the university of Ingolstadt, Victor became obsessed with a single question: what is the principle of life, and could a person command it? In Chapter 4 he describes discovering the answer &mdash; and the months of feverish, secret labor that followed. He also stops to warn Walton, directly, that this knowledge destroyed him. Today we read both the ambition and the warning, and ask the question the novel is built on: can knowledge itself be dangerous &mdash; or only what we do with it?</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how Victor&rsquo;s obsession cuts him off from nature, family, and his own well-being.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">weigh the novel&rsquo;s warning about knowledge &mdash; and decide whether the danger is the knowing or the using.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 4.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Victor is telling his story to Walton. Read the three passages before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; Victor&rsquo;s discovery, his warning, his labor (Chapter 4)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>The discovery:</strong></div>
+                <p style="margin:0 0 12px 0;">&hellip; this discovery was so great and overwhelming that all the steps by which I had been progressively led to it were obliterated, and I beheld only the result. What had been the study and desire of the wisest men since the creation of the world was now within my grasp.</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The warning to Walton:</strong></div>
+                <p style="margin:0 0 12px 0;">I will not lead you on, unguarded and ardent as I then was, to your destruction and infallible misery. Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge and how much happier that man is who believes his native town to be the world, than he who aspires to become greater than his nature will allow.</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The secret labor:</strong></div>
+                <p style="margin:0 0 12px 0;">&hellip; with unrelaxed and breathless eagerness, I pursued nature to her hiding-places&hellip; In a solitary chamber, or rather cell, at the top of the house&hellip; I kept my workshop of filthy creation&hellip; often did my human nature turn with loathing from my occupation, whilst, still urged on by an eagerness which perpetually increased, I brought my work near to a conclusion.</p>
+                <p style="margin:0 0 12px 0;">&hellip; the same feelings which made me neglect the scenes around me caused me also to forget those friends who were so many miles absent, and whom I had not seen for so long a time. I knew my silence disquieted them&hellip;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 4.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">The novel&rsquo;s full title is <em>Frankenstein; or, The Modern Prometheus</em>. In Greek myth, Prometheus stole fire from the gods to give to humans and was punished forever for it &mdash; the original story of a gift of knowledge that comes at a terrible cost. Shelley wrote in an age electrified by exactly this fear and thrill: scientists like Luigi Galvani had made the legs of dead frogs twitch with electric current, and his nephew publicly applied electricity to the corpse of an executed criminal, making it move. To Shelley&rsquo;s first readers, the idea of jolting dead matter into life was not pure fantasy &mdash; it was the cutting edge of science. Victor is the &ldquo;modern Prometheus,&rdquo; and the novel asks the Promethean question for a scientific age: when we learn to do something powerful, have we asked whether we should?</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE OBSESSION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Have you ever been so absorbed in something &mdash; a game, a project, a goal &mdash; that you lost track of everything and everyone else? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That tunnel-vision is exactly what grips Victor &mdash; except his lasts two years and costs him everyone he loves.">Yes, completely</button>
+                <button data-response="That pull-and-resist is what Victor feels too: &lsquo;my human nature turned with loathing&rsquo; even as he kept going.">A little &mdash; I felt it pulling</button>
+                <button data-response="Then watch how it happens to Victor &mdash; Shelley shows obsession creeping in one neglected friend at a time.">Not really</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Victor&rsquo;s discovery is described in the language of conquest: what &ldquo;the wisest men since the creation of the world&rdquo; had wanted was &ldquo;now within my grasp.&rdquo; But notice what the pursuit does to him. He works in &ldquo;a solitary chamber, or rather cell&rdquo; &mdash; he has imprisoned himself. He calls it his &ldquo;workshop of filthy creation,&rdquo; and admits his &ldquo;human nature&rdquo; recoiled from the work even as he drove himself on. Most telling of all: the obsession makes him &ldquo;neglect the scenes around me&rdquo; and &ldquo;forget those friends.&rdquo; This is the same isolation we saw in Walton, but worse. Shelley is showing a pattern: the deeper Victor goes into his great project, the further he pulls from every living person who loves him. The work and the loneliness grow together.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE WARNING &mdash; AND A REAL QUESTION</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Victor interrupts his own story to warn Walton: &ldquo;Learn from me&hellip; how dangerous is the acquirement of knowledge.&rdquo; He even says the happier man is the one &ldquo;who believes his native town to be the world.&rdquo; It is a striking claim &mdash; and here the careful reader should push back. Is Shelley really saying <em>ignorance is bliss</em>, that we should not seek to know? Many readers think the novel says something more precise. The danger may not be knowledge itself, but knowledge pursued in isolation, without wisdom, without asking what one owes the world one is changing. Victor never paused to ask whether he <em>should</em> make a living creature, or who would care for it, or what it would mean to be its only relation. He asked only whether he <em>could</em>. That is a genuine question worth arguing &mdash; and it is exactly the question your Senior Studios pitch forces you to answer before you ask anyone to invest.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. As Victor pursues his discovery, his relationships with family and friends&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The opposite &mdash; he pulls away and falls silent.">grow closer and warmer</button>
+                    <button data-choice="1" data-fb="They don&rsquo;t support the work; he hides it and neglects them.">help him in the lab</button>
+                    <button data-choice="2" data-fb="Yes. He neglects &lsquo;the scenes around me&rsquo; and forgets his friends; his silence worries them.">wither from neglect</button>
+                    <button data-choice="3" data-fb="He&rsquo;s not honest with them at all &mdash; the whole project is secret.">stay exactly the same</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">2. The phrase &ldquo;workshop of filthy creation&rdquo; matters because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It&rsquo;s not about tidiness &mdash; the word &lsquo;filthy&rsquo; is doing moral work.">it shows Victor was messy</button>
+                    <button data-choice="1" data-fb="Yes. Even Victor&rsquo;s own words mark the act as unclean &mdash; his &lsquo;human nature&rsquo; recoils as he works.">Victor&rsquo;s own language signals that something about the act repels him</button>
+                    <button data-choice="2" data-fb="He&rsquo;s proud of the result, but the word &lsquo;filthy&rsquo; betrays unease, not pride.">he is proud of the workshop</button>
+                    <button data-choice="3" data-fb="It&rsquo;s a real place in the story, not a metaphor for school.">it&rsquo;s a metaphor for university</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. A careful reader might argue the novel&rsquo;s real warning is about&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="&lsquo;Never learn anything&rsquo; is too blunt &mdash; the book is more careful than that.">never learning anything new</button>
+                    <button data-choice="1" data-fb="The novel doesn&rsquo;t simply praise staying ignorant; that&rsquo;s Victor&rsquo;s despairing line, not the whole book.">how everyone should stay in their hometown</button>
+                    <button data-choice="2" data-fb="Science isn&rsquo;t the villain here; the question is how it&rsquo;s pursued.">how science is always evil</button>
+                    <button data-choice="3" data-fb="Yes &mdash; a strong reading: knowledge pursued alone, without asking &lsquo;should I, and for whom?&rsquo;">knowledge pursued without wisdom or responsibility</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 1.2</em>, answer in three or four sentences: <strong>Is the novel warning us against knowledge itself, or against something else? Quote one line from the reading to support your view.</strong> Then add a sentence: name one real modern technology where &ldquo;could we&rdquo; has outrun &ldquo;should we.&rdquo;
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the module&rsquo;s <strong>technology</strong> thread in its first full form: the power to make something new, racing ahead of the wisdom to handle it. It is also the exact hinge of your <strong>Senior Studios pitch</strong> &mdash; Victor asked only &ldquo;can I?&rdquo; while your pitch must answer &ldquo;should this exist, for whom, and why does it matter?&rdquo; Next lesson we reach the night it all comes true: the creature opens its eyes.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.2 &middot; How Dangerous Is Knowledge?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

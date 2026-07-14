@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 8.1 (Project Launch)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 8.1 &middot; Project Launch</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Project</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 8.1 &middot; Project Launch</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Module Project: Your Own Answer</div>
+        <div style="font-size: 16px; color: #666;">Seven traditions are in. Now you write what <em>you</em> think.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; WHAT THIS LESSON IS FOR</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This lesson launches the two-week module project. By the end of it you will know exactly what you are building, how the two parts fit together, and where to find the material you already wrote &mdash; so that when you start drafting in the next lesson, you are working from your own seven weeks of thinking, not from a blank page.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; THE QUESTION YOU&rsquo;VE BEEN CIRCLING</div>
+        <div style="margin: 4px 0 14px 0;">
+            <div class="chalkboard">
+                <div class="cb-kicker">&#128221; ON THE BOARD</div>
+                <div class="cb-line" style="font-style:italic;">How ought a person to live?</div>
+            </div>
+        </div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Every text in this module gave an answer. The Gita: act rightly without clinging to the reward. The Bible: love, and depend on something beyond yourself. Confucius: become a cultivated person through steady practice. The Buddhist parables: loosen the grip of craving that causes suffering. The Qur&rsquo;an: live in submission and gratitude. Plato: climb from shadows toward truth, and be just for its own sake. Aristotle: build virtue by habit and let the soul work well across a whole life. They do not agree. Your job now is not to pick the &ldquo;right&rdquo; one &mdash; it is to weigh them and stake out <strong>your own considered answer</strong>.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#129513; TWO PARTS, OVER TWO WEEKS</div>
+
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 44px; height: 44px; border-radius: 8px; background: #0E1C42; color: #fff; font-size: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#9997;&#65039;</div>
+            <div>
+                <div style="font-size: 19px; color: #0e1c42; margin-bottom: 2px;"><strong>1. The Synthesis Essay</strong> <span style="font-size: 14px; color: #888;">&mdash; the heart of the project</span></div>
+                <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">A formal essay (about 900&ndash;1,200 words) in which you answer the question, draw on at least four of the seven traditions, and argue your view against the strongest opposing one. You draft it this week and finalize it next week.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 44px; height: 44px; border-radius: 8px; background: #2196D0; color: #fff; font-size: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#129488;</div>
+            <div>
+                <div style="font-size: 19px; color: #0e1c42; margin-bottom: 2px;"><strong>2. The VR Gallery Finale</strong> <span style="font-size: 14px; color: #888;">&mdash; meet the thinkers</span></div>
+                <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">In your completed Hall of Thinkers &mdash; all seven stations standing &mdash; you record a short walking tour that presents your answer, station by station, citing who you agree with and who you argue against. It doubles as a speaking rehearsal for the essay.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128073; AND THEN, NEXT MODULE</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">The question does not close when the essay is submitted. It opens the next module: the reading turns to <em>Frankenstein</em> and Nietzsche, where the question becomes what a maker owes the people a creation is for. Your Senior Studios work turns with it: the problem you proved real in your <strong>Audience &amp; Problem Brief</strong> becomes the <strong>pitch deck</strong> you build across Quarter 2. Keep your essay and Learning Logs; you will build on them.</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128193; YOU ALREADY HAVE THE RAW MATERIAL</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65;">Open your <strong>Module 1 folder</strong>. You should find <strong>seven Learning Log entries</strong> (one per thinker), <strong>seven Quick Writes</strong>, and your <strong>M1_HowToLiveWell</strong> project document with a section on each tradition plus your draft thinking. That is your evidence bank. You are not starting over &mdash; you are pulling together work you have been building for seven weeks.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128197; THE TWO-WEEK MAP</div>
+        <div style="overflow-x: auto;">
+        <table style="width:100%;border-collapse:collapse;min-width:520px;">
+            <tbody>
+                <tr style="background:#0E1C42;">
+                    <td style="padding:10px 12px;font-size:14px;color:#fff;border:1px solid #334;width:90px;">Week</td>
+                    <td style="padding:10px 12px;font-size:14px;color:#fff;border:1px solid #334;">What you do</td>
+                    <td style="padding:10px 12px;font-size:14px;color:#fff;border:1px solid #334;width:150px;">Due</td>
+                </tr>
+                <tr style="background:#fff;">
+                    <td style="padding:10px 12px;font-size:15px;color:#0e1c42;border:1px solid #D0D9E8;"><strong>Week 8</strong></td>
+                    <td style="padding:10px 12px;font-size:15px;color:#1a2340;border:1px solid #D0D9E8;line-height:1.5;">Plan your thesis (8.2), learn to structure and use evidence (8.3), and write a full draft.</td>
+                    <td style="padding:10px 12px;font-size:15px;color:#1a2340;border:1px solid #D0D9E8;"><strong>Essay draft</strong> (Friday)</td>
+                </tr>
+                <tr style="background:#F4F6FA;">
+                    <td style="padding:10px 12px;font-size:15px;color:#0e1c42;border:1px solid #D0D9E8;"><strong>Week 9</strong></td>
+                    <td style="padding:10px 12px;font-size:15px;color:#1a2340;border:1px solid #D0D9E8;line-height:1.5;">Revise the draft and record the VR gallery tour in your completed Hall.</td>
+                    <td style="padding:10px 12px;font-size:15px;color:#1a2340;border:1px solid #D0D9E8;"><strong>Final essay + VR gallery</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; FIRST INSTINCT &middot; NO WRONG ANSWER</div>
+        <div class="widget-question">Before you plan anything: if you had to answer right now, in one phrase, which thinker&rsquo;s view of the good life is <em>closest</em> to your own?</div>
+        <div class="widget-options">
+            <button data-response="Good &mdash; hold onto that. In the next lesson you&rsquo;ll test whether the texts actually support it, and which thinker you most want to argue against.">One of the religious traditions</button>
+            <button data-response="A strong starting point. Next lesson, you&rsquo;ll turn that instinct into a thesis and find the evidence for it.">Plato or Aristotle</button>
+            <button data-response="That&rsquo;s honest, and useful: a good essay often comes from blending two or three views. You&rsquo;ll shape that into a thesis next.">A mix of several</button>
+            <button data-response="Also fine &mdash; disagreeing with all of them is a real position. You&rsquo;ll need to say what you&rsquo;d put in their place.">None of them, really</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #4F6F52; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #4F6F52; margin-bottom: 12px;">&#10145;&#65039; YOUR NEXT STEP</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Open your <span style="font-family: Consolas, Monaco, monospace; font-size:15px;">M1_HowToLiveWell</span> document and re-read your seven sections and your draft-thinking notes. Come to Lesson 8.2 with a rough sense of which thinkers you lean toward &mdash; that lesson turns this instinct into a thesis you can defend.</p>
+    </div>
+
+<div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 8px;">&#11088; ALSO THIS WEEK &middot; SENIOR STUDIOS</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Your <strong>Audience &amp; Problem Brief</strong> is due this Friday. Polish last week&rsquo;s draft against the success criteria on its assignment page, add your three-line AI-use note, and submit it in Canvas.</div>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Module Project</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 8.1 &middot; Project Launch</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

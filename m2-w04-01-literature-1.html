@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 4.1 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Ch. 17</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Demand for a Mate</div>
+        <div style="font-size: 16px; color: #666;">The creature asks for the one thing that might save him</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">Three literature lessons take the novel through its central bargain (the demand for a mate, Victor&rsquo;s broken promise, and the cost); a <strong>grammar &amp; vocabulary</strong> lesson on active vs. passive voice; <strong>Friday Project Day</strong>, where you plan your chosen project; this week&rsquo;s <strong>Quick Write</strong>; and two creature&rsquo;s-perspective <strong>VR</strong> activities. Keep notes in your <strong>Module 2 folder</strong>.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The creature finishes his story and makes one request &mdash; the only thing, he says, that could turn him back toward good.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">He asks Victor to make him a companion: a female creature like himself, so that he will not be utterly alone. It is the logical end of everything he has told us &mdash; he was driven to rage by isolation, so the cure is connection. But he also makes clear what happens if Victor refuses. Today you weigh the creature&rsquo;s argument: is it a fair request, a threat, or both at once?</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the creature&rsquo;s argument that companionship would make him good again.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">weigh whether his request is a reasonable plea, a threat, or both &mdash; and what that mixture means.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 17.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">The creature has finished his story and now makes his demand. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; the demand, and the reasoning (Chapter 17)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">&ldquo;You must create a female for me with whom I can live in the interchange of those sympathies necessary for my being. This you alone can do, and I demand it of you as a right which you must not refuse to concede.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>When Victor refuses, the creature reasons:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;I am malicious because I am miserable. Am I not shunned and hated by all mankind?&hellip; Let him live with me in the interchange of kindness, and instead of injury I would bestow every benefit upon him with tears of gratitude at his acceptance. But that cannot be&hellip; if I cannot inspire love, I will cause fear, and chiefly towards you my arch-enemy&hellip;&rdquo;</p>
+                <p style="margin:0 0 12px 0;">&ldquo;If any being felt emotions of benevolence towards me, I should return them a hundred and a hundredfold&hellip; My vices are the children of a forced solitude that I abhor, and my virtues will necessarily arise when I live in communion with an equal.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 17. <em>(After this exchange, Victor reluctantly agrees to make the companion.)</em></div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; &ldquo;SYMPATHY&rdquo;</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">When the creature asks for &ldquo;the interchange of those sympathies necessary for my being,&rdquo; he is using a word that carried great weight in Shelley&rsquo;s time. For 18th- and early-19th-century thinkers, <em>sympathy</em> meant more than pity: it was the capacity to feel <em>with</em> another person, and many philosophers (such as Adam Smith) argued that this fellow-feeling is the very foundation of morality &mdash; that we become good by entering into others&rsquo; experience. The creature&rsquo;s claim is built on exactly this idea: cut off from all sympathy, he cannot be good; given one being to share feeling with, he could be. He is not asking for a luxury. By the moral theory of his own era, he is asking for the precondition of having a moral life at all.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE ARGUMENT FOR A COMPANION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Do you think a person cut off from <em>all</em> companionship &mdash; never befriended, never loved &mdash; could stay kind and good? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="The creature stakes his whole plea on the opposite &mdash; that total isolation makes goodness almost impossible. Test his claim as you read.">Probably not &mdash; we need others to stay good</button>
+                <button data-response="A strong view &mdash; and the creature half-agrees: he says his goodness depends on having even one companion.">Some people could; it depends on the person</button>
+                <button data-response="That uncertainty is the heart of the debate. The creature is betting his soul on the answer.">I&rsquo;m honestly not sure</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The creature&rsquo;s request is precise and self-aware. He does not ask to rejoin human society &mdash; he knows &ldquo;the human senses are insurmountable barriers&rdquo; to that. He asks only for <em>one</em> being like himself, so he can live &ldquo;in the interchange of those sympathies necessary for my being.&rdquo; And he offers a diagnosis of his own wickedness: &ldquo;I am malicious because I am miserable.&rdquo; His vices, he argues, are &ldquo;the children of a forced solitude,&rdquo; and &ldquo;my virtues will necessarily arise when I live in communion with an equal.&rdquo; This is a genuine moral argument, and it lands hard because everything we read last week supports it &mdash; we <em>watched</em> him be benevolent until cruelty broke him. He is asking Victor to remove the cause of his evil rather than just punish its effects.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A PLEA WRAPPED AROUND A THREAT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">But read the request again and notice its other half. The same speech that promises &ldquo;tears of gratitude&rdquo; also warns: &ldquo;if I cannot inspire love, I will cause fear, and chiefly towards you my arch-enemy.&rdquo; He even calls the companion a &ldquo;right which you must not refuse to concede&rdquo; &mdash; a demand, not a wish. So which is it? A heartbreaking plea from a lonely being, or extortion backed by a threat of violence? Shelley refuses to let it be simple. It is <em>both</em>, and the doubleness is the point. The creature is sincere that love would make him good &mdash; and he is also dangerous, and saying so. This is what makes Victor&rsquo;s decision genuinely hard: to refuse may doom an innocent to eternal misery and provoke more murder; to agree may unleash a second creature, or a whole race of them, on the world. Hold that dilemma; next lesson, Victor makes his choice, and it is not the one he first agrees to here.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. The creature&rsquo;s explanation for his own wickedness is that&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He doesn&rsquo;t claim he was born evil &mdash; he says misery made him so.">he was created evil</button>
+                    <button data-choice="1" data-fb="He doesn&rsquo;t enjoy it; he calls his vices the &lsquo;children of a forced solitude.&rsquo;">he simply enjoys cruelty</button>
+                    <button data-choice="2" data-fb="Yes &mdash; &lsquo;I am malicious because I am miserable&rsquo;; his vices come from forced solitude.">isolation and misery made him malicious</button>
+                    <button data-choice="3" data-fb="He blames his loneliness, not his appearance, for his behavior.">his ugliness forces him to be cruel</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. What does the creature say a companion would do for him?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; he claims his &lsquo;virtues will necessarily arise&rsquo; in &lsquo;communion with an equal.&rsquo;">let his goodness return through shared sympathy</button>
+                    <button data-choice="1" data-fb="He wants connection, not conquest; that&rsquo;s not his aim.">help him conquer humankind</button>
+                    <button data-choice="2" data-fb="He knows he can&rsquo;t rejoin human society &mdash; he asks only for one like himself.">let him rejoin the human world</button>
+                    <button data-choice="3" data-fb="He wants a companion, not power over Victor.">give him power over Victor</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The request is hard to judge because it is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It&rsquo;s not pure threat &mdash; there&rsquo;s a real, sympathetic plea in it.">only a threat</button>
+                    <button data-choice="1" data-fb="It&rsquo;s not purely innocent either &mdash; he warns he&rsquo;ll &lsquo;cause fear.&rsquo;">only an innocent wish</button>
+                    <button data-choice="2" data-fb="It&rsquo;s entirely coherent &mdash; the difficulty is moral, not logical.">impossible to understand</button>
+                    <button data-choice="3" data-fb="Yes &mdash; a sincere plea and a real threat at once, which is what makes Victor&rsquo;s choice so hard.">both a genuine plea and a threat at the same time</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 4.1</em>, answer in three or four sentences: <strong>If you were Victor, would you make the companion? Quote one line from the creature&rsquo;s argument and weigh it against the risk.</strong>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The demand for a mate is the module&rsquo;s <strong>the other</strong> thread at full volume: the outcast asking simply not to be alone. It also reopens the <strong>creature/creator</strong> question &mdash; does a maker owe his creation a chance at happiness, even a risky one? That is a real dilemma worth arguing, and exactly the kind your module project could take on. Next lesson, Victor decides &mdash; and breaks the promise he is about to make.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.1 &middot; The Demand for a Mate</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

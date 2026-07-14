@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 3.3 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.3 &middot; Literature (3 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Ch. 15&ndash;16</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.3 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Rejected</div>
+        <div style="font-size: 16px; color: #666;">One chance at acceptance &mdash; and the moment a gentle being turns</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">After months of love from a distance, the creature finally tries to be known &mdash; and the attempt destroys him.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">He waits until the blind old man, De Lacey, is alone &mdash; the one person who cannot judge him by his face &mdash; and speaks to him. For a moment, kindness. Then the family returns, sees him, and Felix beats him and drives him out. This is the hinge of the whole novel: the exact point where a being who &ldquo;was benevolent and good&rdquo; is turned, by rejection, toward &ldquo;rage and revenge.&rdquo; Today you watch a person become a monster &mdash; and decide who is responsible.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the creature approaches the <em>blind</em> man, and what that choice reveals.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">trace the turn from goodness to vengeance &mdash; and argue who bears responsibility for it.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapters 15&ndash;16.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open. This week&rsquo;s Quick Write grows out of today&rsquo;s question.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">The creature has just spoken with the blind De Lacey when the family returns. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; the rejection, and the turn (Chapters 15&ndash;16)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>The family returns:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;At that instant the cottage door was opened, and Felix, Safie, and Agatha entered. Who can describe their horror and consternation on beholding me? Agatha fainted, and Safie&hellip; rushed out of the cottage. Felix darted forward, and&hellip; tore me from his father&hellip; in a transport of fury, he dashed me to the ground and struck me violently with a stick. I could have torn him limb from limb, as the lion rends the antelope. But my heart sank within me as with bitter sickness, and I refrained.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The turn (Chapter 16):</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;Cursed, cursed creator! Why did I live?&hellip; my feelings were those of rage and revenge&hellip; there was none among the myriads of men that existed who would pity or assist me; and should I feel kindness towards my enemies? No&hellip; I, like the arch-fiend, bore a hell within me.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapters 15&ndash;16.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; JUDGED BY THE SURFACE</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Shelley makes the one person who is kind to the creature a <em>blind</em> man &mdash; and the detail is doing heavy thematic work. De Lacey, who hears the creature&rsquo;s gentle, intelligent speech but cannot see his body, treats him as a fellow human. Everyone who can see him reacts with horror before he says a word. The novel is built around this gap between what the creature <em>is</em> (thoughtful, longing, capable of good) and how he is <em>seen</em> (a horror to be driven off). It is one of literature&rsquo;s sharpest studies of how appearance overrides character &mdash; how a being can be condemned entirely on the surface, never given the chance to be known.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE ONE WHO COULDN'T SEE HIM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Have you ever been judged on how you looked or seemed &mdash; before anyone gave you a chance to show who you actually are? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="Then you know something of the creature&rsquo;s wound &mdash; condemned on the surface, never given the chance to be known.">Yes &mdash; and it stung</button>
+                <button data-response="Most people have, even in small ways. Shelley pushes that ordinary experience to its extreme.">In small ways, sure</button>
+                <button data-response="Watch how total it is for the creature &mdash; everyone who sees him recoils before he can speak.">Not really that I noticed</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The creature&rsquo;s plan is heartbreakingly smart. He has learned that his face is the problem, so he waits to approach De Lacey when the old man is <em>alone and blind</em> &mdash; the one person who can judge him by his words and heart instead of his appearance. And it works, for a few minutes: the old man listens kindly. Then the others come home and see him, and the moment shatters. &ldquo;Who can describe their horror&hellip; on beholding me?&rdquo; Felix attacks. And here is the detail that proves who the creature still is at this point: he is strong enough to kill &mdash; &ldquo;I could have torn him limb from limb, as the lion rends the antelope&rdquo; &mdash; but &ldquo;my heart sank&hellip; and I refrained.&rdquo; Even being beaten by the family he loved and served, he will not strike back. The goodness is still there. The novel is making sure we cannot miss it, right up to the edge of the change.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE HINGE: WHO MAKES A MONSTER?</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then comes the turn the entire novel has been building toward. Driven out, having lost the one family he loved, the creature&rsquo;s feelings become &ldquo;those of rage and revenge.&rdquo; He reasons his way there: &ldquo;there was none among the myriads of men&hellip; who would pity or assist me; and should I feel kindness towards my enemies? No.&rdquo; He concludes, echoing Milton&rsquo;s Satan again, &ldquo;I, like the arch-fiend, bore a hell within me.&rdquo; Read that sequence carefully, because it is an argument, not just an outburst. The creature began benevolent (Lesson 3.1). He educated himself and longed to belong (Lesson 3.2). He made one careful, peaceful attempt to be accepted &mdash; and was met with violence for his appearance alone. <em>Then</em> he turns. Shelley has constructed the most important question of the book and handed it to you: when a being is made gentle, then taught by relentless cruelty that gentleness earns him nothing, who is responsible for what he becomes &mdash; the creature, the family who beat him, or the creator who abandoned him to all of it? There is no easy answer, and that difficulty is exactly the point. A mature reader holds the creature&rsquo;s coming crimes and his genuine victimhood in view at the same time.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. The creature approaches the blind De Lacey specifically because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="De Lacey isn&rsquo;t weak prey &mdash; the creature wants to be heard, not to harm.">the old man is easy to overpower</button>
+                    <button data-choice="1" data-fb="He wants acceptance, not theft.">he wants to rob the cottage</button>
+                    <button data-choice="2" data-fb="Yes &mdash; a blind man can judge him by his words and heart, not his face.">a blind man can&rsquo;t recoil from his appearance</button>
+                    <button data-choice="3" data-fb="He has nothing against the old man; he hopes to be befriended.">he wants revenge on the old man</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">2. That the creature &ldquo;refrained&rdquo; from harming Felix even while being beaten shows&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He&rsquo;s far stronger than Felix &mdash; weakness isn&rsquo;t the reason.">he was too weak to fight</button>
+                    <button data-choice="1" data-fb="Yes &mdash; at this moment his goodness still holds, even under cruelty.">his goodness is still intact at this point</button>
+                    <button data-choice="2" data-fb="No fear of capture restrains him &mdash; it&rsquo;s his own heart.">he was afraid of being caught</button>
+                    <button data-choice="3" data-fb="He clearly cares deeply &mdash; that&rsquo;s why the rejection devastates him.">he didn&rsquo;t care about the family</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The novel presents the creature&rsquo;s turn to &ldquo;rage and revenge&rdquo; as&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It&rsquo;s not his nature surfacing &mdash; he began gentle, as we&rsquo;ve seen.">proof he was always evil inside</button>
+                    <button data-choice="1" data-fb="It&rsquo;s anything but random &mdash; Shelley traces every step that leads here.">a sudden, random change</button>
+                    <button data-choice="2" data-fb="The novel doesn&rsquo;t simply excuse him; it holds victim and wrongdoer together.">something that fully excuses his later crimes</button>
+                    <button data-choice="3" data-fb="Yes &mdash; the result of relentless rejection, raising a hard question of who is to blame.">the product of repeated rejection, leaving blame genuinely shared</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 3.3</em>, answer in four or five sentences: <strong>Who is most responsible for the creature becoming a &ldquo;fiend&rdquo; &mdash; the creature, the cottagers, or Victor? Quote one line.</strong> This is the seed of your Quick Write this week, so think it through.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the climax of the module&rsquo;s nature-versus-nurture question and the deepest point of the <strong>the other</strong> thread: a being judged and condemned by his surface alone. It powers this week&rsquo;s <strong>Quick Write</strong> (who made the monster?), this week&rsquo;s <strong>VR</strong> (you&rsquo;ll stand at that cottage door), and &mdash; starting this Friday &mdash; your <strong>module project</strong>, where you choose how to make your own argument about this story.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.3 &middot; Rejected</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 4.3 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.3 &middot; Literature (3 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Ch. 21</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.3 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Cost</div>
+        <div style="font-size: 16px; color: #666;">The vow begins to come true &mdash; and Victor&rsquo;s dearest friend pays</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The creature said he would take revenge on what Victor loves. He keeps his word &mdash; on Henry Clerval, Victor&rsquo;s closest friend.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Shortly after the bargain is broken, Henry Clerval is found strangled, &ldquo;the black mark of fingers on his neck.&rdquo; Victor &mdash; who knows exactly whose hands made that mark, and yet again cannot say so &mdash; is even arrested for the crime. Today we watch the creature&rsquo;s revenge turn outward onto the innocent, and see what Victor has truly lost: not just a friend, but the warm, humane life Clerval represented &mdash; the life Victor traded away for his ambition.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace how the creature&rsquo;s revenge moves from threat to action against the innocent.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">explain what Clerval represents in the novel &mdash; and why his death is a particular kind of loss for Victor.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 21.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Victor is brought to see the body of a murdered man. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; Clerval&rsquo;s death (Chapter 21)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">&hellip; the body of a man, found murdered&hellip; bore no sign of any violence except the black mark of fingers on his neck.</p>
+                <p style="margin:0 0 12px 0;">&hellip; The examination, the presence of the magistrate and witnesses, passed like a dream from my memory when I saw the lifeless form of Henry Clerval stretched before me. I gasped for breath, and throwing myself on the body, I exclaimed, &ldquo;Have my murderous machinations deprived you also, my dearest Henry, of life?&hellip;&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 21. <em>(Victor is then accused of the murder and falls gravely ill.)</em></div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; CLERVAL AS FOIL</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">A <strong>foil</strong> is a character whose contrast lights up another character. Henry Clerval is Victor&rsquo;s foil &mdash; and an image of the path Victor didn&rsquo;t take. Where Victor buried himself in cold natural science and isolation, Clerval loved poetry, languages, people, and the &ldquo;moral relations of things&rdquo;; he is warmth, friendship, and a life lived <em>among</em> others. Earlier in the novel, Clerval nurses Victor back from the brink after the creation. So when the creature chooses Clerval as a target, Shelley is not killing a random character &mdash; she is destroying the very thing Victor abandoned to make his creature: human connection. The creature, denied all companionship, methodically strips Victor of his.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; REVENGE TURNS OUTWARD</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When someone wants to hurt another person the most, why do they so often strike at the people that person <em>loves</em> rather than at them directly? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="Exactly the creature&rsquo;s logic: to make Victor feel his own loneliness, he takes away the people who keep Victor from being alone.">Because losing a loved one hurts worse than being hurt yourself</button>
+                <button data-response="That&rsquo;s the cruelty of it &mdash; the creature wants Victor to <em>survive</em> and suffer, not to die.">To make them live with the pain</button>
+                <button data-response="The creature has thought about this carefully; his revenge is designed to mirror what was done to him.">I hadn&rsquo;t thought about it that way</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The creature does not attack Victor. He attacks Victor&rsquo;s <em>world</em>. The &ldquo;black mark of fingers on his neck&rdquo; is the creature&rsquo;s signature &mdash; the same hands, the same method that killed William. And there is a terrible logic to the choice of victim. The creature was condemned to absolute loneliness; his revenge is to inflict that same loneliness on his maker, one loved one at a time. Notice, too, that Victor&rsquo;s first words over the body are about himself: &ldquo;Have my murderous machinations deprived you also&hellip; of life?&rdquo; Even here, he understands that the death traces back to him. The chain that began with a single act of abandonment in the workshop has now reached Victor&rsquo;s closest friend &mdash; and Victor, once again, cannot speak the truth that might explain it.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT VICTOR ACTUALLY LOST</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">To feel the full weight of this death, remember who Clerval was. He was the friend who loved &ldquo;the moral relations of things,&rdquo; who nursed Victor back to health, who stood for everything warm and human that Victor walked away from to pursue his cold experiment. In a real sense, Clerval was the life Victor <em>could</em> have lived. By killing him, the creature destroys not just a person but a possibility &mdash; the road back to an ordinary, connected, humane existence. This is the deep symmetry Shelley has been building toward: a creature made by the neglect of human bonds now devotes himself to severing every human bond his creator has left. Victor sacrificed connection for ambition; the creature, born of that sacrifice, completes it. Hold this as the novel rushes toward its end: the tragedy is not only what the creature does, but how exactly it mirrors what was done to him.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. The creature takes his revenge by&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He pointedly does NOT kill Victor &mdash; that would end the suffering.">killing Victor directly</button>
+                    <button data-choice="1" data-fb="Yes &mdash; he strikes at the people Victor loves, inflicting his own loneliness on his maker.">murdering the people Victor loves, one by one</button>
+                    <button data-choice="2" data-fb="He&rsquo;s past asking; the time for the companion is over.">demanding the companion again</button>
+                    <button data-choice="3" data-fb="He doesn&rsquo;t simply vanish; he stays to destroy Victor&rsquo;s world.">disappearing forever</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">2. As a foil, Clerval represents&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Clerval is the opposite of cold ambition &mdash; he&rsquo;s its alternative.">Victor&rsquo;s scientific ambition</button>
+                    <button data-choice="1" data-fb="He&rsquo;s no enemy &mdash; he&rsquo;s Victor&rsquo;s dearest friend.">the creature&rsquo;s ally</button>
+                    <button data-choice="2" data-fb="Yes &mdash; warmth, friendship, the humane life Victor abandoned for his work.">the warm, connected life Victor gave up for his work</button>
+                    <button data-choice="3" data-fb="Clerval is fully human; he&rsquo;s not a double of the creature.">a mirror of the creature</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The deep symmetry of this death is that&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It&rsquo;s deeply connected to the plot &mdash; the opposite of unrelated.">it has nothing to do with the rest of the story</button>
+                    <button data-choice="1" data-fb="It&rsquo;s not chance &mdash; the creature chooses Clerval deliberately.">it was an accident</button>
+                    <button data-choice="2" data-fb="The creature doesn&rsquo;t regret it here; he&rsquo;s committed to revenge.">the creature immediately regrets it</button>
+                    <button data-choice="3" data-fb="Yes &mdash; the creature severs the human bonds Victor still has, mirroring his own forced isolation.">a creature made by broken bonds now breaks his maker&rsquo;s bonds in turn</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 4.3</em>, answer in three or four sentences: <strong>Why does the creature kill the people Victor loves instead of Victor himself? What does that reveal about what he truly wants? Quote one line.</strong>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The novel&rsquo;s threads tighten into one knot here: ambition (Victor&rsquo;s), the other (the creature&rsquo;s exile), and the creature/creator bond all converge in a single murdered friend. Next week brings the end &mdash; the wedding night, Elizabeth, and the long pursuit into the ice &mdash; and Walton&rsquo;s final warning. Keep building your <strong>project</strong> on Fridays; this chapter&rsquo;s symmetry (the creator&rsquo;s sacrifice mirrored by the creature&rsquo;s revenge) is the kind of pattern a strong project is built on.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.3 &middot; The Cost</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

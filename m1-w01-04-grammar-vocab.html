@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 1.4</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 18px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.4 &middot; Grammar &amp; Vocabulary</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Drawn From</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bhagavad Gita, Ch. II</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.4 &middot; Grammar &amp; Vocabulary</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Five Words, and the Semicolon</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Two tools you can use right away: five words worth keeping from this week&rsquo;s reading, and the semicolon &mdash; a single punctuation mark that fixes one of the most common errors in student essays.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">First you will add five words to your vocabulary and practice using one of them in your own sentence. Then you will learn when to use a semicolon, how it differs from a comma, and how it fixes the comma splice.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> define five words from the reading and use one of them in a sentence of my own.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> join two related sentences with a semicolon and fix a comma splice three different ways.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 — VOCABULARY -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; VOCABULARY FROM THE READING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;">These five words appear in this week&rsquo;s passages. They are useful well beyond the Gita &mdash; you will meet them in other reading and can use them in your own writing. Tap each card to check the definition, then add all five to the <strong>Vocabulary Log</strong> in your Learning Log.</p>
+
+        <div class="optima-widget">
+            <div class="widget-kicker">&#9889; TAP TO REVEAL &middot; THE DEFINITION</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>equable</strong> <span style="color:#888;font-size:14px;">(adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">calm and even; not thrown off by good or bad outcomes. <em>&ldquo;equable / In good or evil&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>ineffable</strong> <span style="color:#888;font-size:14px;">(adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">too great or sacred to be put into words. <em>&ldquo;Invisible, ineffable&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>mutable</strong> <span style="color:#888;font-size:14px;">(adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">able to change; changeable. <em>&ldquo;&rsquo;Tis brief and mutable!&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>contemn</strong> <span style="color:#888;font-size:14px;">(v.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">to treat as worthless; to scorn. (Not the same as <em>condemn</em>.) <em>&ldquo;Contemning gain and merit&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>wrought</strong> <span style="color:#888;font-size:14px;">(v./adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">made, worked, or done (an older past form of <em>work</em>). <em>&ldquo;the bondage of wrought deeds&rdquo;</em></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #FDF3E3; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 16px 20px; margin: 14px 0 0 0;">
+            <div style="font-size: 11px; color: #4F6F52; margin-bottom: 10px;">&#9999;&#65039; WRITE IT &middot; COPIA</div>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Choose <strong>one</strong> of the five words. Find the line it appears in within this week&rsquo;s reading, and <strong>rewrite that line in your own words</strong>, keeping the meaning but using your own phrasing. Put it in your Vocabulary Log. (This is called <em>copia</em> &mdash; practicing a word by reworking a real sentence that uses it. You&rsquo;ll do it every week.)</div>
+        </div>
+    </div>
+
+    <!-- PART 2 — THE SEMICOLON -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE SEMICOLON</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">A <strong>semicolon</strong> ( ; ) joins two complete sentences that are closely related in meaning. By &ldquo;complete sentence&rdquo; we mean a group of words that could stand on its own &mdash; it has a subject and a verb and expresses a full thought (grammar calls this an <em>independent clause</em>). This week&rsquo;s reading uses semicolons constantly to link related statements. You already read one:</p>
+
+        <div style="margin: 14px 0;">
+            <div class="chalkboard">
+                <div class="cb-kicker">&#128221; ON THE BOARD</div>
+                <div class="cb-line" style="font-style:italic;">&ldquo;Never the spirit was born<span class="cb-accent" style="font-style:normal;">;</span> the spirit shall cease to be never&hellip;&rdquo;</div>
+            </div>
+            <div style="font-size: 15px; color: #555; margin-top: 8px;">Two complete statements about the spirit, closely linked &mdash; so a semicolon joins them.</div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The most common reason to reach for a semicolon is to fix a <strong>comma splice</strong> &mdash; the error of joining two complete sentences with only a comma. Here is the error, and the three standard ways to fix it:</p>
+
+        <div style="background: #FDECEC; border-left: 5px solid #C0392B; border-top: 3px solid #E74C3C; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #8A1F16; margin-bottom: 8px;">&#9888;&#65039; THE COMMA SPLICE</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;"><strong>Incorrect:</strong> The body dies, the soul does not.<br /><span style="font-size:15px;color:#555;">Two complete sentences joined by only a comma. A comma is too weak to do that job.</span></div>
+        </div>
+
+        <div style="background: #F4F6FA; border:1px solid #D0D9E8; border-radius:6px; padding:14px 20px; margin:14px 0;">
+            <div style="font-size: 16px; color: #1a2340; line-height: 1.9;">
+                <strong>Fix 1 &mdash; period:</strong> The body dies. The soul does not.<br />
+                <strong>Fix 2 &mdash; semicolon:</strong> The body dies; the soul does not.<br />
+                <strong>Fix 3 &mdash; comma + joining word:</strong> The body dies, but the soul does not.
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">All three are correct. Choose the semicolon when the two ideas are tightly connected and you want to show that link without starting a new sentence or adding a word like <em>but</em> or <em>and</em>. One caution: do not use a semicolon to attach a fragment (something that is not a complete sentence). &ldquo;The body dies; because it is mortal&rdquo; is wrong, because &ldquo;because it is mortal&rdquo; cannot stand alone.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PUNCTUATION CHECK</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. Which sentence is punctuated correctly?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Two complete sentences with only a comma between them — that&rsquo;s a comma splice.">Arjuna refuses to fight, Krishna answers him.</button>
+                    <button data-choice="1" data-fb="Yes. Two complete, closely related sentences joined by a semicolon.">Arjuna refuses to fight; Krishna answers him.</button>
+                    <button data-choice="2" data-fb="A semicolon should join two complete sentences, but &lsquo;answering him&rsquo; is not one.">Arjuna refuses to fight; answering him.</button>
+                    <button data-choice="3" data-fb="No punctuation at all between two sentences (a run-on).">Arjuna refuses to fight Krishna answers him.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">2. Which one contains a comma splice (the error)?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Correctly joined with a comma + &lsquo;and.&rsquo;">The soul is deathless, and the body is not.</button>
+                    <button data-choice="1" data-fb="Correct — a single sentence with one subject and verb.">The deathless soul moves to a new body.</button>
+                    <button data-choice="2" data-fb="Correctly joined with a semicolon.">Outcomes change; the self does not.</button>
+                    <button data-choice="3" data-fb="Yes. Two complete sentences joined by only a comma — a comma splice.">Krishna is calm, he urges Arjuna to act.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">3. Best single-mark fix for: &ldquo;Krishna gives a comparison, it makes the idea clear.&rdquo;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes. The two complete, related sentences are correctly joined by a semicolon.">Krishna gives a comparison; it makes the idea clear.</button>
+                    <button data-choice="1" data-fb="A colon is used to introduce or explain, not to splice two equal sentences like this; a semicolon fits better.">Krishna gives a comparison: it makes the idea clear.</button>
+                    <button data-choice="2" data-fb="Still a comma splice — the comma alone can&rsquo;t join two sentences.">Krishna gives a comparison, it makes the idea clear.</button>
+                    <button data-choice="3" data-fb="Removing punctuation creates a run-on.">Krishna gives a comparison it makes the idea clear.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">4. When should you <em>not</em> use a semicolon?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="This is a good use — two related complete sentences.">When joining two closely related complete sentences</button>
+                    <button data-choice="1" data-fb="That&rsquo;s exactly when a semicolon helps fix the error.">When you are fixing a comma splice</button>
+                    <button data-choice="2" data-fb="Right. A semicolon needs a complete sentence on each side; you can&rsquo;t use it to attach a fragment.">When one side is a fragment, not a complete sentence</button>
+                    <button data-choice="3" data-fb="The ideas being related is the reason TO use one.">When the two ideas are clearly related</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHY THIS IS WORTH KNOWING</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The comma splice is one of the most frequently marked errors in high-school and college essays, and the semicolon is the quickest way to fix it. It also gives you a way to show that two ideas belong together without breaking them into short, choppy sentences. Watch for a chance to use one correctly in this week&rsquo;s Quick Write.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.4 &middot; Grammar &amp; Vocabulary</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

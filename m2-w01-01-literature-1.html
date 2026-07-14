@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 1.1 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Letters 1&ndash;4</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Dream and the Want</div>
+        <div style="font-size: 16px; color: #666;">Where the novel begins &mdash; with a letter from the edge of the world</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">This week you begin <em>Frankenstein</em> with three literature lessons (Walton&rsquo;s letters today, then Victor&rsquo;s obsession, then the creation itself). Alongside the reading, <strong>Studio Session 1</strong> runs in place of this week&rsquo;s Quick Write and VR: the novel about a creator and the pitch where <em>you</em> are the maker move together. Keep your reading notes in your <strong>Module 2 folder</strong>.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A novel about a man who makes a monster does not open with the monster. It opens with letters from a different man, sailing toward the North Pole.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Robert Walton is writing home to his sister as his ship pushes into the Arctic. He is chasing glory &mdash; a passage no one has found, a discovery that will make his name &mdash; and he is completely alone. Before we ever meet Victor Frankenstein, Shelley shows us a man with the same two things inside him: a burning ambition, and an ache for someone to share it with. Watch Walton closely; he is a warning the novel sets up before the danger arrives.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the novel&rsquo;s frame &mdash; a story told inside letters &mdash; shapes the way we receive it.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">identify Walton&rsquo;s ambition and his loneliness, and explain why Shelley pairs them before Victor appears.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Letters 1 and 2.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A reading-notes document in your <strong>Module 2 folder</strong>, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Robert Walton writes to his sister, Margaret Saville, in England. Read both passages before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; Walton&rsquo;s letters (Letters 1&ndash;2)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>From Letter 1 &mdash; the dream:</strong></div>
+                <p style="margin:0 0 12px 0;">I try in vain to be persuaded that the pole is the seat of frost and desolation; it ever presents itself to my imagination as the region of beauty and delight&hellip; What may not be expected in a country of eternal light?&hellip; I shall satiate my ardent curiosity with the sight of a part of the world never before visited, and may tread a land never before imprinted by the foot of man.</p>
+                <p style="margin:0 0 12px 0;">&hellip; you cannot contest the inestimable benefit which I shall confer on all mankind, to the last generation, by discovering a passage near the pole&hellip; This expedition has been the favourite dream of my early years.</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>From Letter 2 &mdash; the want:</strong></div>
+                <p style="margin:0 0 12px 0;">But I have one want which I have never yet been able to satisfy&hellip; I have no friend, Margaret: when I am glowing with the enthusiasm of success, there will be none to participate my joy; if I am assailed by disappointment, no one will endeavour to sustain me in dejection&hellip; I desire the company of a man who could sympathise with me, whose eyes would reply to mine&hellip; I bitterly feel the want of a friend.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein; or, The Modern Prometheus</em> (1818). Public domain. Excerpts from Letters 1&ndash;2.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Mary Shelley began <em>Frankenstein</em> in 1816, when she was eighteen, during a cold, storm-darkened summer at a villa on Lake Geneva. Trapped indoors with the poets Lord Byron and Percy Shelley, the group challenged one another to write ghost stories. Hers grew into this novel, published in 1818. It is often called the first true work of science fiction, because its horror comes not from a ghost but from <em>science</em> &mdash; the new experiments of the age with electricity and the boundary between living and dead. Shelley tells it as an <strong>epistolary frame</strong>: a story inside letters. Walton&rsquo;s letters wrap around Victor&rsquo;s tale, which in turn will wrap around the creature&rsquo;s. We never get the story raw; we always get it through someone.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE DREAM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think of something you want badly enough that you&rsquo;d sacrifice comfort, sleep, or safety for it. What is it? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That&rsquo;s the fire Walton has &mdash; and Victor will have it too. The novel asks what such ambition costs, and whether it&rsquo;s worth the price.">A goal or achievement</button>
+                <button data-response="Wanting to be known or to matter is exactly Walton&rsquo;s drive. Watch where it takes him &mdash; into ice, and alone.">Recognition or to be remembered</button>
+                <button data-response="Honest. Walton would tell you a life needs a &lsquo;steady purpose&rsquo; to fix on &mdash; though the novel will test whether his purpose is a wise one.">Nothing that strongly, really</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Walton is the picture of glorious ambition. He has talked himself out of seeing the pole as &ldquo;frost and desolation&rdquo; and into seeing &ldquo;a country of eternal light.&rdquo; He wants to go where no one has gone, to &ldquo;satiate&rdquo; his &ldquo;ardent curiosity,&rdquo; and &mdash; the part that should make us listen carefully &mdash; to win &ldquo;the inestimable benefit which I shall confer on all mankind.&rdquo; That is the language of a hero. It is also, almost exactly, the language Victor Frankenstein will use to justify creating life. Shelley is teaching us to hear it. Ambition that promises to benefit &ldquo;all mankind&rdquo; can be noble &mdash; or it can be a way of dressing up a hunger for glory as a gift to the world. Part of reading this novel well is learning to tell the two apart.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE WANT UNDERNEATH</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then, in the next letter, the bravado drops. &ldquo;I have no friend, Margaret,&rdquo; Walton admits. Surrounded by a hired crew, sailing toward the achievement of his life, he is starving for one thing his ambition cannot give him: someone &ldquo;whose eyes would reply to mine.&rdquo; This is the quiet engine of the whole book. Nearly every major figure in <em>Frankenstein</em> &mdash; Walton, Victor, and the creature most of all &mdash; is desperate for connection and ends up alone. Shelley pairs the two letters on purpose: the dream of standing where no one has stood, and the loneliness of having no one to stand beside. Hold that pairing. When the creature later begs Victor for a companion, you will recognize the same human want you met here, in the very first pages, in the mouth of the most &ldquo;normal&rdquo; character in the book.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. The novel opens with Walton&rsquo;s letters rather than with Victor because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Walton isn&rsquo;t a minor character to rush past &mdash; he frames the whole book.">Shelley couldn&rsquo;t think of how to start</button>
+                    <button data-choice="1" data-fb="The Arctic matters, but the setting isn&rsquo;t the main reason for the frame.">she wanted to describe the Arctic</button>
+                    <button data-choice="2" data-fb="Yes. The frame lets us meet Walton &mdash; a milder version of Victor&rsquo;s ambition &mdash; before the danger arrives.">the frame introduces ambition and loneliness through a &lsquo;safe&rsquo; character first</button>
+                    <button data-choice="3" data-fb="The letters are central, not a throwaway opening.">letters were just a fashion of the time</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">2. Walton&rsquo;s &ldquo;one want&rdquo; that his expedition cannot satisfy is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He has a ship and crew; supplies aren&rsquo;t the ache he names.">more money for the voyage</button>
+                    <button data-choice="1" data-fb="Yes. &lsquo;I have no friend, Margaret&rsquo; &mdash; he longs for someone who understands him.">a true friend who understands him</button>
+                    <button data-choice="2" data-fb="He wants fame, but that&rsquo;s his ambition, not the &lsquo;want&rsquo; he confesses here.">fame and recognition</button>
+                    <button data-choice="3" data-fb="He&rsquo;s not homesick for England &mdash; he&rsquo;s lonely for connection.">to return home quickly</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Pairing Walton&rsquo;s ambition with his loneliness sets up a pattern in the novel that&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The novel doesn&rsquo;t reward the lonely seeker &mdash; just the opposite.">great achievers always end up happy</button>
+                    <button data-choice="1" data-fb="Shelley isn&rsquo;t saying ambition is always evil; she&rsquo;s more careful than that.">ambition is always wrong</button>
+                    <button data-choice="2" data-fb="The frame is anything but pointless &mdash; it previews the whole theme.">letters can&rsquo;t tell real stories</button>
+                    <button data-choice="3" data-fb="Yes. Driven, isolated seekers recur &mdash; and their isolation is part of what undoes them.">the drive to achieve and the hunger for connection will collide again and again</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 1.1</em>, answer in three or four sentences: <strong>What does Walton want most &mdash; and what is he willing to risk for it? Quote one line from the letters.</strong> Then add one sentence: does his ambition remind you of anyone &mdash; in history, in the news, or in yourself?
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This module&rsquo;s threads start here: the <strong>origins</strong> of a quest, and the longing for <strong>the other</strong> &mdash; someone to share a life with. They also feed your <strong>Senior Studios pitch</strong>: Walton wants to benefit &ldquo;all mankind,&rdquo; but never asks whom, exactly, or at what cost. Your pitch asks the question he skips. Next lesson, we meet the man Walton pulls from the ice &mdash; and hear how his own great ambition began.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.1 &middot; The Dream and the Want</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

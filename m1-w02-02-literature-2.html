@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 2.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.2 &middot; Literature (2 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bible &mdash; Matthew 5</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.2 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Blessed Life</div>
+        <div style="font-size: 16px; color: #666;">The second of three readings from the Bible this week</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Genesis told you where the human being comes from. The Sermon on the Mount turns to how a person should live &mdash; and it begins by naming who is &ldquo;blessed&rdquo; in a way most listeners would not expect.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In the Gospel of Matthew, Jesus teaches a large crowd from a mountainside. The opening lines &mdash; the Beatitudes &mdash; are a list of who is &ldquo;blessed,&rdquo; followed by two short images, salt and light. As you read, watch the repeated sentence pattern, and notice which kinds of people the list calls blessed.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the repeated structure of the Beatitudes and what is surprising about who is called blessed.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">explain what the salt and light images ask of the listener.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; Matthew 5:3&ndash;15.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage once before the lesson below. The reference is in the margin.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; Matthew 5:3&ndash;15 (the Beatitudes; salt and light)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.6;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:3</span><span>Blessed are the poor in spirit: for theirs is the kingdom of heaven.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:4</span><span>Blessed are they that mourn: for they shall be comforted.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:5</span><span>Blessed are the meek: for they shall inherit the earth.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:6</span><span>Blessed are they which do hunger and thirst after righteousness: for they shall be filled.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:7</span><span>Blessed are the merciful: for they shall obtain mercy.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:8</span><span>Blessed are the pure in heart: for they shall see God.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:9</span><span>Blessed are the peacemakers: for they shall be called the children of God.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:10</span><span>Blessed are they which are persecuted for righteousness&rsquo; sake: for theirs is the kingdom of heaven.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:11</span><span>Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:12</span><span>Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you.</span></div>
+                <div style="height:10px;"></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:13</span><span>Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:14</span><span>Ye are the light of the world. A city that is set on an hill cannot be hid.</span></div>
+                <div style="display:flex;gap:12px;"><span style="min-width:34px;color:#aaa;font-size:11px;text-align:right;">5:15</span><span>Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house.</span></div>
+                <div style="font-size:13px;color:#888;margin-top:16px;padding-top:10px;border-top:1px solid #EEF1F8;">King James Version (1611), public domain. Matthew 5:3&ndash;15.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WHO IS &ldquo;BLESSED&rdquo;?</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think about who our culture usually treats as &ldquo;winning&rdquo; at life. What do they tend to have? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="A common picture — success, wealth, status. Keep it in mind; the Beatitudes name almost the opposite kinds of people as &lsquo;blessed.&rsquo;">Money, success, status</button>
+                <button data-response="Strength and control are usually prized. Notice that the Beatitudes bless the meek and the mourning instead.">Strength, power, being in control</button>
+                <button data-response="Comfort and ease, yes. The Beatitudes point somewhere else &mdash; toward people who are struggling. Watch for that reversal.">Comfort and an easy life</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The Beatitudes are built on one repeated sentence: &ldquo;Blessed are <em>[a kind of person]</em>: for they shall <em>[a promise]</em>.&rdquo; Nine times the same frame returns, which makes the passage easy to hear and hard to forget. But look at who fills the first slot: the poor in spirit, those who mourn, the meek, the persecuted. These are not the people most societies call fortunate. The passage deliberately calls <em>blessed</em> exactly the people who seem to be losing &mdash; and attaches to each a promise that reverses their situation (those who mourn &ldquo;shall be comforted&rdquo;; the meek &ldquo;shall inherit the earth&rdquo;). The repeated structure is doing real work: it lines these reversals up one after another so the pattern itself becomes the argument.</p>
+
+        <div style="margin: 14px 0;">
+            <div style="font-size: 11px; color: #7a5b1e; margin-bottom: 8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">Blessed are the poor in spirit: for theirs is the kingdom of heaven.</div>
+                <div class="pm-line" style="font-style:italic;">Blessed are they that mourn: for they shall be comforted.</div>
+                <div class="pm-line" style="font-style:italic;">Blessed are the meek: for they shall inherit the earth.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; SALT AND LIGHT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After the Beatitudes, the teaching shifts from who is blessed to what the listeners are to <em>be</em>, using two everyday images. &ldquo;Ye are the salt of the earth&rdquo; &mdash; salt preserves and gives flavor, but salt that has lost its <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="Taste or flavor (older usage).">savour</span> is useless. &ldquo;Ye are the light of the world&rdquo; &mdash; and a light is meant to be set where it can be seen, not hidden under a basket. Both images make the same demand in different terms: what you are is only worth something if it actually does its work in the world. A good life, in this teaching, is not private; it is visible and useful to others.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. Each Beatitude follows the pattern &ldquo;Blessed are X: for they shall Y.&rdquo; The second half (Y) usually&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The promises are not warnings; they offer something good.">warns the person of punishment</button>
+                    <button data-choice="1" data-fb="Yes. Each promise reverses the hardship named in the first half (mourners are comforted, the meek inherit).">promises a reversal of their hardship</button>
+                    <button data-choice="2" data-fb="The structure repeats the same frame; it does not change the subject.">changes the subject entirely</button>
+                    <button data-choice="3" data-fb="The promises look forward to a reward, not backward.">describes the person&rsquo;s past</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">2. What is surprising about the people the Beatitudes call &ldquo;blessed&rdquo;?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="They are named very specifically, not vaguely.">They are described only in vague terms</button>
+                    <button data-choice="1" data-fb="The opposite — they are the powerful in most accounts, but not here.">They are the rich and powerful</button>
+                    <button data-choice="2" data-fb="They are people, not places.">They are kings and cities</button>
+                    <button data-choice="3" data-fb="Yes. The list blesses the struggling &mdash; the poor, mourning, meek, and persecuted.">They are people who seem to be losing, not winning</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">3. The salt and light images both make the point that a good life should be&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Hidden is exactly what the light image rules out (&lsquo;cannot be hid&rsquo;).">kept private and hidden</button>
+                    <button data-choice="1" data-fb="Neither image is about wealth.">focused on becoming wealthy</button>
+                    <button data-choice="2" data-fb="Yes. Salt must keep its savour and light must be seen &mdash; both must do their work in the world.">useful and visible to others</button>
+                    <button data-choice="3" data-fb="The images stress action and effect, not effortlessness.">effortless and easy</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 2.2</em>, answer in three or four sentences: <strong>The Beatitudes call people &ldquo;blessed&rdquo; who most of us would call unlucky. Do you find that vision of the good life convincing, or not?</strong> Quote one line from the reading. Save it for Project Day.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS FITS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the Bible&rsquo;s most direct answer to the module&rsquo;s question of how to live. Set it beside the Gita&rsquo;s steady, self-governed person from last week: both describe a good life, but they value strikingly different things. You will compare answers like these in your project. Notice, too, that the repeated &ldquo;Blessed are&hellip;&rdquo; pattern is an example of <strong>parallel structure</strong> &mdash; the grammar tool you will study in this week&rsquo;s grammar lesson.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.2 &middot; The Blessed Life</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

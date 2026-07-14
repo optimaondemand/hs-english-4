@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 7.3</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.3 &middot; Literature (3 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Aristotle, <em>Nicomachean Ethics</em> &mdash; Book X</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.3 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Highest Activity</div>
+        <div style="font-size: 16px; color: #666;">The life of the mind &mdash; and the module&rsquo;s last reading</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If happiness is the soul working well, one question remains: which kind of working is the best of all?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In the last book of the <em>Ethics</em>, Aristotle gives his final answer. Of all the activities a human can do well, he ranks one highest: <em>contemplation</em> &mdash; the steady use of the mind to understand things worth understanding. In this translation it is called the &ldquo;contemplative&rdquo; or &ldquo;speculative&rdquo; life. It is a fitting place to end a module called <em>The Enduring Quest</em>, because Aristotle is arguing that the best human life is, at its peak, a life of inquiry.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why Aristotle ranks contemplation &mdash; the activity of understanding &mdash; as the highest happiness.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">weigh his reasons (it is the highest, the most continuous, the most self-sufficient) and decide how convincing they are.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; from the <em>Nicomachean Ethics</em>, Book X.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> &mdash; and your six earlier entries, since you&rsquo;ll start pulling the module together.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage once before the lesson below. &ldquo;Working&rdquo; here means activity; &ldquo;the best Principle&rdquo; means the highest part of us &mdash; the mind.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; on contemplation (<em>Nicomachean Ethics</em>, Book X)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">Happiness then stands not in amusement; in fact the very notion is absurd of the End being amusement, and of one&rsquo;s toiling and enduring hardness all one&rsquo;s life long with a view to amusement&hellip; Happiness stands not in such pastimes but in the Workings in the way of Excellence&hellip;</p>
+                <p style="margin:0 0 12px 0;">Now if Happiness is a Working in the way of Excellence, of course that Excellence must be the highest, that is to say, the Excellence of the best Principle&hellip; the Working of this in accordance with its own proper Excellence must be the perfect Happiness.</p>
+                <p style="margin:0 0 12px 0;">That it is Contemplative has been already stated&hellip; for, in the first place, this Working is of the highest kind, since the Intellect is the highest of our internal Principles and the subjects with which it is conversant the highest of all which fall within the range of our knowledge.</p>
+                <p style="margin:0 0 12px 0;">Next, it is also most Continuous: for we are better able to contemplate than to do anything else whatever, continuously&hellip; And the Self-Sufficiency which people speak of will attach chiefly to the Contemplative Working&hellip;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Aristotle, <em>Nicomachean Ethics</em>, Book X (D. P. Chase translation). Public domain English text. Excerpts.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">In Aristotle&rsquo;s Athens, a small class of free men had the leisure to spend their lives thinking, while most of the work that made that leisure possible was done by laborers, women, and enslaved people who had no such freedom. That social fact shapes this passage: when Aristotle calls the contemplative life the highest, he is describing an ideal open to very few of his contemporaries. Reading him today, part of the work is to separate his core claim &mdash; that understanding is among the best things a human can do &mdash; from the narrow world that first made it thinkable.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; NOT AMUSEMENT, BUT UNDERSTANDING</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When you finally understand something you&rsquo;d been struggling with &mdash; a problem clicks, a book opens up &mdash; how would you describe that feeling? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="Aristotle would say you&rsquo;ve touched the thing he&rsquo;s pointing at &mdash; understanding has a satisfaction unlike entertainment.">Satisfying in a deep, quiet way</button>
+                <button data-response="That&rsquo;s real &mdash; and Aristotle distinguishes the effort of understanding from mere amusement precisely because it costs something.">Hard-won, sometimes exhausting</button>
+                <button data-response="Honest. Aristotle is making a strong claim here, and you don&rsquo;t have to accept it &mdash; weigh it as you read.">I&rsquo;m not sure I feel much</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Aristotle first clears away an easy answer. Happiness, he says, &ldquo;stands not in amusement.&rdquo; It would be absurd to toil your whole life just so you can be entertained at the end of it &mdash; amusement is rest, and rest exists for the sake of work, not the other way around. So the highest happiness has to be a serious activity, done for its own sake. Then he reasons toward which one. If happiness is the soul working in line with its best excellence, then it must be the working of the <strong>best part</strong> of us &mdash; and for Aristotle that is the intellect, the mind&rsquo;s power to understand. The activity of understanding the highest things, done well, is what he calls &ldquo;the perfect Happiness.&rdquo; This does not cancel the virtues from Lesson 7.2; a contemplative life still needs courage, justice, and friendship. But at its summit, Aristotle says, the best life is one spent coming to understand.</p>
+
+        <div style="margin:14px 0;">
+            <div style="font-size:11px;color:#7a5b1e;margin-bottom:8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">this Working is of the highest kind, since the Intellect is the highest</div>
+                <div class="pm-line" style="font-style:italic;">of our internal Principles and the subjects with which it is conversant</div>
+                <div class="pm-line" style="font-style:italic;">the highest of all which fall within the range of our knowledge.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHY HE RANKS IT FIRST &mdash; AND WHETHER HE'S RIGHT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Aristotle gives reasons, and a careful reader can test each one. Contemplation is &ldquo;the highest kind&rdquo; of working, he says, because the mind is our highest faculty and it deals with the highest subjects. It is &ldquo;most continuous&rdquo;: &ldquo;we are better able to contemplate than to do anything else whatever, continuously&rdquo; &mdash; you can think for longer than you can do almost anything else. And it is the most &ldquo;self-sufficient&rdquo;: a just act needs other people to be just toward, but a person can understand on their own. These are real arguments, and they are open to challenge. You might ask: is a life of pure thought really richer than a life of love, or service, or making things? Aristotle himself seems to feel the pull of that objection elsewhere. That tension &mdash; between the life of the mind and the life of action and relationship &mdash; is exactly the kind of genuine question this module has trained you to argue, and it is good material for your essay.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. Aristotle says happiness &ldquo;stands not in amusement&rdquo; because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He doesn&rsquo;t condemn fun outright; he ranks it below serious activity done for its own sake.">amusement is always wrong</button>
+                    <button data-choice="1" data-fb="He says the reverse &mdash; we work in order to rest, so rest can&rsquo;t be the final goal.">rest is the goal of life</button>
+                    <button data-choice="2" data-fb="Yes. It would be absurd to labor all your life just to be entertained; amusement is rest, not the End.">it makes no sense to toil all your life just for entertainment</button>
+                    <button data-choice="3" data-fb="That&rsquo;s not his reason here; he&rsquo;s arguing about what the final goal can be.">only the wealthy can afford amusement</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. Why does Aristotle call contemplation the highest activity?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes. The intellect is our highest part and deals with the highest subjects.">it is the working of our highest faculty, the mind, on the highest subjects</button>
+                    <button data-choice="1" data-fb="He doesn&rsquo;t say it&rsquo;s easy &mdash; in fact it&rsquo;s demanding.">it is the easiest thing to do</button>
+                    <button data-choice="2" data-fb="The opposite &mdash; he prizes it partly because it can be done for its own sake, not for pay.">it earns the most money</button>
+                    <button data-choice="3" data-fb="He values it for itself, not because others applaud it.">it impresses other people</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. A reasonable objection to Aristotle&rsquo;s ranking would be&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="That&rsquo;s not an objection to his view &mdash; it just restates a part of it.">that thinking uses the mind</button>
+                    <button data-choice="1" data-fb="He agrees the virtues matter; that&rsquo;s not where the disagreement lies.">that courage and justice are real virtues</button>
+                    <button data-choice="2" data-fb="He never claims it&rsquo;s effortless, so this misses his actual claim.">that contemplation is easy for everyone</button>
+                    <button data-choice="3" data-fb="Yes &mdash; one might argue a life of love, service, or making things is at least as rich as pure thought.">that a life of love or service might be just as high as a life of thought</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 7.3</em>, answer in three or four sentences: <strong>Is Aristotle right that understanding is the highest human activity &mdash; or is something else (love, service, creating) at least as high? Why?</strong> Quote one line from the passage. This is the last of your seven Learning Log entries; you&rsquo;ll use all of them to plan the essay.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS &mdash; THE WHOLE MODULE</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You have now read seven traditions on how to live: the Gita on duty without attachment, the Bible on love and dependence, Confucius on the cultivated person, the Buddhist parables on suffering and craving, the Qur&rsquo;an on submission and gratitude, Plato on justice and the climb to truth, and Aristotle on happiness, habit, and understanding. They disagree &mdash; sometimes sharply &mdash; and that disagreement is the point. Your essay will not crown a winner; it will set these voices against your own considered answer to the module&rsquo;s question: how ought a person to live? This week&rsquo;s Project Day begins turning seven Learning Log entries into that essay.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.3 &middot; The Highest Activity</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

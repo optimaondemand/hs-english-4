@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 2.2 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.2 &middot; Literature (2 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Chapter 8</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.2 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Justine</div>
+        <div style="font-size: 16px; color: #666;">An innocent condemned &mdash; while the one who could save her stays silent</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A gentle servant girl, beloved by the family, is accused of William&rsquo;s murder on a scrap of false evidence. Victor knows she is innocent. He says nothing that could save her.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Justine Moritz is tried, pressured into a false confession, and executed. Victor &mdash; the one person who knows the truth &mdash; stays quiet to protect his secret, and tortures himself in private instead. This chapter widens the novel&rsquo;s question from &ldquo;what does a creator owe his creation?&rdquo; to a second one your Senior Studios work also asks: <strong>what do we owe the innocent people our choices put at risk?</strong></div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Justine comes to confess to a crime she did not commit.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">evaluate Victor&rsquo;s silence &mdash; weighing his private suffering against his public cowardice.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 8.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Justine explains to Elizabeth why she confessed; then Victor describes his own state. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; the false confession, and Victor&rsquo;s guilt (Chapter 8)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>Justine, to Elizabeth:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;I did confess, but I confessed a lie. I confessed, that I might obtain absolution; but now that falsehood lies heavier at my heart than all my other sins&hellip; Ever since I was condemned, my confessor has besieged me; he threatened and menaced, until I almost began to think that I was the monster that he said I was&hellip; I had none to support me; all looked on me as a wretch doomed to ignominy and perdition. What could I do? In an evil hour I subscribed to a lie; and now only am I truly miserable.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>Victor:</strong></div>
+                <p style="margin:0 0 12px 0;">Thus the poor sufferer tried to comfort others and herself&hellip; But I, the true murderer, felt the never-dying worm alive in my bosom, which allowed of no hope or consolation&hellip; Justine died; she rested; and I was alive.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 8.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">In the legal world Shelley knew, a confession was treated as the strongest possible proof of guilt &mdash; which gave authorities every reason to press hard for one. Justine, a poor servant with no family to defend her and little standing in court, is exactly the kind of person such a system could crush: condemned on thin circumstantial evidence (a portrait found in her pocket, which the creature had planted), then pressured by her own confessor into &ldquo;confessing&rdquo; with threats about her soul. Shelley, the daughter of the early feminist writer Mary Wollstonecraft, was alert to how the powerless &mdash; especially women and servants &mdash; fared when the powerful needed someone to blame. Justine&rsquo;s fate is not just bad luck; it is a portrait of how easily the innocent and voiceless are sacrificed.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A CONFESSION THAT ISN'T TRUE</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Could you imagine confessing to something you didn&rsquo;t do &mdash; if you were frightened, alone, and everyone already believed you were guilty? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="It&rsquo;s easy to say &lsquo;never&rsquo; from a safe chair. Justine shows how pressure, isolation, and fear can break that certainty.">No &mdash; I&rsquo;d never lie about that</button>
+                <button data-response="That&rsquo;s the honest answer, and exactly what Shelley wants you to feel &mdash; Justine isn&rsquo;t weak; she&rsquo;s cornered.">Maybe, under enough pressure</button>
+                <button data-response="Real cases of false confession happen for just these reasons &mdash; fear, exhaustion, and no one in your corner.">I&rsquo;m honestly not sure</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Read Justine&rsquo;s explanation carefully, because it is not the confession of a guilty person &mdash; it is the anatomy of how an innocent one is broken. She confessed &ldquo;that I might obtain absolution,&rdquo; under a confessor who &ldquo;threatened and menaced&rdquo; her until she &ldquo;almost began to think that I was the monster that he said I was.&rdquo; That line is chilling: pressed hard enough, by everyone at once, she nearly believes the lie about herself. &ldquo;I had none to support me,&rdquo; she says &mdash; and there it is. Justine is destroyed not only by false evidence but by being <em>alone</em>, with no one willing to stand for her. The novel keeps returning to this: what happens to a person when no one will speak for them. It happened to the creature. Now it happens to Justine.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE SILENCE THAT KILLS</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">And one person could have spoken for her: Victor. He calls himself &ldquo;the true murderer&rdquo; &mdash; he knows that his creature did it, and that his silence is helping to hang an innocent woman. But he carries his guilt as private agony, &ldquo;the never-dying worm alive in my bosom,&rdquo; rather than as public confession. Here a careful reader has to hold two things at once. Victor genuinely suffers; his torment is real, and Shelley makes us feel it. <em>And</em> his suffering changes nothing for Justine &mdash; it is, in a way, the cheapest response available, because it costs him only feelings, not his reputation or safety. &ldquo;Justine died; she rested; and I was alive.&rdquo; The novel quietly indicts a kind of moral cowardice we all recognize: feeling terrible about a wrong while doing nothing that would actually cost us to stop it. Is private guilt worth anything if it never becomes action?</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. Justine confesses to the murder because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="She is innocent &mdash; she says so plainly to Elizabeth.">she is actually guilty</button>
+                    <button data-choice="1" data-fb="No bribe is involved; she&rsquo;s threatened, not paid.">she is paid to take the blame</button>
+                    <button data-choice="2" data-fb="Yes. Threatened and alone, she confesses a lie to obtain absolution.">she is pressured and frightened into a false confession</button>
+                    <button data-choice="3" data-fb="She protects no one; she&rsquo;s simply cornered.">she is protecting the real killer</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. What does Justine&rsquo;s fate have in common with the creature&rsquo;s?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; both are condemned and abandoned with no one to stand for them.">both are judged and left utterly alone, with no one to defend them</button>
+                    <button data-choice="1" data-fb="Justine is innocent of any violence &mdash; that&rsquo;s the point.">both are violent killers</button>
+                    <button data-choice="2" data-fb="Neither gets a fair hearing &mdash; that&rsquo;s the tragedy.">both receive justice in the end</button>
+                    <button data-choice="3" data-fb="Neither has Victor&rsquo;s protection &mdash; that&rsquo;s precisely what they lack.">both are protected by Victor</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The novel presents Victor&rsquo;s private guilt as&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It isn&rsquo;t enough &mdash; suffering that changes nothing doesn&rsquo;t save Justine.">a full and admirable response</button>
+                    <button data-choice="1" data-fb="His guilt is real, so it&rsquo;s not fake &mdash; the problem is it stays private.">completely fake</button>
+                    <button data-choice="2" data-fb="The law never hears the truth, because he won&rsquo;t say it.">the same as confessing to the court</button>
+                    <button data-choice="3" data-fb="Yes &mdash; real suffering, but a cheap substitute for the costly act of telling the truth.">genuine, yet a cowardly substitute for action</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 2.2</em>, answer in three or four sentences: <strong>Victor suffers terribly over Justine but never speaks up. Is his guilt worth anything if it changes nothing? Quote one line from the passage.</strong>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Justine sharpens the module&rsquo;s question about <strong>the other</strong> &mdash; the powerless, the voiceless, the ones no one will defend &mdash; and about <strong>what we owe others</strong>, the question at the center of your <strong>Senior Studios app</strong>. A responsible creator weighs who could be hurt by what they set in motion. Next lesson, the novel does something daring: it finally lets the most abandoned figure of all &mdash; the creature &mdash; speak for himself.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.2 &middot; Justine</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

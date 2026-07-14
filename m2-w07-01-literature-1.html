@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 7.1 (Nietzsche)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Nietzsche, <em>Genealogy of Morals</em></div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Where &ldquo;Good&rdquo; Came From</div>
+        <div style="font-size: 16px; color: #666;">Nietzsche&rsquo;s claim that our values have a hidden history</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">The last week of new reading: three lessons on Nietzsche&rsquo;s <em>Genealogy of Morals</em> and <em>Beyond Good and Evil</em>, a <strong>grammar &amp; vocabulary</strong> lesson, a Quick Write, and &mdash; again &mdash; your <strong>Friday Project Day and two VR sessions as project build/revise time</strong>. Keep notes in your <strong>Module 2 folder</strong>.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Last week Nietzsche asked who decides what is good. This week he gives a startling answer: our very words &ldquo;good&rdquo; and &ldquo;evil&rdquo; have a history &mdash; and it isn&rsquo;t the one we assume.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In the <em>Genealogy of Morals</em>, Nietzsche acts like a detective tracing where moral words came from. His theory &mdash; &ldquo;master&rdquo; and &ldquo;slave&rdquo; morality &mdash; is one of the most provocative in philosophy. As always, our job is to understand it precisely and weigh it honestly. It is a <em>theory about the origins</em> of values, and you are free &mdash; even invited &mdash; to argue against it.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Nietzsche&rsquo;s distinction between &ldquo;master&rdquo; morality and &ldquo;slave&rdquo; morality.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">evaluate his &ldquo;genealogy&rdquo; &mdash; and raise the strongest objection to it.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from the <em>Genealogy of Morals</em>, First Essay.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Nietzsche traces two opposite ways of creating values. Read before the lesson below; the older English is dense, so go slowly.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; master and slave morality (First Essay)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>The powerful coin the word &ldquo;good&rdquo;:</strong></div>
+                <p style="margin:0 0 12px 0;">&hellip; [the noble and high-minded] felt that they themselves were good&hellip; in contradistinction to all the low, the low-minded, the vulgar&hellip; It was out of this pathos of distance that they first arrogated the right to create values for their own profit, and to coin the names of such values&hellip; this is the origin of the antithesis of good and bad.</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The powerless answer with a different value-set:</strong></div>
+                <p style="margin:0 0 12px 0;">The revolt of the slaves in morals begins in the very principle of resentment becoming creative and giving birth to values&hellip; While every aristocratic morality springs from a triumphant affirmation of its own demands, the slave morality says &ldquo;no&rdquo; from the very outset to what is &ldquo;outside itself,&rdquo; &ldquo;different from itself,&rdquo; and &ldquo;not itself&rdquo;: and this &ldquo;no&rdquo; is its creative deed&hellip; its action is fundamentally a reaction.</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The long quarrel:</strong></div>
+                <p style="margin:0 0 12px 0;">&hellip; The two opposing values, &ldquo;good and bad,&rdquo; &ldquo;good and evil,&rdquo; have fought a dreadful, thousand-year fight in the world&hellip;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Friedrich Nietzsche, <em>The Genealogy of Morals</em>, First Essay (Horace B. Samuel translation). Public domain. Excerpts.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; WHAT A &ldquo;GENEALOGY&rdquo; IS</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">A <em>genealogy</em> traces a family&rsquo;s descent &mdash; who came from whom. Nietzsche does this for <em>ideas</em>: instead of asking &ldquo;what is good?&rdquo; he asks &ldquo;where did our idea of &lsquo;good&rsquo; come <em>from</em>, and who first used the word, and why?&rdquo; It&rsquo;s a powerful and unsettling move, because it treats values not as eternal truths dropped from the sky but as things with a history &mdash; invented by particular people, in particular situations, for particular reasons. You don&rsquo;t have to accept his answer to find the <em>method</em> illuminating: asking where an idea came from, and whose interests it served, is a tool you can use on any claim &mdash; including Nietzsche&rsquo;s own.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; TWO WAYS TO MAKE A VALUE</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Quick gut check: is &ldquo;good&rdquo; more about being <em>strong, excellent, admirable</em> &mdash; or about being <em>kind, humble, harmless</em>? <em>(No wrong answer; notice which pull is stronger for you.)</em></div>
+            <div class="widget-options">
+                <button data-response="That&rsquo;s closer to what Nietzsche calls &lsquo;master&rsquo; valuing &mdash; good = noble, excellent, powerful.">Strong, excellent, admirable</button>
+                <button data-response="That&rsquo;s closer to what he calls &lsquo;slave&rsquo; valuing &mdash; good = humble, gentle, harmless. Most of us lean here, which is his whole point.">Kind, humble, harmless</button>
+                <button data-response="Feeling the pull of both is exactly right &mdash; Nietzsche says these two value-systems are still at war inside us.">Honestly, both at once</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Nietzsche claims there are two opposite ways human beings have created the word &ldquo;good.&rdquo; In what he calls <strong>master morality</strong>, the powerful and noble looked at themselves &mdash; strong, capable, flourishing &mdash; and called <em>that</em> &ldquo;good,&rdquo; with &ldquo;bad&rdquo; simply meaning low or common. They &ldquo;arrogated the right to create values&hellip; and to coin the names of such values.&rdquo; In other words, the strong defined &ldquo;good&rdquo; as a confident &ldquo;yes&rdquo; to their own kind of life. This is his blunt answer to last week&rsquo;s question, <em>who decides what is good?</em> &mdash; historically, he says, the people with power did, by naming themselves the standard.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE REVOLT &mdash; AND THE OBJECTION</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then comes the &ldquo;slave revolt in morals.&rdquo; Those without power, Nietzsche argues, could not win by force, so they won by <em>redefining the words</em>: out of <strong>resentment</strong>, they declared the meek, the humble, and the harmless &ldquo;good,&rdquo; and the strong and proud &ldquo;evil.&rdquo; Where master morality begins with a &ldquo;triumphant affirmation&rdquo; of itself, slave morality &ldquo;says &lsquo;no&rsquo; from the very outset&rdquo; to others &mdash; &ldquo;its action is fundamentally a reaction.&rdquo; And here is the genuinely uncomfortable part you should not dodge: the values Nietzsche files under &ldquo;slave morality&rdquo; &mdash; humility, meekness, compassion for the weak &mdash; are exactly the virtues most of us, and most of the Module 1 traditions, hold dearest. So the obvious, powerful objection writes itself: <em>just because a value may have arisen from resentment does not make it false or bad.</em> Compassion might be the noblest thing humans ever invented, whatever its origins. (This is the &ldquo;genetic fallacy&rdquo; &mdash; judging an idea by where it came from rather than whether it&rsquo;s true.) Nietzsche wants to rattle your confidence that &ldquo;good&rdquo; is obvious and eternal. Whether he&rsquo;s exposed a real history or smuggled in his own preference for the &ldquo;strong&rdquo; is exactly the argument a sharp reader has with him &mdash; and a perfect one for an essay.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. In Nietzsche&rsquo;s &ldquo;master morality,&rdquo; &ldquo;good&rdquo; originally meant&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="That&rsquo;s the &lsquo;slave&rsquo; redefinition, not the master one.">meek and humble</button>
+                    <button data-choice="1" data-fb="Yes &mdash; the noble/strong called themselves &lsquo;good&rsquo; in a &lsquo;triumphant affirmation&rsquo; of their own kind of life.">noble, strong, excellent &mdash; the powerful naming themselves</button>
+                    <button data-choice="2" data-fb="Nietzsche says the nobles ignored utility &mdash; that&rsquo;s not the source.">whatever is most useful to society</button>
+                    <button data-choice="3" data-fb="He locates the origin in the powerful, not a deity, in this genealogy.">whatever God commands</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">2. The &ldquo;slave revolt in morals&rdquo; works by&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Not by force &mdash; that&rsquo;s exactly what the powerless lacked.">overpowering the strong in battle</button>
+                    <button data-choice="1" data-fb="It&rsquo;s not indifference &mdash; it&rsquo;s an active reversal of values.">ignoring values altogether</button>
+                    <button data-choice="2" data-fb="Yes &mdash; out of resentment, redefining &lsquo;good&rsquo; as meek and &lsquo;evil&rsquo; as strong; &lsquo;its action is fundamentally a reaction.&rsquo;">reversing the words &mdash; calling the meek &lsquo;good&rsquo; and the strong &lsquo;evil&rsquo;</button>
+                    <button data-choice="3" data-fb="He says the reverse &mdash; slave morality reacts <em>against</em> the masters&rsquo; values.">adopting the masters&rsquo; values exactly</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. The strongest objection to Nietzsche&rsquo;s genealogy is that&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It&rsquo;s vivid and clear &mdash; hard to follow isn&rsquo;t the deep problem.">it&rsquo;s too hard to read</button>
+                    <button data-choice="1" data-fb="He gives a detailed origin story &mdash; &lsquo;no history&rsquo; isn&rsquo;t the objection.">he offers no theory at all</button>
+                    <button data-choice="2" data-fb="That&rsquo;s a fair worry, but the deeper objection is about origins vs. truth.">it is written in old English</button>
+                    <button data-choice="3" data-fb="Yes &mdash; where a value came from doesn&rsquo;t settle whether it&rsquo;s true or good (the &lsquo;genetic fallacy&rsquo;).">a value&rsquo;s origin doesn&rsquo;t determine whether it is true or good</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 7.1</em>, answer in four or five sentences: <strong>Does it matter <em>where</em> a value like compassion came from &mdash; does its origin change whether it&rsquo;s good? Use Nietzsche&rsquo;s genealogy, and quote one line.</strong> You may argue with him.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the deepest form of the module&rsquo;s question. <em>Frankenstein</em> asked who gets to call a being a &ldquo;monster&rdquo;; Nietzsche asks who got to define &ldquo;good&rdquo; and &ldquo;evil&rdquo; in the first place &mdash; and answers that values were <em>made</em> by people, with motives. The Module 1 traditions would push back hard here, insisting the good is real and not merely invented. That clash is yours to judge. Next lesson, Nietzsche&rsquo;s most famous warning &mdash; and a line that could have been written for Victor Frankenstein.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.1 &middot; Where &ldquo;Good&rdquo; Came From</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 7.4</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.4 &middot; Grammar &amp; Vocabulary</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Focus</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Transitions &amp; the semicolon</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.4 &middot; Grammar &amp; Vocabulary</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Joining Ideas: However, Therefore, Moreover</div>
+        <div style="font-size: 16px; color: #666;">Conjunctive adverbs &mdash; and the punctuation that makes them work</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; WHAT THIS LESSON IS FOR</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">An essay lives or dies on how its ideas connect. Next week you start the module essay, where you will set seven thinkers against your own view &mdash; agreeing, qualifying, objecting. Words like <em>however, therefore, moreover,</em> and <em>consequently</em> are the hinges that make those moves clear. This lesson shows what they do and, just as important, how to punctuate them so a reader never stumbles.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#9999;&#65039; PART 1 &middot; GRAMMAR: CONJUNCTIVE ADVERBS</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;"><strong>Notice it first.</strong> Read these two versions of the same idea:</p>
+        <div style="background:#FDF3E3;border-left:4px solid #C7922C;border-radius:6px;padding:14px 18px;margin:0 0 14px 0;font-size:17px;color:#0E1C42;line-height:1.7;">
+            <div style="margin-bottom:8px;">Aristotle admires the life of the mind. He insists it still needs courage and justice.</div>
+            <div>Aristotle admires the life of the mind; <strong>however</strong>, he insists it still needs courage and justice.</div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;"><strong>Name it.</strong> Words like <em>however, therefore, moreover, consequently, nevertheless,</em> and <em>thus</em> are <strong>conjunctive adverbs</strong> &mdash; they signal the logical relationship between two complete thoughts: contrast (<em>however, nevertheless</em>), result (<em>therefore, consequently, thus</em>), or addition (<em>moreover, furthermore</em>). They are not the same as conjunctions like <em>and</em> or <em>but</em>, and that difference changes the punctuation.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;"><strong>The rule.</strong> When a conjunctive adverb joins two complete sentences, put a <strong>semicolon before it</strong> and a <strong>comma after it</strong>:</p>
+        <div style="margin:0 0 6px 0;">
+            <div class="chalkboard">
+                <div class="cb-kicker">&#128221; ON THE BOARD</div>
+                <div class="cb-line">Glaucon doubts that justice pays<span class="cb-accent"><strong>;</strong></span> <span class="cb-accent"><strong>therefore</strong></span>, Socrates must answer him.</div>
+            </div>
+        </div>
+        <p style="font-size: 15px; color: #6b7a99; line-height: 1.6; margin: 0 0 10px 0;">A comma alone before <em>however</em> or <em>therefore</em> creates a run-on (the comma splice you want to avoid). This builds directly on the semicolon you learned in Week 1 &mdash; the semicolon links two complete thoughts; the conjunctive adverb names <em>how</em> they relate.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; USE IT &middot; PUNCTUATE AND CHOOSE</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. Which is punctuated correctly?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="A comma before &lsquo;however&rsquo; joining two full sentences is a comma splice.">We become brave by acting bravely, however, the first act is the hardest.</button>
+                    <button data-choice="1" data-fb="Yes. Semicolon before, comma after &mdash; the standard punctuation for two complete thoughts.">We become brave by acting bravely; however, the first act is the hardest.</button>
+                    <button data-choice="2" data-fb="A comma after &lsquo;however&rsquo; is needed, and a semicolon (not a comma) before it.">We become brave by acting bravely; however the first act is the hardest.</button>
+                    <button data-choice="3" data-fb="No punctuation before &lsquo;however&rsquo; runs the two sentences together.">We become brave by acting bravely however, the first act is the hardest.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">2. The mean depends on the person; _____, the right amount differs for Milo and a beginner. (Which word fits the <em>result</em>?)</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="&lsquo;However&rsquo; signals contrast, but this sentence draws a consequence.">however</button>
+                    <button data-choice="1" data-fb="&lsquo;Nevertheless&rsquo; signals contrast against expectation, not a result.">nevertheless</button>
+                    <button data-choice="2" data-fb="Yes. &lsquo;Consequently&rsquo; signals that the second statement follows from the first.">consequently</button>
+                    <button data-choice="3" data-fb="&lsquo;In contrast&rsquo; sets two things against each other; here the second follows from the first.">in contrast</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Aristotle praises contemplation; _____, he never says the virtues stop mattering. (Which word fits the <em>contrast</em>?)</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="&lsquo;Therefore&rsquo; signals a result, but this is a contrast.">therefore</button>
+                    <button data-choice="1" data-fb="&lsquo;Moreover&rsquo; adds a similar point; here the second clause pushes back.">moreover</button>
+                    <button data-choice="2" data-fb="&lsquo;Thus&rsquo; signals a conclusion, not a contrast.">thus</button>
+                    <button data-choice="3" data-fb="Yes. &lsquo;Nevertheless&rsquo; marks the contrast &mdash; despite the praise, the virtues still matter.">nevertheless</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+        <p style="font-size: 15px; color: #6b7a99; line-height: 1.6; margin: 6px 0 0 0;">One caution for your essay: these words are seasoning, not filler. A <em>however</em> in front of a sentence that doesn&rsquo;t actually contrast anything just confuses the reader. Use one when the logic genuinely turns.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128218; PART 2 &middot; VOCABULARY FROM THE READING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Five words from this week&rsquo;s Aristotle. Each is defined in the sense it carries in the reading.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
+            <div style="flex:1;min-width:280px;background:#FDF3E3;border-radius:6px;padding:14px 18px;">
+                <div style="font-size:18px;color:#0E1C42;margin-bottom:4px;"><strong>self-sufficient</strong> <span style="font-size:14px;color:#888;">(adjective)</span></div>
+                <div style="font-size:16px;color:#1a2340;line-height:1.55;">complete in itself; needing nothing further to be worthwhile. <em>Aristotle calls happiness self-sufficient.</em></div>
+            </div>
+            <div style="flex:1;min-width:280px;background:#EEF1F8;border-radius:6px;padding:14px 18px;">
+                <div style="font-size:18px;color:#0E1C42;margin-bottom:4px;"><strong>excess</strong> <span style="font-size:14px;color:#888;">(noun)</span></div>
+                <div style="font-size:16px;color:#1a2340;line-height:1.55;">too much of something &mdash; the &ldquo;too far&rdquo; side of a virtue. <em>Recklessness is courage carried to excess.</em></div>
+            </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
+            <div style="flex:1;min-width:280px;background:#EEF1F8;border-radius:6px;padding:14px 18px;">
+                <div style="font-size:18px;color:#0E1C42;margin-bottom:4px;"><strong>deficiency</strong> <span style="font-size:14px;color:#888;">(noun)</span></div>
+                <div style="font-size:16px;color:#1a2340;line-height:1.55;">too little of something &mdash; the &ldquo;falling short&rdquo; side of a virtue. <em>Cowardice is a deficiency of courage.</em></div>
+            </div>
+            <div style="flex:1;min-width:280px;background:#FDF3E3;border-radius:6px;padding:14px 18px;">
+                <div style="font-size:18px;color:#0E1C42;margin-bottom:4px;"><strong>habituation</strong> <span style="font-size:14px;color:#888;">(noun)</span></div>
+                <div style="font-size:16px;color:#1a2340;line-height:1.55;">the forming of a character trait by repeated practice. <em>Good citizens are made by habituation.</em></div>
+            </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+            <div style="flex:1;min-width:280px;background:#EEF1F8;border-radius:6px;padding:14px 18px;">
+                <div style="font-size:18px;color:#0E1C42;margin-bottom:4px;"><strong>contemplation</strong> <span style="font-size:14px;color:#888;">(noun)</span></div>
+                <div style="font-size:16px;color:#1a2340;line-height:1.55;">sustained, focused thought aimed at understanding. <em>Aristotle ranks contemplation as the highest activity.</em></div>
+            </div>
+            <div style="flex:1;min-width:280px;background:#FDF3E3;border-radius:6px;padding:14px 18px;">
+                <div style="font-size:18px;color:#0E1C42;margin-bottom:4px;"><strong>disposition</strong> <span style="font-size:14px;color:#888;">(noun)</span></div>
+                <div style="font-size:16px;color:#1a2340;line-height:1.55;">a settled tendency to act or feel a certain way. <em>A virtue, for Aristotle, is a stable disposition.</em></div>
+            </div>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid #CBD8CB;border-left:4px solid #4F6F52;border-radius:6px;padding:16px 20px;">
+            <div style="font-size:11px;color:#4F6F52;margin-bottom:8px;">&#9999;&#65039; WRITTEN PRACTICE &middot; COPIA</div>
+            <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 10px 0;">Start from this sentence built on the reading:</p>
+            <div style="background:#EEF1F8;border-radius:6px;padding:12px 16px;margin:0 0 12px 0;font-size:17px;color:#0E1C42;font-style:italic;line-height:1.6;">&ldquo;Courage is a mean: an excess of confidence becomes recklessness, and a deficiency becomes cowardice.&rdquo;</div>
+            <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0;">In your Learning Log, rewrite this sentence <strong>two ways</strong>: (1) keep the structure but swap in a <em>different</em> virtue, naming its own excess and deficiency; (2) rewrite it as two complete sentences joined by a conjunctive adverb (<em>therefore, however,</em> or <em>moreover</em>), punctuated correctly. Use at least <strong>two</strong> of this week&rsquo;s vocabulary words in your sentences.</p>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; CARRY IT INTO THE ESSAY</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Your Quick Write this week, and the module essay next week, both ask you to connect ideas &mdash; to say one thinker agrees, another pushes back, and therefore you conclude something. The conjunctive adverbs from Part 1 are built for exactly that. Reach for them when the logic turns; punctuate them with the semicolon you already know.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Grammar &amp; Vocabulary</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.4 &middot; Joining Ideas</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

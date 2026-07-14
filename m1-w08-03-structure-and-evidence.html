@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 8.3</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 8.3 &middot; Structure &amp; Evidence</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Project</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 8.3 &middot; Structure &amp; Evidence</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Building the Body, Using the Quotes</div>
+        <div style="font-size: 16px; color: #666;">How to organize the essay &mdash; and drop in evidence so it argues</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; OBJECTIVE</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">By the end of this lesson you will be able to outline the synthesis essay around your thesis and integrate quoted evidence using a signal phrase, the quotation, and your own explanation &mdash; so quotes carry the argument instead of just decorating it.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#129521; PART 1 &middot; A SHAPE THAT FITS YOUR ARGUMENT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;">A synthesis essay is organized by <strong>ideas, not by texts</strong>. Do not write one paragraph per thinker. Instead, let each body paragraph advance one part of your thesis, calling on whichever thinkers serve it. A reliable shape for this essay:</p>
+        <div style="background:#FDF3E3;border-radius:7px;padding:16px 20px;margin:0 0 8px 0;">
+            <div style="font-size:16px;color:#0E1C42;line-height:1.8;">
+                <strong>Introduction</strong> &mdash; open with the question, then land your thesis.<br />
+                <strong>Body 1</strong> &mdash; your strongest reason, supported by the thinker(s) who back it.<br />
+                <strong>Body 2</strong> &mdash; a second reason, weaving in a different tradition.<br />
+                <strong>Body 3 (counterargument)</strong> &mdash; the strongest view <em>against</em> you, stated fairly, then answered.<br />
+                <strong>Conclusion</strong> &mdash; return to the question and say what your answer asks of a person.
+            </div>
+        </div>
+        <p style="font-size: 15px; color: #6b7a99; line-height: 1.6; margin: 8px 0 0 0;">That counterargument paragraph is the move you have rehearsed in every Quick Write since Week 3 &mdash; state the other side at full strength, then respond. It is what separates a real argument from a one-sided one.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128221; PART 2 &middot; INTEGRATING A QUOTE: FRAME, QUOTE, EXPLAIN</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;">A quote dropped in alone does no work. Surround it with three moves: a <strong>signal phrase</strong> that frames who is speaking and why, the <strong>quotation</strong> itself (introduced with a colon or a comma, per Lessons 7.4 and 6.4), and your <strong>explanation</strong> of how it supports your point. Watch the difference:</p>
+        <div style="background:#FDECEC;border-left:4px solid #C0392B;border-radius:6px;padding:12px 16px;margin:0 0 10px 0;">
+            <div style="font-size:13px;color:#8A1F16;margin-bottom:4px;">DROPPED IN &mdash; the quote floats</div>
+            <div style="font-size:16px;color:#0E1C42;line-height:1.6;">Habits matter a lot. &ldquo;By doing just actions we come to be just.&rdquo; So practice is important.</div>
+        </div>
+        <div style="margin:0 0 6px 0;">
+            <div style="font-size:13px;color:#1A6B3D;margin-bottom:4px;">INTEGRATED &mdash; frame, quote, explain</div>
+            <div class="notebook">
+                <div class="nb-line"><span style="background:#fff;border-radius:3px;padding:0 3px;">Aristotle grounds character in repetition rather than nature:</span> &ldquo;by doing just actions we come to be just.&rdquo; <span style="background:#fff;border-radius:3px;padding:0 3px;">If virtue is built this way, then a person is never simply stuck being who they are &mdash; which is exactly why fear-of-getting-caught cannot be the whole story of why we act well.</span></div>
+            </div>
+        </div>
+        <p style="font-size: 15px; color: #6b7a99; line-height: 1.6; margin: 8px 0 0 0;">The shaded parts are <em>your</em> words. As a rule of thumb, your explanation should be longer than the quote. The quote is the witness; you are the lawyer.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; SPOT THE BETTER INTEGRATION</div>
+            <div class="widget-question">Pick the stronger option in each pair.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1.</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The quote is just pasted next to a claim with no frame and no explanation.">The Gita is about duty. &ldquo;Let right deeds be thy motive, not the fruit which comes from them.&rdquo;</button>
+                    <button data-choice="1" data-fb="Yes. A signal phrase frames it, the colon introduces it, and the writer explains its force.">The Gita locates the good life in the act itself, not its payoff: &ldquo;Let right deeds be thy motive, not the fruit which comes from them.&rdquo; Detachment, here, is not indifference but freedom from the anxiety of outcomes.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2.</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; the writer answers the opposing quote instead of just reporting it.">Glaucon presses the hardest objection &mdash; that we are just &ldquo;not willingly&hellip; but of necessity.&rdquo; Yet this mistakes a beginning for the whole: fear may start us, but habit, as Aristotle shows, can carry us past it.</button>
+                    <button data-choice="1" data-fb="It states the objection but never answers it, so the counterargument falls flat.">Glaucon says people are just &ldquo;not willingly&hellip; but of necessity,&rdquo; and that is an interesting point to consider.</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128172; QUOTING SACRED AND PHILOSOPHICAL TEXTS WITH CARE</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Quote each tradition <strong>accurately and respectfully</strong>, in its own terms. Frame a religious text as that tradition&rsquo;s teaching &mdash; &ldquo;the Qur&rsquo;an describes&hellip;,&rdquo; &ldquo;in the Gospel of Matthew, Jesus teaches&hellip;&rdquo; &mdash; rather than as a claim every reader must share. You can argue <em>with</em> a tradition without misrepresenting it. Copy quotations exactly from your Learning Log or the lesson readings.</div>
+    </div>
+
+    <div style="background: #EAF1EA; border-left: 4px solid #4F6F52; border: 1px solid #CBD8CB; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #4F6F52; margin-bottom: 10px;">&#9999;&#65039; DO THIS NOW &middot; IN YOUR PROJECT DOCUMENT</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65;">Under a heading <strong>Outline</strong>, write one sentence for each paragraph of your essay (intro, three bodies, conclusion), naming which thinker(s) each body paragraph will use. Then, under each body sentence, paste <strong>one exact quotation</strong> you plan to integrate there, copied from your Learning Log. You now have a skeleton with evidence already in place &mdash; drafting is filling it in.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#10145;&#65039; WRITE YOUR DRAFT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">With a thesis (8.2) and an outline-with-evidence (above), you are ready to draft. Open the <strong>Synthesis Essay assignment</strong> for the full requirements, rubric, and submission details, and write your draft this week &mdash; it is due Friday. Next week you revise it and record your VR gallery tour.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Module Project</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 8.3 &middot; Building the Body, Using the Quotes</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

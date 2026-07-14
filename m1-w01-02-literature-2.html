@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 1.2</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.2 &middot; Literature (2 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bhagavad Gita, Ch. II</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.2 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Act, and Let Go</div>
+        <div style="font-size: 16px; color: #666;">The second of three readings from the Bhagavad Gita this week</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">In Lesson 1.1, Krishna argued that the self does not die. Here he uses that claim to answer a practical question: how should a person act?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This is the Gita&rsquo;s best-known teaching: do your duty without acting for the reward. As you read, track how Krishna gets from a claim about what is <em>true</em> (the soul does not die) to a claim about what to <em>do</em> (act without attachment to results).</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Krishna moves from his claim about the soul to his counsel about how to act.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe two different ways readers interpret &ldquo;act without attachment to the fruits&rdquo; and take a position of my own.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; Bhagavad Gita, Chapter II (the turn from the soul to action).</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage once before the lesson below. It continues directly from Lesson 1.1. Numbers in the margin mark every fifth line.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; <em>The Bhagavad Gita</em>, Chapter II (Krishna on action)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.5;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">This Life within all living things, my Prince!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Hides beyond harm; scorn thou to suffer, then,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">For that which cannot suffer. Do thy part!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Be mindful of thy name, and tremble not!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">5</span><span style="">Nought better can betide a martial soul</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Than lawful war; happy the warrior</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">To whom comes joy of battle&mdash;comes, as now,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Glorious and fair, unsought; opening for him</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">A gateway unto Heav'n. But, if thou shunn'st</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">10</span><span style="">This honourable field&mdash;a Kshattriya&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">If, knowing thy duty and thy task, thou bidd'st</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Duty and task go by&mdash;that shall be sin!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">And those to come shall speak thee infamy</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">From age to age; but infamy is worse</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">15</span><span style="">For men of noble blood to bear than death!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The chiefs upon their battle-chariots</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Will deem 'twas fear that drove thee from the fray.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Of those who held thee mighty-souled the scorn</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thou must abide, while all thine enemies</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">20</span><span style="">Will scatter bitter speech of thee, to mock</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The valour which thou hadst; what fate could fall</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">More grievously than this? Either&mdash;being killed&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thou wilt win Swarga's safety, or&mdash;alive</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">And victor&mdash;thou wilt reign an earthly king.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">25</span><span style="">Therefore, arise, thou Son of Kunti! brace</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thine arm for conflict, nerve thy heart to meet&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">As things alike to thee&mdash;pleasure or pain,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Profit or ruin, victory or defeat:</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">So minded, gird thee to the fight, for so</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">30</span><span style="">Thou shalt not sin!</span></div>
+<div style="height:9px;"></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thus far I speak to thee</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">As from the "Sankhya"&mdash;unspiritually&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Hear now the deeper teaching of the Yog,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Which holding, understanding, thou shalt burst</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">35</span><span style="">Thy Karmabandh, the bondage of wrought deeds.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Here shall no end be hindered, no hope marred,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">No loss be feared: faith&mdash;yea, a little faith&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Shall save thee from the anguish of thy dread.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Here, Glory of the Kurus! shines one rule&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">40</span><span style="">One steadfast rule&mdash;while shifting souls have laws</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Many and hard. Specious, but wrongful deem</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The speech of those ill-taught ones who extol</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The letter of their Vedas, saying, "This</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Is all we have, or need;" being weak at heart</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">45</span><span style="">With wants, seekers of Heaven: which comes&mdash;they say&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">As "fruit of good deeds done;" promising men</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Much profit in new births for works of faith;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">In various rites abounding; following whereon</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Large merit shall accrue towards wealth and power;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">50</span><span style="">Albeit, who wealth and power do most desire</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Least fixity of soul have such, least hold</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">On heavenly meditation. Much these teach,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">From Veds, concerning the "three qualities;"</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">But thou, be free of the "three qualities,"</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">55</span><span style="">Free of the "pairs of opposites,"[FN#2] and free</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">From that sad righteousness which calculates;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Self-ruled, Arjuna! simple, satisfied![FN#3]</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Look! like as when a tank pours water forth</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">To suit all needs, so do these Brahmans draw</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">60</span><span style="">Text for all wants from tank of Holy Writ.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">But thou, want not! ask not! Find full reward</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Of doing right in right! Let right deeds be</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thy motive, not the fruit which comes from them.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">And live in action! Labour! Make thine acts</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">65</span><span style="">Thy piety, casting all self aside,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Contemning gain and merit; equable</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">In good or evil: equability</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Is Yog, is piety!</span></div>
+<div style="height:9px;"></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Yet, the right act</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">70</span><span style="">Is less, far less, than the right-thinking mind.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Seek refuge in thy soul; have there thy heaven!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Scorn them that follow virtue for her gifts!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The mind of pure devotion&mdash;even here&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Casts equally aside good deeds and bad,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">75</span><span style="">Passing above them. Unto pure devotion</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Devote thyself: with perfect meditation</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Comes perfect act, and the right-hearted rise&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">More certainly because they seek no gain&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Forth from the bands of body, step by step,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">80</span><span style="">To highest seats of bliss. When thy firm soul</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Hath shaken off those tangled oracles</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Which ignorantly guide, then shall it soar</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">To high neglect of what's denied or said,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">This way or that way, in doctrinal writ.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">85</span><span style="">Troubled no longer by the priestly lore,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Safe shall it live, and sure; steadfastly bent</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">On meditation. This is Yog&mdash;and Peace!</span></div>
+
+                <div style="font-size:13px;color:#888;margin-top:16px;padding-top:10px;border-top:1px solid #EEF1F8;">From <em>The Song Celestial, or Bhagavad-G&icirc;t&acirc;</em>, translated from the Sanskrit by Sir Edwin Arnold (1885). Public domain.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; FROM THE SOUL TO ACTION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When you do something difficult and right but it goes unrewarded &mdash; no credit, no win, no thanks &mdash; how does that usually sit with you? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That reaction is common — for most people the result is a big part of the motive. Krishna&rsquo;s teaching is aimed at exactly this feeling.">It bothers me &mdash; the result matters</button>
+                <button data-response="That is close to what Krishna recommends: treating the action itself, done well, as the point.">It&rsquo;s fine &mdash; doing it right is enough</button>
+                <button data-response="A practical answer. Notice that it still ties the value of the act to an outcome — being noticed. Krishna questions that link.">It depends on whether anyone notices</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">In the previous lesson, Krishna argued that the self does not die. Here he uses that claim to answer a practical question: how should Arjuna act? His reasoning is straightforward. If the outcomes of action &mdash; winning, losing, even dying &mdash; cannot change what a person fundamentally is, then Arjuna should do his duty for its own sake rather than for what it might gain him.</p>
+
+        <div style="margin:14px 0;">
+            <div style="font-size:11px;color:#7a5b1e;margin-bottom:8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">But thou, want not! ask not! Find full reward</div>
+                <div class="pm-line" style="font-style:italic;">Of doing right in right! Let right deeds be</div>
+                <div class="pm-line" style="font-style:italic;">Thy motive, not the fruit which comes from them.</div>
+                <div class="pm-line" style="font-style:italic;">And live in action! Labour! Make thine acts</div>
+                <div class="pm-line" style="font-style:italic;">Thy piety, casting all self aside&hellip;</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Krishna&rsquo;s point is not that results do not exist, but that they should not be the motive. He is describing a kind of discipline: act with full effort, and stay steady &mdash; <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="Calm and even; not disturbed by good or bad outcomes.">equable</span> &mdash; about whether the action succeeds or fails.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; TWO WAYS TO READ IT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This teaching can be read in more than one way, and careful readers disagree. Read one way, it offers relief: if you do what is right and let go of the outcome, you are freed from the anxiety and disappointment that come with chasing results. Read another way, it is troubling: in this scene Krishna is using the teaching to convince Arjuna to fight a war against his own relatives, and detachment from outcomes can make it easier to do something harmful. The poem does not settle this. It gives the relieving reading in Krishna&rsquo;s own voice and leaves the harder question to the reader. It is also worth remembering what Krishna wants here: he is not a neutral teacher but someone trying to move Arjuna from refusal to action.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. &ldquo;Let right deeds be thy motive, not the fruit which comes from them&rdquo; most nearly means&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Krishna does not tell Arjuna to stop acting — he tells him to keep acting, just for a different reason.">stop acting until you are sure of the result</button>
+                    <button data-choice="1" data-fb="Yes. The reason for acting should be that the act is right, not the reward it brings.">do what is right without acting for the reward</button>
+                    <button data-choice="2" data-fb="The opposite — he says the fruit (reward) should NOT be the motive.">act only when the reward is guaranteed</button>
+                    <button data-choice="3" data-fb="Results still happen; Krishna&rsquo;s point is about motive, not about ignoring reality.">pretend results do not exist</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">2. Krishna tells Arjuna to stay &ldquo;equable / In good or evil.&rdquo; <em>Equable</em> here describes a person who&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Not quite — equable is about steadiness, not strong feeling.">reacts strongly to every result</button>
+                    <button data-choice="1" data-fb="Equable does not mean uninvolved; Krishna still wants full effort.">refuses to act at all</button>
+                    <button data-choice="2" data-fb="It is about emotional steadiness, not physical strength.">is physically powerful in battle</button>
+                    <button data-choice="3" data-fb="Yes. Equable means even and steady &mdash; the same whether things go well or badly.">stays steady whether things go well or badly</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">3. In this scene, Krishna&rsquo;s purpose in giving this teaching is to&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes. Krishna is trying to move Arjuna from refusing to act back into the battle.">persuade Arjuna to stop refusing and act</button>
+                    <button data-choice="1" data-fb="He is not neutral here; he wants a specific outcome from Arjuna.">give neutral information with no goal</button>
+                    <button data-choice="2" data-fb="There is no suggestion that Arjuna should leave; Krishna argues the opposite.">convince Arjuna to leave the battlefield</button>
+                    <button data-choice="3" data-fb="Krishna is speaking to Arjuna alone, not addressing the armies.">deliver a speech to both armies</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 1.2</em>, answer in three or four sentences: <strong>Is Krishna&rsquo;s teaching mainly freeing, or mainly troubling?</strong> Use one line from the passage to support your view. You will reuse this in your Quick Write and on Project Day.
+                <details style="background: #F4F6FA; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 16px; margin: 12px 0 4px 18px;">
+                    <summary style="font-size: 15px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; How readers have answered (read after you write)</summary>
+                    <div style="font-size: 16px; color: #1a2340; line-height: 1.6; margin-top: 10px;">Readers who find it <strong>freeing</strong> point to the relief it offers: do what is right, release the outcome, and you are no longer ruled by anxiety about results. Readers who find it <strong>troubling</strong> point to the situation: the teaching is being used to send Arjuna into a war against his own family, and detachment from outcomes can quiet a conscience that maybe should not be quiet. Both readings have support in the text. Your job is to decide which you find stronger, and why.</div>
+                </details>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#9999;&#65039; CONNECTS TO YOUR QUICK WRITE</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">This teaching is the center of what Arjuna has to make sense of. Your Quick Write (Arjuna&rsquo;s Letter, due Friday) asks what Krishna taught and whether it changed how Arjuna feels &mdash; so the entry you just wrote is useful material. Keep it.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; ONE THING TO CARRY FORWARD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Notice the shape of Krishna&rsquo;s argument: first a claim about what is true (the soul does not die), then a claim about what to do (act without attachment). Many strong arguments move this way &mdash; from a premise to its practical consequence &mdash; and yours can too. The question of how to act when you cannot control the result will return later this year in Stoic writing and in stories about endurance.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.2 &middot; Act, and Let Go</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

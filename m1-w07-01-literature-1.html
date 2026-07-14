@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 7.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 7.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Aristotle, <em>Nicomachean Ethics</em> &mdash; Book I</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 7.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">What Is Happiness For?</div>
+        <div style="font-size: 16px; color: #666;">The first of three readings from Aristotle &mdash; the module&rsquo;s last thinker</div>
+    </div>
+
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">Three literature lessons from Aristotle (happiness today, then virtue as habit, then the life of the mind), a grammar &amp; vocabulary lesson, and Friday Project Day. Aristotle is the <strong>seventh and final thinker</strong> in this module &mdash; after this week you write the essay. This week&rsquo;s <strong>Quick Write</strong> is assigned now and <strong>due Friday</strong>, and you have two VR activities. Keep your notes in your <strong>Module 1 folder</strong>.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Almost everyone says they want to be happy. Aristotle asks the harder question underneath: what is happiness <em>for</em>?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Aristotle was Plato&rsquo;s student, but he works differently. Instead of a story like the Cave, he reasons step by step. He notices that we choose most things for the sake of something else &mdash; money for what it buys, exercise for health &mdash; and asks whether there is anything we choose only for itself. His name for that one final goal is <em>eudaimonia</em>, usually translated &ldquo;happiness,&rdquo; though it means something closer to a whole life lived well.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what Aristotle means by happiness as the &ldquo;final&rdquo; and &ldquo;self-sufficient&rdquo; good.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">describe Aristotle&rsquo;s &ldquo;function&rdquo; argument &mdash; that a good human life is the soul working well over a whole life, not a single good day.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; from the <em>Nicomachean Ethics</em>, Book I.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage once before the lesson below. The English is older, so read slowly; the three short paragraphs each carry one idea.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; on happiness (<em>Nicomachean Ethics</em>, Book I)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">Now that which is an object of pursuit in itself we call more final than that which is so with a view to something else&hellip; and so by the term &ldquo;absolutely final,&rdquo; we denote that which is an object of choice always in itself, and never with a view to any other.</p>
+                <p style="margin:0 0 12px 0;">And of this nature Happiness is mostly thought to be, for this we choose always for its own sake, and never with a view to anything further: whereas honour, pleasure, intellect&hellip; we choose&hellip; also with a view to happiness, conceiving that through their instrumentality we shall be happy: but no man chooses happiness with a view to them, nor in fact with a view to any other thing whatsoever.</p>
+                <p style="margin:0 0 12px 0;">&hellip; we define that to be self-sufficient &ldquo;which taken alone makes life choice-worthy, and to be in want of nothing;&rdquo; now of such kind we think Happiness to be&hellip; So then Happiness is manifestly something final and self-sufficient, being the end of all things which are and may be done.</p>
+                <p style="margin:0 0 12px 0;">If then the work of Man is a working of the soul&hellip; the Good of Man comes to be &ldquo;a working of the Soul in the way of Excellence,&rdquo; or, if Excellence admits of degrees, in the way of the best and most perfect Excellence. And we must add, in a complete life: for as it is not one swallow or one fine day that makes a spring, so it is not one day or a short time that makes a man blessed and happy.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Aristotle, <em>Nicomachean Ethics</em>, Book I (D. P. Chase translation). Public domain English text. Excerpts.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Aristotle (384&ndash;322 BCE) studied for about twenty years under Plato in Athens and later tutored the young Alexander the Great. The <em>Nicomachean Ethics</em> is thought to come from his lectures &mdash; it reads like careful, working-through argument rather than polished prose, and is named for Nicomachus, probably his son. Where Plato pointed beyond the everyday world toward eternal truths, Aristotle keeps his eye on this life: what an actual good human life consists of, and how a person builds one.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE GOAL BEHIND THE GOALS</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think of something you want this year. Now ask <em>why</em> you want it &mdash; and keep asking &ldquo;why&rdquo; to each answer. Where does the chain seem to stop? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That&rsquo;s Aristotle&rsquo;s move exactly. He thinks the chain stops at one thing chosen only for itself &mdash; happiness.">It stops at &ldquo;because it would make my life good&rdquo;</button>
+                <button data-response="Useful honesty &mdash; Aristotle would say those are chosen for the sake of something further, and he wants to find what&rsquo;s at the end.">It stops at money or success</button>
+                <button data-response="That&rsquo;s the puzzle Aristotle is chasing. He argues there has to be a final stopping point, or we&rsquo;d want nothing at all.">It doesn&rsquo;t seem to stop</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Aristotle starts from a plain observation: almost everything we pursue, we pursue for the sake of something else. You study for a grade, the grade for a diploma, the diploma for a job, the job for a life you want. But that chain cannot run forever, or nothing would ever be worth wanting. So there must be at least one thing we choose <strong>only for itself</strong> and never as a means to something else. That, he argues, is what people are really naming when they say <em>happiness</em>. It is &ldquo;final&rdquo; because we never want it in order to get something further, and &ldquo;self-sufficient&rdquo; because, as he puts it, it is what &ldquo;taken alone makes life choice-worthy, and to be in want of nothing.&rdquo; Notice he is not saying happiness is a good <em>mood</em>. He is saying it is the target the whole of a life points toward.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; HAPPINESS AS AN ACTIVITY, NOT A FEELING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Here Aristotle makes a turn that still surprises readers. He asks what the &ldquo;work&rdquo; or characteristic activity of a human being is &mdash; the thing a person does that nothing else does &mdash; and answers that it is the soul reasoning and acting well. So the good life is not a feeling that happens to you; it is <strong>an activity you perform</strong>: &ldquo;a working of the Soul in the way of Excellence.&rdquo; A harpist&rsquo;s job is to play the harp, a good harpist&rsquo;s job is to play it <em>well</em>; a human being&rsquo;s job is to live, and a good human being&rsquo;s job is to live <em>well</em>, reasoning and choosing well over time. And he adds a quiet, demanding condition: this has to be measured across &ldquo;a complete life,&rdquo; because &ldquo;it is not one swallow or one fine day that makes a spring.&rdquo; One good afternoon, or one good year, does not settle whether a life went well. That is a high bar &mdash; and it sets up everything in the next two lessons, where Aristotle explains how a person actually becomes the kind of soul that works well.</p>
+
+        <div style="margin:14px 0;">
+            <div style="font-size:11px;color:#7a5b1e;margin-bottom:8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">for as it is not one swallow or one fine day that makes a spring,</div>
+                <div class="pm-line" style="font-style:italic;">so it is not one day or a short time that makes a man blessed and happy.</div>
+            </div>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. When Aristotle calls happiness &ldquo;final,&rdquo; he means&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He means the opposite &mdash; it&rsquo;s never chosen for the sake of anything else.">it is the last thing we get in life</button>
+                    <button data-choice="1" data-fb="Yes. We choose everything else for its sake, but we never choose it for the sake of anything further.">we choose it only for itself, never as a means to something else</button>
+                    <button data-choice="2" data-fb="Aristotle is talking about what we pursue for its own sake, not about death.">it comes at the end of life</button>
+                    <button data-choice="3" data-fb="He says the reverse &mdash; honour and pleasure are chosen partly for the sake of happiness.">it is the same as honour and pleasure</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">2. For Aristotle, happiness is best described as&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He specifically argues it is more than a feeling that comes and goes.">a pleasant mood</button>
+                    <button data-choice="1" data-fb="Luck matters to him a little, but the core is something you do, not something handed to you.">good luck</button>
+                    <button data-choice="2" data-fb="Yes &mdash; &lsquo;a working of the Soul in the way of Excellence,&rsquo; an activity done well.">an activity: the soul working well</button>
+                    <button data-choice="3" data-fb="That&rsquo;s closer to what he&rsquo;s arguing against &mdash; he ties happiness to how you live, not what you own.">a large amount of money</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Why does Aristotle say &ldquo;one swallow does not make a spring&rdquo;?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It&rsquo;s not about birds or weather &mdash; it&rsquo;s an image for time.">because he is describing the seasons</button>
+                    <button data-choice="1" data-fb="He isn&rsquo;t ranking pleasures here; he&rsquo;s talking about how long happiness takes to judge.">to say pleasure is unimportant</button>
+                    <button data-choice="2" data-fb="The point is the reverse &mdash; a good life is hard to fake in a single moment.">to say happiness is easy to reach</button>
+                    <button data-choice="3" data-fb="Yes. A good life has to be judged over a whole life, not from one good day.">because happiness must be measured across a complete life</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 7.1</em>, answer in three or four sentences: <strong>Is Aristotle right that happiness is an activity &mdash; the soul working well over a whole life &mdash; rather than a feeling? Where does that match or clash with how people use the word &ldquo;happy&rdquo; today?</strong> Quote one line from the passage. Save it for Project Day.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; THIS WEEK'S QUICK WRITE</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">This week&rsquo;s Quick Write (due Friday) builds on the next lesson&rsquo;s idea &mdash; that we become good by practice &mdash; and asks you to argue how a person actually becomes the kind of soul Aristotle describes. Open the assignment page now so the question is in view as you read this week.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Set Aristotle&rsquo;s &ldquo;final good&rdquo; next to the others you have read. The Gita urged acting without attachment to the result; the Buddhist parables traced suffering to craving; Confucius pointed to the cultivated person; Plato pointed to the climb toward truth. Aristotle gives this whole module its title question a direct, this-worldly answer: a good life is the soul reasoning and acting well, all the way through. In the next lesson, he explains the one thing that makes it possible &mdash; habit.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 7.1 &middot; What Is Happiness For?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

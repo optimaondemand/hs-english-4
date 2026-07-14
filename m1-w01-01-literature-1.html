@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 1.1</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .parchment { background:#f4e8cd; background-image:radial-gradient(ellipse at 50% 38%, #f8f0d8 0%, #efe1bd 72%, #e4d2a6 100%); border:1px solid #cdb583; border-radius:6px; padding:16px 22px 18px; box-shadow:0 1px 5px rgba(90,70,25,.18), inset 0 0 34px rgba(150,120,55,.13); }
+    .parchment .pm-line { font-size:17px; line-height:1.85; color:#3f3115; font-family:Georgia,'Times New Roman',serif; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.1 &middot; Literature (1 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bhagavad Gita, Ch. II</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.1 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Pause Before the Battle</div>
+        <div style="font-size: 16px; color: #666;">The first of three readings from the Bhagavad Gita this week</div>
+    </div>
+
+    <!-- This week at a glance -->
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128197; YOUR WEEK AT A GLANCE</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">Three literature lessons on the Gita (today and the next two days), then a grammar &amp; vocabulary lesson, and a Friday <strong>Project Day</strong>. This week&rsquo;s writing is the <strong>Quick Write: Arjuna&rsquo;s Letter</strong> &mdash; it is assigned now and <strong>due Friday on Project Day</strong>, so begin thinking about it now. You also have two short VR activities this week (see your assignments list). Keep all of your notes in your <strong>Module 1 folder</strong> in OneDrive (set up in <em>Module 1 Setup</em>).</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The Bhagavad Gita opens with a warrior who refuses to fight. Today&rsquo;s lesson covers his refusal and the first part of Krishna&rsquo;s reply &mdash; a claim about what in a person does not die.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This week you read the Bhagavad Gita, a conversation between the warrior Arjuna and his charioteer, Krishna. In this first lesson, focus on two things: the idea Krishna argues for, and the comparison he uses to make that idea clear.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe Arjuna&rsquo;s crisis and Krishna&rsquo;s first response to it.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Krishna&rsquo;s worn-robes image makes an abstract claim about the soul concrete and persuasive.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The reading is on this page, in <strong>The Reading</strong> below &mdash; Bhagavad Gita, Chapter II (opening of Krishna&rsquo;s teaching).</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 1 Learning Log</strong> (the Word document in your OneDrive folder) open and ready &mdash; you will write two short entries in it today.</div>
+        </div>
+    </div>
+
+    <!-- THE READING -->
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage once, straight through, before the lesson below. This is the opening of Krishna&rsquo;s answer to Arjuna in Chapter II. Numbers in the margin mark every fifth line.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; <em>The Bhagavad Gita</em>, Chapter II (Krishna speaks)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.5;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thou grievest where no grief should be! thou speak'st</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Words lacking wisdom! for the wise in heart</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Mourn not for those that live, nor those that die.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Nor I, nor thou, nor any one of these,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">5</span><span style="">Ever was not, nor ever will not be,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">For ever and for ever afterwards.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">All, that doth live, lives always! To man's frame</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">As there come infancy and youth and age,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">So come there raisings-up and layings-down</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">10</span><span style="">Of other and of other life-abodes,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Which the wise know, and fear not. This that irks&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thy sense-life, thrilling to the elements&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Bringing thee heat and cold, sorrows and joys,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">'Tis brief and mutable! Bear with it, Prince!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">15</span><span style="">As the wise bear. The soul which is not moved,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The soul that with a strong and constant calm</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Takes sorrow and takes joy indifferently,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Lives in the life undying! That which is</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Can never cease to be; that which is not</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">20</span><span style="">Will not exist. To see this truth of both</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Is theirs who part essence from accident,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Substance from shadow. Indestructible,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Learn thou! the Life is, spreading life through all;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">It cannot anywhere, by any means,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">25</span><span style="">Be anywise diminished, stayed, or changed.</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">But for these fleeting frames which it informs</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">With spirit deathless, endless, infinite,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">They perish. Let them perish, Prince! and fight!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">He who shall say, "Lo! I have slain a man!"</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">30</span><span style="">He who shall think, "Lo! I am slain!" those both</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Know naught! Life cannot slay. Life is not slain!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Never the spirit was born; the spirit shall cease to be never;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Never was time it was not; End and Beginning are dreams!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Birthless and deathless and changeless remaineth the spirit for ever;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">35</span><span style="">Death hath not touched it at all, dead though the house of it seems!</span></div>
+<div style="height:9px;"></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Who knoweth it exhaustless, self-sustained,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Immortal, indestructible,&mdash;shall such</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Say, "I have killed a man, or caused to kill?"</span></div>
+<div style="height:9px;"></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Nay, but as when one layeth</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">40</span><span style="padding-left:28px;">His worn-out robes away,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">And taking new ones, sayeth,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="padding-left:28px;">"These will I wear to-day!"</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">So putteth by the spirit</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="padding-left:28px;">Lightly its garb of flesh,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">45</span><span style="">And passeth to inherit</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="padding-left:28px;">A residence afresh.</span></div>
+<div style="height:9px;"></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">I say to thee weapons reach not the Life;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Flame burns it not, waters cannot o'erwhelm,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Nor dry winds wither it. Impenetrable,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">50</span><span style="">Unentered, unassailed, unharmed, untouched,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Immortal, all-arriving, stable, sure,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Invisible, ineffable, by word</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">And thought uncompassed, ever all itself,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Thus is the Soul declared! How wilt thou, then,&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">55</span><span style="">Knowing it so,&mdash;grieve when thou shouldst not grieve?</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">How, if thou hearest that the man new-dead</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Is, like the man new-born, still living man&mdash;</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">One same, existent Spirit&mdash;wilt thou weep?</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">The end of birth is death; the end of death</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">60</span><span style="">Is birth: this is ordained! and mournest thou,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Chief of the stalwart arm! for what befalls</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Which could not otherwise befall? The birth</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Of living things comes unperceived; the death</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Comes unperceived; between them, beings perceive:</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">65</span><span style="">What is there sorrowful herein, dear Prince?</span></div>
+<div style="height:9px;"></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Wonderful, wistful, to contemplate!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="padding-left:28px;">Difficult, doubtful, to speak upon!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="">Strange and great for tongue to relate,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="padding-left:28px;">Mystical hearing for every one!</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;">70</span><span style="">Nor wotteth man this, what a marvel it is,</span></div>
+<div style="display:flex;gap:12px;"><span style="min-width:26px;color:#aaa;font-size:11px;text-align:right;"></span><span style="padding-left:28px;">When seeing, and saying, and hearing are done!</span></div>
+
+                <div style="font-size:13px;color:#888;margin-top:16px;padding-top:10px;border-top:1px solid #EEF1F8;">From <em>The Song Celestial, or Bhagavad-G&icirc;t&acirc;</em>, translated from the Sanskrit by Sir Edwin Arnold (1885). Public domain.</div>
+            </div>
+        </details>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A WARRIOR WHO WILL NOT FIGHT</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think of something you trained hard for with no promise it would pay off &mdash; a tryout, an audition, a test, a first real attempt at something that mattered. In the last moment before it began, what was loudest in your head? <em>(No wrong answer &mdash; just check in with yourself.)</em></div>
+            <div class="widget-options">
+                <button data-response="Outcome-focused — your eyes are on the result. Hold onto that feeling. Krishna is about to argue that this exact grip is the one worth loosening.">&#127919; &ldquo;Did I do enough to win this?&rdquo;</button>
+                <button data-response="Process-focused — your attention is on the action itself, not the payoff. That instinct is surprisingly close to what Krishna will call a discipline.">&#129504; &ldquo;Just do what I trained to do.&rdquo;</button>
+                <button data-response="Fear of the outcome — and of how others will see it. Arjuna feels a heavier version of this same fear. Watch how Krishna meets it head-on rather than soothing it.">&#128556; &ldquo;What if I fail and look foolish?&rdquo;</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The Bhagavad Gita is set on a battlefield, just before a war begins. Arjuna, a warrior, asks his charioteer to drive into the space between the two armies so he can see who he will be fighting. He recognizes cousins, teachers, and friends among the opposing soldiers, and he decides he cannot fight them &mdash; he sets down his bow. His charioteer is Krishna, who in this poem is the god Vishnu in human form. Krishna answers him, and he does not begin with battle strategy or with reassurance. He begins with what Arjuna fears most, death, and makes a claim about it: the body can be killed, but the self that lives in the body cannot.</p>
+
+        <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 16px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#128214; FROM THE TEXT</div>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.85; font-style: italic;">
+                Never the spirit was born; the spirit shall cease to be never;<br />
+                Never was time it was not; End and Beginning are dreams!<br />
+                Birthless and deathless and changeless remaineth the spirit for ever;<br />
+                Death hath not touched it at all, dead though the house of it seems!
+            </div>
+        </div>
+
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">The Gita is a 700-verse dialogue set inside the <em>Mahabharata</em>, the enormous epic of ancient India, composed and gathered over roughly 400 BCE to 400 CE. In the Hindu tradition, Krishna is an <em>avatar</em> &mdash; an earthly incarnation &mdash; of Vishnu, the great god who preserves and protects the world. So this scene is not a wise friend offering advice; it is a warrior being counseled by Vishnu himself, in the human form of Krishna, on the edge of battle. Knowing the Gita sits inside a much larger war epic also helps explain why Krishna and Arjuna come to be talking there in the first place.</div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE IMAGE THAT CARRIES THE IDEA</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Krishna does not state the idea only in the abstract. He gives Arjuna a comparison: the soul changing bodies is like a person changing clothes.</p>
+
+        <div style="margin: 14px 0;">
+            <div style="font-size: 11px; color: #7a5b1e; margin-bottom: 8px;">&#128220; FROM THE TEXT &middot; AS IT WAS WRITTEN</div>
+            <div class="parchment">
+                <div class="pm-line" style="font-style:italic;">Nay, but as when one layeth</div>
+                <div class="pm-line" style="font-style:italic; padding-left:24px;">His worn-out robes away,</div>
+                <div class="pm-line" style="font-style:italic;">And taking new ones, sayeth,</div>
+                <div class="pm-line" style="font-style:italic; padding-left:24px;">&ldquo;These will I wear to-day!&rdquo;</div>
+                <div class="pm-line" style="font-style:italic;">So putteth by the spirit</div>
+                <div class="pm-line" style="font-style:italic; padding-left:24px;">Lightly its garb of flesh,</div>
+                <div class="pm-line" style="font-style:italic;">And passeth to inherit</div>
+                <div class="pm-line" style="font-style:italic; padding-left:24px;">A residence afresh.</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">A claim that is hard to picture &mdash; that the part of you that matters outlasts your body &mdash; is made easier to grasp by comparing death to an everyday action: taking off worn-out clothes and putting on new ones. The soul does not end; it moves to a new body. A few lines later, Krishna lists the soul&rsquo;s qualities one after another &mdash; &ldquo;Impenetrable, / Unentered, unassailed, unharmed, untouched, / Immortal, all-arriving, stable, sure, / Invisible, <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="Too great or sacred to be put into words.">ineffable</span>.&rdquo; The repetition keeps the focus on one point: nothing can reach or harm it.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; READ LIKE A CLOSE READER</div>
+            <div class="widget-question">Three questions about how this passage is built. Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. In the worn-robes passage, what is being compared to what?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Look again at who &lsquo;putteth by&rsquo; the robes — it is not the body doing the changing.">The body to a warrior, the soul to a king</button>
+                    <button data-choice="1" data-fb="Sleep and waking never appear here — the image is about clothing.">Death to sleep, life to waking</button>
+                    <button data-choice="2" data-fb="Yes. The wearer (the soul) lays aside old robes (the body) and puts on new ones. Death becomes a change of clothing.">The soul to a person changing clothes; the body to the worn-out robes</button>
+                    <button data-choice="3" data-fb="The image is about the soul and the body, not the two speakers.">Arjuna to Krishna; the battle to a game</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. Which line most directly states Krishna&rsquo;s claim that the self does not die?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Right. &lsquo;Birthless and deathless and changeless&rsquo; — the soul is never born and never dies.">&ldquo;Never the spirit was born; the spirit shall cease to be never.&rdquo;</button>
+                    <button data-choice="1" data-fb="That is the robe image — a comparison, not the direct claim.">&ldquo;So putteth by the spirit / Lightly its garb of flesh.&rdquo;</button>
+                    <button data-choice="2" data-fb="This describes the body&rsquo;s suffering, not the soul&rsquo;s deathlessness.">&ldquo;Bringing thee heat and cold, sorrows and joys.&rdquo;</button>
+                    <button data-choice="3" data-fb="This is Krishna&rsquo;s rebuke to Arjuna, not the claim about the soul.">&ldquo;Thou grievest where no grief should be.&rdquo;</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. &ldquo;Impenetrable, / Unentered, unassailed, unharmed, untouched&rdquo; &mdash; piling these words up creates an effect of&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The repetition is insistent, not confused — every word points the same way.">confusion and doubt</button>
+                    <button data-choice="1" data-fb="The words describe what CANNOT happen to the soul, the reverse of pain.">physical pain</button>
+                    <button data-choice="2" data-fb="The piled words slow the reader down; they are not about speed.">the speed of battle</button>
+                    <button data-choice="3" data-fb="Right. The accumulation hammers a single point: nothing can reach the soul.">the soul&rsquo;s total invulnerability</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #CBD8CB; border-left: 4px solid #4F6F52; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #4F6F52;">&#9654;</span>&nbsp; Write it down: in your Learning Log</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Open your <strong>Module 1 Learning Log</strong> and, under a heading <em>Lesson 1.1</em>, answer in three or four sentences: <strong>Does Krishna&rsquo;s worn-robes image actually make death less frightening &mdash; or does it dodge the fear instead of facing it?</strong> Quote one phrase from the passage in your answer. You will reuse this thinking on Friday.
+            </div>
+        </details>
+    </div>
+
+    <!-- What you'll do next -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT'S COMING THIS WEEK</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#9999;&#65039;</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quick Write: Arjuna&rsquo;s Letter</strong> &mdash; assigned now, due Friday</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">By Friday you will write a short letter in Arjuna&rsquo;s voice about what Krishna taught him and whether it changed how he feels. Open the assignment page now and read it, then keep it in mind as you read this week. You&rsquo;ll submit it on Project Day.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#128218;</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lessons 1.2 and 1.3</strong> continue the Gita</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Next we follow Krishna from the deathless soul to his counsel about how to <em>act</em> &mdash; and then to his portrait of the person who has found peace.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap-up -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHERE THIS GOES</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This scene introduces two threads the course returns to: a question about <strong>origins</strong> &mdash; what in a person does not begin or end &mdash; and the relationship between a <strong>creator and what it creates</strong>, here a person questioning God about duty and death. You will meet related questions in other texts this year. One thing to take into your own writing: Krishna makes a difficult idea easier to understand by tying it to a familiar comparison. That technique works in essays, not just poems.</p>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.1 &middot; The Pause Before the Battle</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

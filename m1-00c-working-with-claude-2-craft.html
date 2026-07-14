@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Working with Claude (2): Prompting, Records, and Checking</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; text-align: left; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .codey { background: #0E1C42; border-radius: 8px; padding: 14px 18px; font-family: Consolas, Monaco, monospace; font-size: 14px; color: #cfe8f5; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Start Here &middot; Step 3</div>
+        <div style="font-size: 17px; color: #0e1c42;">Working with Claude (2 of 2)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Focus</div>
+        <div style="font-size: 17px; color: #0e1c42;">Prompting, records, checking</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Type</div>
+        <div style="font-size: 17px; color: #0e1c42;">Orientation (no assignment)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Course Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<!-- ===== BODY ===== -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Orientation</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Four Habits That Make AI Useful and Honest</div>
+        <div style="font-size: 16px; color: #666;">Ask well, keep records, use it lean, and verify everything.</div>
+    </div>
+
+    <!-- HABIT 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#9997;&#65039; HABIT 1 &middot; WRITE A GOOD PROMPT</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65; margin-bottom: 14px;">A vague request gets a vague, generic answer. A specific one gets something you can actually use. A strong prompt usually has four parts:</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+            <div style="flex: 1; min-width: 230px; background: #FAFBFD; border: 1px solid #D0D9E8; border-top: 3px solid #3B4E8C; border-radius: 8px; padding: 12px 16px;">
+                <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 4px;">ROLE / CONTEXT</div>
+                <div style="font-size: 15px; color: #1a2340; line-height: 1.55;">Who you are and what you are doing. &ldquo;I am a 12th grader comparing the Gita and Aristotle on duty.&rdquo;</div>
+            </div>
+            <div style="flex: 1; min-width: 230px; background: #FAFBFD; border: 1px solid #D0D9E8; border-top: 3px solid #3B4E8C; border-radius: 8px; padding: 12px 16px;">
+                <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 4px;">THE TASK</div>
+                <div style="font-size: 15px; color: #1a2340; line-height: 1.55;">Exactly what you want it to do. &ldquo;Explain this sentence,&rdquo; not &ldquo;help with Plato.&rdquo;</div>
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px;">
+            <div style="flex: 1; min-width: 230px; background: #FAFBFD; border: 1px solid #D0D9E8; border-top: 3px solid #3B4E8C; border-radius: 8px; padding: 12px 16px;">
+                <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 4px;">THE MATERIAL</div>
+                <div style="font-size: 15px; color: #1a2340; line-height: 1.55;">Give it the actual passage or your actual notes, so it works from your reading, not a guess.</div>
+            </div>
+            <div style="flex: 1; min-width: 230px; background: #FAFBFD; border: 1px solid #D0D9E8; border-top: 3px solid #3B4E8C; border-radius: 8px; padding: 12px 16px;">
+                <div style="font-size: 11px; color: #3B4E8C; margin-bottom: 4px;">THE LIMITS</div>
+                <div style="font-size: 15px; color: #1a2340; line-height: 1.55;">What you do NOT want. &ldquo;Do not rewrite it; just point to the problem.&rdquo; &ldquo;Two sentences, plain words.&rdquo;</div>
+            </div>
+        </div>
+        <div style="margin-top: 14px;" class="codey">WEAK: &nbsp;Help me with my pitch.<br />STRONG: I am a senior building an investor pitch for an app that helps new students find study groups. Here is my one-sentence description. Ask me three questions an investor would ask about the PROBLEM it solves. Do not suggest slides or wording.</div>
+    </div>
+
+    <!-- WIDGET: pick the strong prompt -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#129504; CHECK THE HABIT &middot; UNGRADED</div>
+        <div class="widget-question">You want help with a hard passage in Plato&rsquo;s cave allegory. Which prompt will get the most useful answer?</div>
+        <div class="widget-row" data-correct="b">
+            <div class="widget-options">
+                <button data-choice="a" data-fb="It names the text, but there is no task, no passage, and no limit. You will get a generic lecture on Plato instead of help with your sentence.">Explain Plato&rsquo;s allegory of the cave</button>
+                <button data-choice="b" data-fb="Right. It has who you are, one clear task, the actual sentence, and a limit that keeps the interpreting yours.">I am a 12th grader close-reading the cave allegory. Here is the sentence that loses me: [pasted]. Explain what the &ldquo;shadows&rdquo; are in this sentence in two plain sentences. Do not tell me what the whole allegory means.</button>
+                <button data-choice="c" data-fb="Close: it gives context and material. But asking for the meaning of the whole passage hands over the interpretive work the lesson is asking of you.">I am a 12th grader and this passage confuses me: [pasted]. What does it mean and what should I say about it?</button>
+                <button data-choice="d" data-fb="Specific, but it asks for your reaction to be generated. What you find striking is the one thing Claude cannot know.">Read the cave allegory and tell me which line I should find most striking, in one sentence</button>
+            </div>
+        </div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- HABIT 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128221; HABIT 2 &middot; KEEP A RECORD (THE AI-USE LOG)</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65; margin-bottom: 14px;">Whenever you use Claude on graded work, keep a short, honest log. It protects you (it shows the work is yours) and it makes you notice how you are actually using the tool. Four columns are enough:</div>
+        <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #1a2340;">
+            <tr style="background: #0E1C42; color: #ffffff;">
+                <td style="padding: 8px 10px;">What I asked</td>
+                <td style="padding: 8px 10px;">What it gave me</td>
+                <td style="padding: 8px 10px;">What I kept</td>
+                <td style="padding: 8px 10px;">What was wrong</td>
+            </tr>
+            <tr style="border: 1px solid #D0D9E8;">
+                <td style="padding: 8px 10px; border-right: 1px solid #D0D9E8;">&ldquo;Who invests in education apps, and what do they look for?&rdquo;</td>
+                <td style="padding: 8px 10px; border-right: 1px solid #D0D9E8;">A list of investor types and four things they weigh</td>
+                <td style="padding: 8px 10px; border-right: 1px solid #D0D9E8;">Two audience insights, reworded into my brief</td>
+                <td style="padding: 8px 10px;">It named a &ldquo;report&rdquo; I could not find; I dropped that claim</td>
+            </tr>
+        </table>
+        <div style="font-size: 15px; color: #1a2340; line-height: 1.6; margin-top: 12px;">Keep the log in your <strong>Learning Log</strong>, in a section named <strong>AI-Use Log</strong>. Studio assignments and projects that invite Claude will ask for it.</div>
+    </div>
+
+    <!-- HABIT 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#9889; HABIT 3 &middot; USE IT LEAN</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65; margin-bottom: 10px;">AI tools measure work in <strong>tokens</strong>, small chunks of text (roughly a few characters each). Every word you send and every word it sends back costs tokens, and your account has limits. You do not need to count them, but a few habits keep you from running out mid-project:</div>
+        <ul style="margin: 0; padding-left: 20px; font-size: 16px; color: #1a2340; line-height: 1.75;">
+            <li><strong>Send only what is needed.</strong> Paste the paragraph you are working on, not the whole book.</li>
+            <li><strong>Start a fresh conversation for a new task.</strong> Long, wandering chats carry all their earlier text along and cost more each turn.</li>
+            <li><strong>Ask for the length you want.</strong> &ldquo;Two sentences&rdquo; costs far less than an unbounded answer, and is usually more useful anyway.</li>
+            <li><strong>Do the easy thinking yourself.</strong> Save the tool for the moment you are genuinely stuck.</li>
+        </ul>
+    </div>
+
+    <!-- HABIT 4 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128269; HABIT 4 &middot; VERIFY EVERYTHING</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">This is the most important habit. AI tools sometimes state false things with total confidence. The classic trap in an English class: you ask for a quotation and it hands you a line that <strong>is not in the text</strong>, worded just plausibly enough to fool you. It can also get a date, an author, a statistic, or a source wrong. In your Studio work the same trap looks like an invented market figure or a &ldquo;study&rdquo; that does not exist.</div>
+        <div style="background: #FDECEC; border: 1px solid #E8B4AE; border-left: 5px solid #C0392B; border-radius: 6px; padding: 14px 18px;">
+            <div style="font-size: 11px; color: #C0392B; margin-bottom: 6px;">&#9888;&#65039; THE RULE</div>
+            <div style="font-size: 16px; color: #1a2340; line-height: 1.6;">Never put an AI-supplied quotation, date, statistic, or fact into your work until you have confirmed it against the real source with your own eyes. A quote is only yours to use once you have found it in the text yourself; a number is only yours to pitch once you can say where it comes from.</div>
+        </div>
+    </div>
+
+    <!-- PROMPT LIBRARY -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128218; ONE MORE HABIT WORTH BUILDING &middot; THE PROMPT LIBRARY</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">When you find a prompt that works, it becomes a tool you will use again, so do not throw it away. Keep a <strong>prompt library</strong>: a short running list of your best prompts, each with a label and a note on what it is for. Yours will grow all year as your pitch develops.</div>
+        <div class="codey">[Objection finder] &nbsp;Use before revising an argument. &ldquo;Here is my claim and my evidence. List the three strongest objections a skeptical reader would raise. Do not soften them.&rdquo;</div>
+        <div style="font-size: 15px; color: #1a2340; line-height: 1.6; margin-top: 12px;">Keep the library at the bottom of your Learning Log or in its own page of your Senior Studios document.</div>
+    </div>
+
+    <!-- SAVE OUTPUTS -->
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 16px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128190; SAVE WHAT YOU KEEP TO ONEDRIVE</div>
+        <div style="font-size: 16px; color: #0E1C42; line-height: 1.65;">Anything you decide to keep, save into your English IV folders in OneDrive, named the usual way for this course (for example <span style="font-family: Consolas, Monaco, monospace; background:#FFFFFF; border:1px solid #C5DCE5; border-radius:4px; padding:1px 6px;">LastName_ENG4_Q1_AudienceNotes.docx</span>). A chat window is not storage; if you close it, the conversation can be gone. Your OneDrive folder is where your real, submittable work lives.</div>
+    </div>
+
+    <!-- CARRY FORWARD -->
+    <div style="background: #FDF3E3; border-left: 5px solid #C7922C; border-radius: 6px; padding: 16px 22px; margin-bottom: 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 8px;">&#128170; CARRY THIS FORWARD</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Ask well, log honestly, use it lean, verify everything, and save what you keep. Do those five things and Claude will make you faster without making the work any less yours. Each assignment will tell you exactly where it fits; the thinking stays with you.</div>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Working with Claude (2 of 2)</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Prompting, Records, and Checking</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

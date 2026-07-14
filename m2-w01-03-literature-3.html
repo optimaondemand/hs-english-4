@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 1.3 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.3 &middot; Literature (3 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Chapter 5</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.3 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Creator Runs</div>
+        <div style="font-size: 16px; color: #666;">The night the creature opens its eyes &mdash; and Victor flees</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Two years of work end in a single moment &mdash; and Victor&rsquo;s response to it sets the whole tragedy in motion.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This is the most famous scene in the novel, and probably not the one you&rsquo;re picturing. There is no lightning storm, no shout of &ldquo;It&rsquo;s alive!&rdquo; &mdash; those come from the movies. In the book, the creature simply opens one &ldquo;dull yellow eye,&rdquo; and the man who spent two years building it is instantly filled with &ldquo;horror and disgust&rdquo; and runs. As you read, watch what the creature actually <em>does</em> in its first minutes of life &mdash; and what Victor does in response. The gap between the two is where the novel&rsquo;s moral center lives.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how the long-dreamed creation turns to horror the instant it succeeds.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">explain why Victor&rsquo;s abandonment of his creation is the true beginning of the tragedy.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passage is on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 5.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Read the passage before the lesson below. Victor is describing the night the creature came to life.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passage &mdash; the creation night (Chapter 5)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">It was on a dreary night of November that I beheld the accomplishment of my toils. With an anxiety that almost amounted to agony, I collected the instruments of life around me, that I might infuse a spark of being into the lifeless thing that lay at my feet. It was already one in the morning; the rain pattered dismally against the panes&hellip; when, by the glimmer of the half-extinguished light, I saw the dull yellow eye of the creature open; it breathed hard, and a convulsive motion agitated its limbs.</p>
+                <p style="margin:0 0 12px 0;">&hellip; I had worked hard for nearly two years, for the sole purpose of infusing life into an inanimate body&hellip; but now that I had finished, the beauty of the dream vanished, and breathless horror and disgust filled my heart. Unable to endure the aspect of the being I had created, I rushed out of the room&hellip;</p>
+                <p style="margin:0 0 12px 0;">&hellip; I beheld the wretch&mdash;the miserable monster whom I had created. He held up the curtain of the bed; and his eyes, if eyes they may be called, were fixed on me. His jaws opened, and he muttered some inarticulate sounds, while a grin wrinkled his cheeks&hellip; one hand was stretched out, seemingly to detain me, but I escaped and rushed downstairs.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 5.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; BOOK VS. SCREEN</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Almost everything popular culture &ldquo;knows&rdquo; about this scene comes from the 1931 film and its successors: the bolt of lightning, the crackling machines, the flat-headed green monster, the cry of &ldquo;It&rsquo;s alive!&rdquo; Shelley wrote none of it. Her creation is quiet, dim, and intimate &mdash; rain on the window, a guttering candle, &ldquo;a spark of being.&rdquo; She deliberately keeps the <em>method</em> vague (Victor refuses to reveal his secret), because the novel is not interested in <em>how</em> he did it. It is interested in what happens next. Noticing the gap between the famous movie image and Shelley&rsquo;s actual words is itself a reading skill: the culture remembers the spectacle and forgets the moral question at the center.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE DREAM CURDLES</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Have you ever wanted something intensely, finally gotten it &mdash; and felt the excitement drain away almost at once? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That collapse of a long-wanted dream the instant it arrives is exactly Victor&rsquo;s experience &mdash; &lsquo;the beauty of the dream vanished.&rsquo;">Yes &mdash; the letdown was instant</button>
+                <button data-response="Sometimes the wanting really is better than the having. Shelley dramatizes that to a terrifying degree here.">Sometimes the wanting is the best part</button>
+                <button data-response="Then Victor&rsquo;s reaction may surprise you: two years of longing turn to horror in a single sentence.">Not that I can remember</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Look at how fast the turn happens. Victor has worked &ldquo;for nearly two years, for the sole purpose of infusing life,&rdquo; with an ardor that &ldquo;far exceeded moderation.&rdquo; The creature&rsquo;s eye opens &mdash; the impossible thing works &mdash; and in the very next breath, &ldquo;the beauty of the dream vanished, and breathless horror and disgust filled my heart.&rdquo; The achievement and the revulsion arrive in the same instant. Shelley is making a sharp point about a certain kind of ambition: it is in love with the <em>dream</em> of creating, not with the <em>thing</em> created. Victor wanted to do the impossible. He never once pictured living with the result, or caring for it. The moment the dream becomes a real being with a body and a need, he cannot bear to look at it.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE FIRST GESTURE &mdash; AND THE FLIGHT</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Now read the creature&rsquo;s actual behavior, slowly, setting aside the word &ldquo;monster.&rdquo; It opens its eyes. It breathes. Later it comes to Victor&rsquo;s bed, makes &ldquo;inarticulate sounds&rdquo; &mdash; the noises of something that cannot yet speak &mdash; and stretches out one hand, &ldquo;seemingly to detain me.&rdquo; A newborn reaching for the only face it has ever seen. That is what Victor flees from. Many readers see this as the true crime of the novel &mdash; not that Victor made the creature, but that he abandoned it at the instant of its birth, judging it by its appearance before it had done a single thing. Everything terrible that follows grows from this moment of a creator turning his back. The creature is not born a monster; it is born, and then deserted, and the desertion is what shapes it. Hold that as you read the rest of the novel: how much of what the creature becomes was made not in the workshop, but in the running away?</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. The instant the creature comes to life, Victor feels&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="There&rsquo;s no triumph here &mdash; the dream collapses at once.">pride and triumph</button>
+                    <button data-choice="1" data-fb="Not tenderness &mdash; he can&rsquo;t even bear to look at it.">love for his creation</button>
+                    <button data-choice="2" data-fb="Yes. &lsquo;Breathless horror and disgust filled my heart&rsquo; &mdash; and he runs.">horror and disgust</button>
+                    <button data-choice="3" data-fb="He&rsquo;s anything but calm; he flees the room.">calm satisfaction</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. When the creature reaches its hand toward Victor, it is most likely&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; a newborn reaching for its only companion; the text says &lsquo;seemingly to detain me.&rsquo;">reaching out, perhaps for connection</button>
+                    <button data-choice="1" data-fb="Nothing in the passage shows an attack &mdash; that&rsquo;s the fear Victor projects.">attacking him</button>
+                    <button data-choice="2" data-fb="It can&rsquo;t speak yet &mdash; only &lsquo;inarticulate sounds.&rsquo; This isn&rsquo;t a threat.">demanding revenge</button>
+                    <button data-choice="3" data-fb="It has just been born; it isn&rsquo;t fleeing &mdash; Victor is.">trying to escape</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Many readers argue the true beginning of the tragedy is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The making is the setup; the disaster turns on what Victor does after.">the act of creating life</button>
+                    <button data-choice="1" data-fb="The creature does nothing violent here &mdash; it&rsquo;s just been born.">the creature&rsquo;s first violent act</button>
+                    <button data-choice="2" data-fb="His looks are the excuse Victor uses; the choice to abandon is the crime.">the creature&rsquo;s ugliness</button>
+                    <button data-choice="3" data-fb="Yes &mdash; Victor abandons his creation at the moment of its birth, judging it before it has acted.">Victor abandoning his creation the instant it lives</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 1.3</em>, answer in three or four sentences: <strong>What does Victor owe the being he has made &mdash; and where, exactly, does he fail it? Quote one line from the passage.</strong> Then connect it: how does this scene speak to a question your Senior Studios work keeps asking: what does a maker owe the people their creation is for?
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This scene is the beating heart of the module&rsquo;s <strong>creature/creator</strong> thread &mdash; and the mirror your <strong>Senior Studios pitch</strong> holds up. Victor never asked what he owed his creation; you are required to. Next week the consequences begin to fall: an innocent dies, a second innocent is blamed, and at last the abandoned creature steps forward to tell Victor &mdash; and us &mdash; his own side of the story.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.3 &middot; The Creator Runs</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

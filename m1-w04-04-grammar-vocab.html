@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 4.4</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 18px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .notebook { background:#FFFEF7; border:1px solid #E3DEC9; border-left:34px solid #FBE9EA; border-radius:4px; padding:10px 18px 14px 14px; position:relative; background-image:repeating-linear-gradient(#FFFEF7 0px,#FFFEF7 27px,#D9E6F2 28px); box-shadow:0 1px 4px rgba(0,0,0,.06); }
+    .notebook .nb-title { font-size:12px; color:#8A2E3B; letter-spacing:.4px; line-height:28px; }
+    .notebook .nb-line { font-size:16px; color:#33485e; line-height:28px; }
+    .chalkboard { background:#27392f; border:8px solid #8a6d3b; border-radius:8px; padding:16px 22px; box-shadow:inset 0 0 50px rgba(0,0,0,.4); }
+    .chalkboard .cb-kicker { font-size:12px; color:#bfe3c8; letter-spacing:.6px; margin-bottom:8px; }
+    .chalkboard .cb-line { font-size:18px; line-height:1.7; color:#fdfdfb; }
+    .chalkboard .cb-accent { color:#ffe39a; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Ancient Wisdom &mdash; How to Live Well</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.4 &middot; Grammar &amp; Vocabulary</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Drawn From</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Buddhist Parables</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How Should We Live?</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.4 &middot; Grammar &amp; Vocabulary</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Five Words, and Punctuating Quotations</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Five words from the parables, and the rules for punctuating a quotation &mdash; which you need every time you put someone else&rsquo;s words in your writing.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Last week the colon helped you <em>introduce</em> a quotation. This week you learn how to punctuate the quotation itself: where the commas and periods go, when to capitalize, and how to attach a speaker. The parables, full of dialogue, are a perfect model.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> define five words from the reading and use one in a sentence of my own.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">punctuate a quotation correctly &mdash; commas and periods, capitalization, and speaker tags.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; VOCABULARY FROM THE READING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 12px 0;">Tap each card to check the definition, then add all five to the <strong>Vocabulary Log</strong> in your Learning Log.</p>
+
+        <div class="optima-widget">
+            <div class="widget-kicker">&#9889; TAP TO REVEAL &middot; THE DEFINITION</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>fester</strong> <span style="color:#888;font-size:14px;">(v.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">to become infected and inflamed; to grow worse over time. <em>&ldquo;his foot became swollen and festered&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>maddened</strong> <span style="color:#888;font-size:14px;">(adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">driven to frenzy or desperation. <em>&ldquo;Maddened with pain&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>admonition</strong> <span style="color:#888;font-size:14px;">(n.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">a gentle warning or piece of firm advice. <em>&ldquo;patient of admonition&rdquo;</em> (willing to be corrected)</div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>ascetic</strong> <span style="color:#888;font-size:14px;">(n./adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">a person who gives up comforts and pleasures for a spiritual purpose; severely self-disciplined. <em>&ldquo;the wandering ascetics&rdquo;</em></div>
+                </div>
+                <div class="ow-flip" tabindex="0" style="flex:1;min-width:200px;">
+                    <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;"><strong>ardent</strong> <span style="color:#888;font-size:14px;">(adj.)</span></div>
+                    <div class="ow-flip-back" style="font-size:15px;line-height:1.5;">intensely eager or passionate. <em>&ldquo;ardent spirits&rdquo;</em></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #EAF1EA; border-left: 4px solid #4F6F52; border: 1px solid #CBD8CB; border-radius: 6px; padding: 16px 20px; margin: 14px 0 0 0;">
+            <div style="font-size: 11px; color: #4F6F52; margin-bottom: 10px;">&#9999;&#65039; WRITE IT &middot; COPIA</div>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Choose <strong>one</strong> of the five words, find the line it appears in this week, and <strong>rewrite that line in your own words</strong> &mdash; same meaning, your phrasing. Put it in your Vocabulary Log.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; PUNCTUATING A QUOTATION</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When you put someone&rsquo;s exact words on the page, a few rules keep it clean. Here they are, with examples from this week:</p>
+
+        <div style="margin:14px 0;">
+            <div class="chalkboard">
+                <div class="cb-kicker">&#128221; ON THE BOARD</div>
+                <div class="cb-line">&ldquo;An elephant is like a fan<span class="cb-accent">,&rdquo;</span> said the blind man.</div>
+            </div>
+        </div>
+
+        <div style="background:#F4F6FA; border:1px solid #D0D9E8; border-radius:6px; padding:14px 20px; margin:14px 0;">
+            <div style="font-size: 16px; color: #1a2340; line-height: 1.9;">
+                <strong>1. A comma joins a speaker tag to the quote.</strong> The elephant thought, &ldquo;I owe my life to these carpenters.&rdquo;<br />
+                <strong>2. Periods and commas go <em>inside</em> the closing quotation mark.</strong> &ldquo;An elephant is like a fan,&rdquo; said the blind man.<br />
+                <strong>3. Capitalize the first word of a quoted full sentence.</strong> The Buddha said, &ldquo;In weeping over the death of dear ones&hellip;&rdquo;<br />
+                <strong>4. If you weave a quote into your own sentence, no comma is needed.</strong> The blind men each insist the elephant is &ldquo;like a pillar&rdquo; or &ldquo;like a fan.&rdquo;
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Rule 4 is the one you will use most in essays. When you quote just a phrase and it fits the grammar of your own sentence, you do not stop it with a comma &mdash; you let it flow. Combine this with last week&rsquo;s colon (to introduce a full-sentence quotation after a complete sentence) and you can handle nearly every quotation an essay will ask of you.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PUNCTUATE THE QUOTE</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. Which is punctuated correctly?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="The period belongs inside the closing quotation mark.">The blind man said, &ldquo;an elephant is like a fan&rdquo;.</button>
+                    <button data-choice="1" data-fb="A quoted full sentence after a speaker tag should be capitalized.">The blind man said, &ldquo;an elephant is like a fan.&rdquo;</button>
+                    <button data-choice="2" data-fb="Yes. Comma after the tag, capital &lsquo;An,&rsquo; period inside the quotation mark.">The blind man said, &ldquo;An elephant is like a fan.&rdquo;</button>
+                    <button data-choice="3" data-fb="A speaker tag needs a comma, not a colon, here &mdash; and the period goes inside.">The blind man said &ldquo;An elephant is like a fan&rdquo;.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. You want to weave a short phrase into your own sentence. Which is right?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes. The phrase flows into the sentence, so no comma and no capital are needed.">The elephant resolves to &ldquo;do something for them.&rdquo;</button>
+                    <button data-choice="1" data-fb="No comma is needed when the quote flows grammatically into your sentence.">The elephant resolves to, &ldquo;do something for them.&rdquo;</button>
+                    <button data-choice="2" data-fb="Don&rsquo;t capitalize a phrase woven mid-sentence into your own.">The elephant resolves to &ldquo;Do something for them.&rdquo;</button>
+                    <button data-choice="3" data-fb="The period belongs inside the closing quotation mark.">The elephant resolves to &ldquo;do something for them&rdquo;.</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Where does the period go in American usage?</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Not outside the quotation mark in American style.">Always outside the quotation mark</button>
+                    <button data-choice="1" data-fb="A quotation does not take a semicolon to close it like this.">Replaced by a semicolon</button>
+                    <button data-choice="2" data-fb="You do need end punctuation; it just goes inside.">It is left off entirely</button>
+                    <button data-choice="3" data-fb="Yes. In American usage, the period goes inside the closing quotation mark.">Inside the closing quotation mark</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHY THIS IS WORTH KNOWING</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Quoting accurately and punctuating it cleanly is the single most common technical task in literary writing &mdash; and a frequent place to lose easy points. You have used quotations in every Quick Write so far; now you can punctuate them with confidence. This week&rsquo;s Quick Write is a parable with dialogue, so you will get to use these rules right away.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.4 &middot; Grammar &amp; Vocabulary</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

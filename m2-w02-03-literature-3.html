@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 2.3 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.3 &middot; Literature (3 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Chapter 10</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.3 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">&ldquo;I Ought to Be Thy Adam&rdquo;</div>
+        <div style="font-size: 16px; color: #666;">The creature finally speaks &mdash; and the story turns</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">High on a glacier in the Alps, Victor meets his creature face to face &mdash; and for the first time, the &ldquo;monster&rdquo; speaks.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">What comes out is not a snarl. It is an argument &mdash; eloquent, reasoned, and devastating. The creature does not deny what he has done; he asks Victor to understand <em>why</em>, and to face what he, the creator, owes the thing he made and abandoned. This is the structural heart of the novel: Shelley hands the floor to the figure everyone has called a monster, and dares us to keep calling him that once we&rsquo;ve heard him.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the creature&rsquo;s claim that he was &ldquo;benevolent and good&rdquo; and that &ldquo;misery made me a fiend.&rdquo;</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">interpret the &ldquo;Adam&hellip; fallen angel&rdquo; comparison and name the duties a creator owes a creature.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 10.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open, for one short entry.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">The creature stops Victor on the glacier and pleads to be heard. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; the creature&rsquo;s plea (Chapter 10)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <p style="margin:0 0 12px 0;">&ldquo;Be calm! I entreat you to hear me before you give vent to your hatred on my devoted head. Have I not suffered enough, that you seek to increase my misery?&hellip; I am thy creature, and I will be even mild and docile to my natural lord and king if thou wilt also perform thy part, the which thou owest me&hellip;</p>
+                <p style="margin:0 0 12px 0;">Remember that I am thy creature; I ought to be thy Adam, but I am rather the fallen angel, whom thou drivest from joy for no misdeed. Everywhere I see bliss, from which I alone am irrevocably excluded. I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>Victor, in response:</strong></div>
+                <p style="margin:0 0 12px 0;">For the first time, also, I felt what the duties of a creator towards his creature were, and that I ought to render him happy before I complained of his wickedness.</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 10.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; PARADISE LOST</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">The creature&rsquo;s words lean on John Milton&rsquo;s epic poem <em>Paradise Lost</em> (1667), which retells the Bible&rsquo;s creation and the fall of Satan, and which the creature later teaches himself to read. Two figures from it matter here. <strong>Adam</strong> is the first human, made by a Creator who walks with him and provides for him. <strong>Satan</strong> is the &ldquo;fallen angel,&rdquo; cast out of heaven, excluded forever from joy. The creature&rsquo;s tragedy is that he is built to be an Adam &mdash; a beloved first creation &mdash; but is treated like Satan, exiled by his maker &ldquo;for no misdeed.&rdquo; Shelley uses the comparison to put a hard question to the reader: if you make a being capable of love and goodness and then cast it out, which of you turns it into a devil?</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE MONSTER ARGUES</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Do you think people are born good or bad &mdash; or made that way by how they&rsquo;re treated? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="The creature would agree with you: &lsquo;I was benevolent and good; misery made me a fiend.&rsquo; The novel leans hard on the &lsquo;made&rsquo; side.">Mostly made by how they&rsquo;re treated</button>
+                <button data-response="A real position &mdash; and the creature&rsquo;s later violence lets you test it. Does cruelty excuse cruelty in return?">Some of both &mdash; nature and treatment</button>
+                <button data-response="Hold that view against the creature&rsquo;s claim. He insists he started good. Watch whether the novel persuades you.">Mostly born one way or the other</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">The first shock is simply that the creature is <em>articulate</em>. The thing that could only make &ldquo;inarticulate sounds&rdquo; on the night of its birth now speaks in the careful, elevated language of a courtroom: &ldquo;I entreat you to hear me before you give vent to your hatred.&rdquo; He builds a real argument. He admits he has become dangerous, but he locates the cause: &ldquo;I was benevolent and good; misery made me a fiend.&rdquo; He did not begin evil &mdash; he was driven to it by total rejection. And he offers a bargain rooted in justice: &ldquo;I am thy creature, and I will be&hellip; mild and docile&hellip; if thou wilt also perform thy part, the which thou owest me.&rdquo; The creature is claiming that obligations run <em>both ways</em> between a maker and the thing it makes. He owes Victor obedience; Victor owes him care. Shelley has quietly turned the horror story into a debate about responsibility &mdash; and given the better argument, so far, to the monster.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE DUTIES OF A CREATOR</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then comes the line your whole module has been moving toward. Hearing the creature out, Victor admits: &ldquo;For the first time&hellip; I felt what the duties of a creator towards his creature were, and that I ought to render him happy before I complained of his wickedness.&rdquo; <em>For the first time.</em> He built a living being and never once, until this moment on the ice, asked what he owed it. The order of that sentence matters: he should make the creature happy <em>before</em> condemning its bad behavior, because the bad behavior grew out of the neglect. This is the moral the novel has been constructing from the first abandoned moment in the workshop &mdash; and it is, word for word, the question your <strong>Senior Studios work</strong> forces you to answer before you ask anyone to believe in what you make: what do I owe what I create, and whom will it affect? You don&rsquo;t have to decide the creature is innocent. He kills; later he kills again. But Shelley insists you hold both truths at once &mdash; that the creature does terrible things, <em>and</em> that he was made terrible by a creator who would not do his part. That double vision, refusing the easy label of &ldquo;monster,&rdquo; is the most grown-up reading skill this novel teaches.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">1. &ldquo;I was benevolent and good; misery made me a fiend&rdquo; argues that&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He claims the opposite &mdash; that he started good.">he was born evil</button>
+                    <button data-choice="1" data-fb="He doesn&rsquo;t deny the deeds; he explains their cause.">he never did anything wrong</button>
+                    <button data-choice="2" data-fb="Yes. Rejection and suffering, not his nature, turned him cruel.">his cruelty was caused by how he was treated</button>
+                    <button data-choice="3" data-fb="He&rsquo;s not boasting &mdash; he&rsquo;s pleading to be made happy again.">he enjoys being a fiend</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0">
+                <div class="widget-row-prompt">2. Calling himself &ldquo;the fallen angel&rdquo; rather than &ldquo;Adam,&rdquo; the creature means&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Yes &mdash; he should have been a cherished first creation, but was cast out like Satan, &lsquo;for no misdeed.&rsquo;">he should have been loved like Adam but was exiled like Satan</button>
+                    <button data-choice="1" data-fb="He&rsquo;s not claiming holiness &mdash; he&rsquo;s naming his exile.">he is literally an angel</button>
+                    <button data-choice="2" data-fb="He read deeply later &mdash; the allusion is anything but ignorant.">he doesn&rsquo;t understand the Bible</button>
+                    <button data-choice="3" data-fb="He demands justice, not worship.">he wants to be worshipped</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. Victor&rsquo;s admission about &ldquo;the duties of a creator&rdquo; matters because&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="It comes far too late &mdash; &lsquo;for the first time&rsquo; is the damning phrase.">he had always known his duties</button>
+                    <button data-choice="1" data-fb="He admits he has duties &mdash; the reverse of owing nothing.">he owes the creature nothing</button>
+                    <button data-choice="2" data-fb="He says care should come first, before complaint about wickedness.">the creature&rsquo;s wickedness comes first</button>
+                    <button data-choice="3" data-fb="Yes &mdash; only now does he grasp that making a being created real obligations to it.">he finally realizes making a being created obligations he ignored</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 2.3</em>, answer in four or five sentences: <strong>After hearing the creature, do you still call him a monster? What does Victor owe him &mdash; and did he owe it from the start? Quote one line.</strong> Then connect it to your Senior Studios app: name one duty <em>you</em> owe the people your app is made for.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the module&rsquo;s <strong>creature/creator</strong> and <strong>the other</strong> threads meeting in a single voice &mdash; the made being, the outcast, asking to be seen as more than his face. And &ldquo;the duties of a creator&rdquo; is the exact standard behind the <strong>pitch deck</strong> you launched this week: you are the maker now, and every claim on your deck answers the question Victor answered far too late. As the module continues, you&rsquo;ll hear the creature&rsquo;s full story &mdash; how he learned to speak, what he read, and how rejection turned a gentle being toward revenge.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.3 &middot; &ldquo;I Ought to Be Thy Adam&rdquo;</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

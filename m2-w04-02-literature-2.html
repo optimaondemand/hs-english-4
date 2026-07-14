@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>English IV &mdash; Lesson 4.2 (Frankenstein)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">ENGLISH IV</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Creature and the Creator</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.2 &middot; Literature (2 of 3)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Anchor Text</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Shelley, <em>Frankenstein</em> &mdash; Ch. 20</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Enduring Quest</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.2 &middot; Literature</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Bargain Broken</div>
+        <div style="font-size: 16px; color: #666;">Victor&rsquo;s hardest choice &mdash; and the vow it earns him</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Victor has agreed to build the companion. Half-finished, with the creature watching at the window, he stops &mdash; and destroys her.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">For once, Victor thinks about consequences before he acts. He imagines what a second creature might do, and what the two together might unleash on the world &mdash; and tears his work to pieces. It may be the most responsible thing he does in the whole novel. It is also a brutal second abandonment, performed in front of the being who depended on it. Today you weigh whether breaking the promise was right, and watch the creature&rsquo;s grief harden into a vow.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> lay out Victor&rsquo;s reasons for destroying the second creature.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">judge whether the choice was responsible, cruel, or both &mdash; and explain the creature&rsquo;s response.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">The passages are on this page, in <strong>The Reading</strong> below &mdash; from <em>Frankenstein</em>, Chapter 20.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your <strong>Module 2</strong> reading notes open. This week&rsquo;s Quick Write grows out of today&rsquo;s question.</div>
+        </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-top:3px solid #C7922C;border:1px solid #D0D9E8;border-radius:8px;padding:20px 24px;margin-bottom:20px;">
+        <div style="font-size:11px;color:#c7922c;margin-bottom:12px;">&#128214; THE READING</div>
+        <p style="font-size:17px;color:#1a2340;line-height:1.65;margin:0 0 6px 0;">Victor is at work on the female creature when he stops to think. Read before the lesson below.</p>
+        <details style="background:#FFFFFF;border:1px solid #D0D9E8;border-left:4px solid #C7922C;border-radius:6px;padding:12px 18px;margin:14px 0;">
+            <summary style="font-size:16px;color:#0E1C42;cursor:pointer;list-style:none;"><span style="color:#C7922C;">&#9654;</span>&nbsp; Read the passages &mdash; the reasoning, the destruction, the vow (Chapter 20)</summary>
+            <div style="font-size:16px;color:#1a2340;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px solid #EEF1F8;">
+                <div style="font-size:13px;color:#888;margin-bottom:8px;"><strong>Victor reasons:</strong></div>
+                <p style="margin:0 0 12px 0;">&hellip; one of the first results of those sympathies for which the d&aelig;mon thirsted would be children, and a race of devils would be propagated upon the earth who might make the very existence of the species of man a condition precarious and full of terror. Had I right, for my own benefit, to inflict this curse upon everlasting generations?&hellip; now, for the first time, the wickedness of my promise burst upon me&hellip;</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The destruction:</strong></div>
+                <p style="margin:0 0 12px 0;">&hellip; I thought with a sensation of madness on my promise of creating another like to him, and trembling with passion, tore to pieces the thing on which I was engaged. The wretch saw me destroy the creature on whose future existence he depended for happiness, and with a howl of devilish despair and revenge, withdrew.</p>
+                <div style="font-size:13px;color:#888;margin:14px 0 8px 0;"><strong>The creature&rsquo;s answer:</strong></div>
+                <p style="margin:0 0 12px 0;">&ldquo;Shall each man&hellip; find a wife for his bosom, and each beast have his mate, and I be alone?&hellip; revenge remains&mdash;revenge, henceforth dearer than light or food!&hellip; It is well. I go; but remember, I shall be with you on your wedding-night.&rdquo;</p>
+                <div style="font-size:13px;color:#888;margin-top:8px;padding-top:10px;border-top:1px solid #EEF1F8;">Mary Shelley, <em>Frankenstein</em> (1818). Public domain. Excerpts from Chapter 20.</div>
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 0 0 20px 0;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128218; HISTORICAL CONTEXT &middot; A QUESTION AHEAD OF ITS TIME</div>
+        <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Victor&rsquo;s worry &mdash; that creating one new kind of being could lead to &ldquo;a race of devils&hellip; propagated upon the earth&rdquo; &mdash; is a remarkably modern thought. He is reasoning about <em>unintended consequences at scale</em>: not just what his creation will do, but what it will set in motion for &ldquo;everlasting generations.&rdquo; This is the same shape of question our own age asks about powerful technologies &mdash; once you release something self-replicating or self-deciding into the world, you cannot easily recall it. Shelley, writing in 1818, gives her scientist a flash of exactly the caution Victor lacked at the beginning. The tragedy is that he learns to ask &ldquo;what could this unleash?&rdquo; only <em>after</em> he has already made the first creature and broken its heart.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE CASE FOR DESTROYING HER</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Is it ever right to break a promise &mdash; if keeping it might cause far greater harm? <em>(No wrong answer.)</em></div>
+            <div class="widget-options">
+                <button data-response="That&rsquo;s Victor&rsquo;s defense exactly: a promise can&rsquo;t bind you to unleash catastrophe. The hard part is being sure the catastrophe is real.">Yes &mdash; preventing harm can outweigh a promise</button>
+                <button data-response="A serious position &mdash; a promise is a bond, and breaking it betrays the one you made it to. The creature would agree with you.">A promise is a promise; breaking it is a betrayal</button>
+                <button data-response="That &lsquo;it depends&rsquo; is the whole debate of this chapter. Watch how Shelley refuses to make it easy.">It depends entirely on the situation</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 10px 0;">Give Victor his due: this is the first time in the novel he stops to think through consequences <em>before</em> acting. He realizes he knows nothing of the second creature&rsquo;s disposition &mdash; she &ldquo;might become ten thousand times more malignant&rdquo; &mdash; and that the two together could produce &ldquo;a race of devils&hellip; propagated upon the earth.&rdquo; So he asks a genuinely serious moral question: &ldquo;Had I right, for my own benefit, to inflict this curse upon everlasting generations?&rdquo; To buy his own peace by risking all of humanity&rsquo;s future would be, he decides, monstrous. Measured against his reckless behavior in the workshop, this is growth. He finally weighs the world beyond himself. By that light, tearing the creature &ldquo;to pieces&rdquo; is the responsible act of a maker who has, too late, learned to think.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE CASE AGAINST &mdash; AND THE VOW</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Now read the same scene from the window. The creature &ldquo;saw me destroy the creature on whose future existence he depended for happiness.&rdquo; Victor does it <em>in front of him</em> &mdash; the one being who had pinned every hope on her. And notice the fairness problem buried in Victor&rsquo;s reasoning: he condemns the female to non-existence for crimes she <em>might</em> commit, judging her exactly as the world judged the first creature &mdash; on what she is, before she has done anything. He even admits the female &ldquo;might&rdquo; be worse, or the two &ldquo;might&rdquo; hate each other. He destroys a possible life on a string of maybes. So which is it &mdash; prudent guardianship of the human future, or one more failure to keep faith with what he made? Shelley keeps both alive. What is <em>not</em> ambiguous is the result: the creature&rsquo;s grief turns final. &ldquo;Shall each man find a wife&hellip; and I be alone?&rdquo; From here, &ldquo;revenge&rdquo; becomes &ldquo;dearer than light or food,&rdquo; and he leaves Victor with the sentence that will shape the rest of the book: &ldquo;I shall be with you on your wedding-night.&rdquo;</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHECK YOUR READING</div>
+            <div class="widget-question">Pick one answer per row; you&rsquo;ll get an instant note.</div>
+
+            <div class="widget-row" data-correct="1">
+                <div class="widget-row-prompt">1. Victor&rsquo;s main reason for destroying the second creature is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He never finishes her, but his reason isn&rsquo;t lack of skill.">he couldn&rsquo;t finish making her</button>
+                    <button data-choice="1" data-fb="Yes &mdash; he fears a &lsquo;race of devils&rsquo; and questions his right to curse &lsquo;everlasting generations.&rsquo;">fear of the harm she and her offspring might do to humanity</button>
+                    <button data-choice="2" data-fb="The creature begs for her; he doesn&rsquo;t ask Victor to stop.">the creature asked him to stop</button>
+                    <button data-choice="3" data-fb="His change of heart is moral, not romantic.">he fell in love with the first creature</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2">
+                <div class="widget-row-prompt">2. A strong objection to Victor&rsquo;s choice is that he&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He thinks more here than anywhere &mdash; over-thinking isn&rsquo;t the flaw.">didn&rsquo;t think it through at all</button>
+                    <button data-choice="1" data-fb="He has clear reasons; &lsquo;no reason&rsquo; isn&rsquo;t the objection.">acted with no reason</button>
+                    <button data-choice="2" data-fb="Yes &mdash; he condemns the female for crimes she only <em>might</em> commit, judging her before she exists.">condemns a being for what she only <em>might</em> do, before she exists</button>
+                    <button data-choice="3" data-fb="He was never indifferent here &mdash; he agonizes over it.">felt nothing about it</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3">
+                <div class="widget-row-prompt">3. &ldquo;I shall be with you on your wedding-night&rdquo; signals that the creature will&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="He&rsquo;s not seeking reconciliation now &mdash; he&rsquo;s vowing revenge.">try to make peace with Victor</button>
+                    <button data-choice="1" data-fb="He&rsquo;s done asking &mdash; the time for requests has passed.">ask again for a companion</button>
+                    <button data-choice="2" data-fb="He doesn&rsquo;t leave for good &mdash; he promises to return.">leave forever</button>
+                    <button data-choice="3" data-fb="Yes &mdash; he aims his revenge at what Victor loves; the wedding night is the target.">strike at Victor&rsquo;s own happiness and those he loves</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <details style="background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 4px solid #C7922C; border-radius: 6px; padding: 12px 18px; margin: 14px 0;">
+            <summary style="font-size: 16px; color: #0E1C42; cursor: pointer; list-style: none;"><span style="color: #C7922C;">&#9654;</span>&nbsp; Write it down: in your reading notes</summary>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #EEF1F8;">
+                Under a heading <em>Lesson 4.2</em>, answer in four or five sentences: <strong>Was Victor right to destroy the second creature? State the strongest point for the other side before you answer. Quote one line.</strong> This is the seed of this week&rsquo;s Quick Write.
+            </div>
+        </details>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128161; WHERE THIS CONNECTS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">This is the <strong>creature/creator</strong> and <strong>technology</strong> threads at their sharpest: a maker forced to weigh one being&rsquo;s happiness against a whole world&rsquo;s risk &mdash; the question your <strong>Senior Studios pitch</strong> asks in miniature (&ldquo;what could this unleash, and for whom?&rdquo;). It&rsquo;s also a near-perfect <em>disputatio</em> or essay topic if you chose one for your project. Next lesson, the vow begins to come true &mdash; and the price falls on someone Victor loves.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; ENGLISH IV &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.2 &middot; The Bargain Broken</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
